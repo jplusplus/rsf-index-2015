@@ -140,7 +140,7 @@ gulp.task('images', function () {
 });
 
 gulp.task('assets', function () {
-  return gulp.src('src/assets/**/*')
+  return gulp.src('src/assets/{fonts,json}/*')
     .pipe(gulp.dest('dist/assets/'));
 });
 
@@ -167,4 +167,4 @@ gulp.task('deploy', ['build'], function() {
   }));
 });
 
-gulp.task('build', ['html', 'images', 'fonts', 'misc']);
+gulp.task('build', ['html', 'images', 'fonts', 'misc', 'assets']);
