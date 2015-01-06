@@ -2,14 +2,24 @@
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand">
-        <span class="glyphicon glyphicon-home"></span>
-        RSF Index 2015
+        <img src="http://rsf.org/squelettes/img/fr/logo-fr.png" height="25" width="auto" />
       </a>
     </div>
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
       <ul class="nav navbar-nav">
-        <li class="active"><a ng-href="#">Home</a></li>
+        <li ui-sref-active="active">
+          <a ui-sref="map">La carte</a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref="details">Détails</a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref="highlight">Eclairage</a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref="themes">Thèmes</a>
+        </li>
       </ul>
     </div>
   </div>
