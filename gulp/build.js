@@ -28,7 +28,7 @@ gulp.task('injector:css:preprocessor', function () {
     .pipe($.inject(gulp.src([
         'src/{app,components}/**/*.less',
         '!src/app/index.less',
-        '!src/app/vendor.less' 
+        '!src/app/vendor.less'
       ], {read: false}), {
       transform: function(filePath) {
         filePath = filePath.replace('src/app/', '');
@@ -153,6 +153,13 @@ gulp.task('misc', function () {
 
 gulp.task('clean', function (done) {
   $.del(['dist/', '.tmp/'], done);
+});
+
+
+gulp.task('deploy', ['build'], function() {
+  gulp.src("./dist/**/*").pipe($.ghPages({
+    remoteUrl: "git@github.com:jplusplus/rsf-index-2015.git"
+  }));
 });
 
 gulp.task('build', ['html', 'images', 'fonts', 'misc']);
