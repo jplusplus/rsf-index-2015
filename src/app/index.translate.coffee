@@ -3,4 +3,5 @@ angular.module "rsfIndex2015"
 		$translateProvider.useStaticFilesLoader
 			prefix: 'assets/locale/'
 			suffix: '.json'
-		$translateProvider.preferredLanguage('en');
+    $translateProvider.preferredLanguage('en');
+		$translateProvider.fallbackLanguage('en');

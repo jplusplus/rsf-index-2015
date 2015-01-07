@@ -1,2 +1,6 @@
-.main.container
-  map
+.main
+  ui-view
+    .container
+      map(country="selectedCountry", data="mapData")
+
+  a(ui-sref="main.details.country({ country: 'FRA' })") details

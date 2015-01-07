@@ -6,18 +6,43 @@
       </a>
     </div>
 
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
+
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li ng-class="{ active: useLanguage() === 'fr' }">
+          <a ng-click="useLanguage('fr')">
+            {{ 'to_french' | translate }}
+          </a>
+        </li>
+        <li ng-class="{ active: useLanguage() === 'en' }">
+          <a ng-click="useLanguage('en')">
+            {{ 'to_english' | translate }}
+          </a>
+        </li>
+        <li ng-class="{ active: useLanguage() === 'es' }">
+          <a ng-click="useLanguage('es')">
+            {{ 'to_spanish' | translate }}
+          </a>
+        </li>
+      </ul>
       <ul class="nav navbar-nav">
         <li ui-sref-active="active">
-          <a ui-sref="details">Détails</a>
+          <a ui-sref="main.details">
+            {{ 'details_nav' | translate }}
+          </a>
         </li>
         <li ui-sref-active="active">
-          <a ui-sref="highlight">Eclairage</a>
+          <a ui-sref="highlight">
+            {{ 'highlight_nav' | translate }}
+          </a>
         </li>
         <li ui-sref-active="active">
-          <a ui-sref="themes">Thèmes</a>
+          <a ui-sref="themes">
+            {{ 'themes_nav' | translate }}
+          </a>
         </li>
       </ul>
     </div>
+
   </div>
 </nav>

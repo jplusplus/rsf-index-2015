@@ -1,3 +1,9 @@
 {
-  "app_title": "RWB: Index 2015"
+  "app_title": "RWB: Index 2015",
+  "to_english": "English",
+  "to_french": "French",
+  "to_spanish": "Spanish",
+  "details_nav": "Details",
+  "highlight_nav": "Highlight",
+  "themes_nav": "Themes"
 }

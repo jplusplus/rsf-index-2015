@@ -1,2 +1,2 @@
-angular.module("rsfIndex2015").controller "MainCtrl", ($scope) ->
-  $scope
+angular.module("rsfIndex2015").controller "MainCtrl", ($scope, mapData) ->
+  $scope.mapData = mapData

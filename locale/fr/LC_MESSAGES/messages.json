@@ -1,3 +1,9 @@
 {
-  "app_title":"RSF : Index 2015"
+  "app_title":"RSF : Index 2015",
+  "to_english":"Anglais",
+  "to_french":"Français",
+  "to_spanish":"Espagnole",
+  "details_nav":"Détails",
+  "highlight_nav":"Éclairage",
+  "themes_nav":"Thèmes"
 }

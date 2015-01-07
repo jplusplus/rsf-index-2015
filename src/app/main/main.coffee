@@ -5,3 +5,5 @@ angular.module "rsfIndex2015"
         url: "/",
         templateUrl: "app/main/main.html",
         controller: "MainCtrl"
+        resolve:
+          mapData: (MapData)-> MapData

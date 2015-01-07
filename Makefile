@@ -11,3 +11,9 @@ install:
 
 deploy:
 	gulp --force deploy
+
+crowdin_upload:
+	crowdin upload sources
+
+crowdin_download:
+	crowdin download
