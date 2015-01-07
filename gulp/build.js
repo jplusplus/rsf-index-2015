@@ -144,6 +144,18 @@ gulp.task('assets', function () {
     .pipe(gulp.dest('dist/assets/'));
 });
 
+gulp.task('locale', function () {
+  return gulp.src('locale/*/LC_MESSAGES/messages.json')  
+    .pipe($.rename(function (path) {
+      // Extract the locale code from the dirname
+      var locale = path.dirname.match(/^([a-zA-Z_-]*)\//)[1];
+      // Change the final file name
+      path.basename = locale;
+    }))
+    .pipe($.flatten())
+    .pipe(gulp.dest('.tmp/assets/locale/'));
+});
+
 gulp.task('fonts', function () {
   return gulp.src($.mainBowerFiles())
     .pipe($.filter('**/*.{eot,svg,ttf,woff}'))
@@ -167,4 +179,4 @@ gulp.task('deploy', ['build'], function() {
   }));
 });
 
-gulp.task('build', ['html', 'images', 'fonts', 'misc', 'assets']);
+gulp.task('build', ['html', 'images', 'fonts', 'misc', 'assets', 'locale']);
