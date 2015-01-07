@@ -153,7 +153,8 @@ gulp.task('locale', function () {
       path.basename = locale;
     }))
     .pipe($.flatten())
-    .pipe(gulp.dest('.tmp/assets/locale/'));
+    .pipe(gulp.dest('.tmp/assets/locale/'))
+    .pipe(gulp.dest('dist/assets/locale/'));
 });
 
 gulp.task('fonts', function () {
