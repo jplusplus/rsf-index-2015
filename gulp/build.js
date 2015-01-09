@@ -1,6 +1,7 @@
 'use strict';
 
 var gulp = require('gulp');
+var slug = require('slug');
 
 var $ = require('gulp-load-plugins')({
   pattern: ['gulp-*', 'main-bower-files', 'uglify-save-license', 'del']
@@ -145,7 +146,7 @@ gulp.task('assets', function () {
 });
 
 gulp.task('locale', function () {
-  return gulp.src('locale/*/LC_MESSAGES/messages.json')  
+  return gulp.src('locale/*/LC_MESSAGES/messages.json')
     .pipe($.rename(function (path) {
       // Extract the locale code from the dirname
       var locale = path.dirname.match(/^([a-zA-Z_-]*)\//)[1];
@@ -155,6 +156,31 @@ gulp.task('locale', function () {
     .pipe($.flatten())
     .pipe(gulp.dest('.tmp/assets/locale/'))
     .pipe(gulp.dest('dist/assets/locale/'));
+});
+
+
+gulp.task('csv', function(){
+  gulp.src(['src/assets/csv/*.csv'])
+    .pipe($.convert({ from: 'csv', to: 'json' }))
+    .pipe($.jsonEditor(function(data) {
+      var dataWithSlug = [];
+      data.forEach(function(row) {
+        var rowWithSlug = {};
+        // For each key of this object
+        for (var k in row){
+          if (row.hasOwnProperty(k)) {
+            // Convert it as a slug
+            rowWithSlug[ slug(k, '_').toLowerCase() ] = row[k];
+          }
+        }
+        // Add the new row
+        dataWithSlug.push(rowWithSlug);
+      });
+      return dataWithSlug;
+    }))
+    .pipe($.rename({ suffix: ".data" }))
+    .pipe(gulp.dest('.tmp/assets/json/'))
+    .pipe(gulp.dest('dist/assets/json/'));
 });
 
 gulp.task('fonts', function () {
@@ -179,5 +205,6 @@ gulp.task('deploy', ['build'], function() {
     remoteUrl: "git@github.com:jplusplus/rsf-index-2015.git"
   }));
 });
+
 
 gulp.task('build', ['html', 'images', 'fonts', 'misc', 'assets', 'locale']);
