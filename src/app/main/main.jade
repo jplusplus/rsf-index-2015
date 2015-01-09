@@ -1,6 +1,35 @@
 .main
   ui-view
     .container
-      map(country="selectedCountry", data="mapData")
+      map(data="mapData")
+      .row
+        .col-sm-4
+          | Lorem ispum
+        .col-sm-4
+          .panel.panel-default
+            .panel-heading
+              h3 {{ "details_nav" | translate }}
+            .panel-body {{ "details_desc" | translate }}
+        .col-sm-4
+          .panel.panel-default
+            .panel-heading
+              h3 {{ "press_nav" | translate }}
+            .panel-body {{ "press_desc" | translate }}
+      .row
+        .col-sm-4
+          .panel.panel-default
+            .panel-heading
+              h3 {{ "details_nav" | translate }}
+            .panel-body {{ "details_desc" | translate }}
+        .col-sm-4
+          .panel.panel-default
+            .panel-heading
+              h3 {{ "themes_nav" | translate }}
+            .panel-body {{ "themes_desc" | translate }}
+        .col-sm-4
+          .panel.panel-default
+            .panel-heading
+              h3 {{ "help_us_nav" | translate }}
+            .panel-body {{ "help_us_desc" | translate }}
 
   a(ui-sref="main.details.country({ country: 'FRA' })") details

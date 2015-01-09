@@ -1,4 +1,4 @@
-angular.module("rsfIndex2015").controller "MapCtrl", ($scope, $q, leafletData)->
+angular.module("rsfIndex2015").controller "MapCtrl", ($scope, $rootScope, $q, leafletData)->
 
   countryMarker = null
   featureFillScale = chroma.scale(['#FFFFFF', '#F1FB8D', '#EA191E', '#9F042B', '#410E2E']).domain [0, 100]
@@ -35,14 +35,26 @@ angular.module("rsfIndex2015").controller "MapCtrl", ($scope, $q, leafletData)->
       zoom: 2
     defaults:
       scrollWheelZoom: no
-    geojson:
-      data: $scope.data.geojson
-      style: featureStyle
+
+  # Retreive map instance
+  leafletData.getMap().then (map)->
+    bindClick = (feature, layer)->
+      # Create an event on click
+      layer.on 'click', (ev)->
+        # Trigger a scope digest
+        $scope.$apply ->
+          # Broadcast this event
+          $rootScope.$broadcast 'country:click', ev.target.feature
+    # Create a layer to host topojson
+    layer = L.geoJson null, style: featureStyle, onEachFeature: bindClick
+    # Add the layer to the map
+    omnivore.topojson.parse($scope.data.topojson, null, layer).addTo map
+
   # Watch change on the selected country
   $scope.$watch('country', (country)->
     updateMapView country, 4
   , yes)
   # Watch click on a geojson feature
-  $scope.$on 'leafletDirectiveMap.geojsonClick', (ev, feature)->
+  $scope.$on 'country:click', (ev, feature)->
     # Retreive map instance
     updateMapView feature.id
