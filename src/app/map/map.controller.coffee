@@ -22,9 +22,15 @@ angular.module("rsfIndex2015").controller "MapCtrl", ($scope, $rootScope, $compi
   openCountryPopup = (map, country, center)->
     # Create a popup bellow the given marker
     countryPopup = L.popup().setLatLng(center).openOn(map)
+    rank = $scope.data.country(country).rank()
     # Create a new scope for this popup
     scope = $scope.$new yes
     scope.useLanguage = $translate.use
+    scope.countryRankData =
+      country: $scope.data.country(country).name()
+      rank   : rank["ranking_" + $scope.selectedYear]
+      score  : rank["score_" + $scope.selectedYear]
+      year   : 2015
     scope.country =
       'name': $scope.data.country(country).name
       'country-code': country
