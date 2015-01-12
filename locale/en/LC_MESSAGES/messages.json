@@ -1,9 +1,17 @@
 {
   "app_title": "RWB: Index 2015",
+  "change_language":"Change the language",
+  "details_desc": "Details description",
+  "details_nav": "Details",
+  "help_us_desc": "Help us description",
+  "help_us_nav": "Help us",
+  "highlight_nav": "Highlight",
+  "press_desc": "Press description",
+  "press_nav": "Press",
+  "select_year":"Select another year:",
+  "themes_desc": "Themes description",
+  "themes_nav": "Themes",
   "to_english": "English",
   "to_french": "French",
-  "to_spanish": "Spanish",
-  "details_nav": "Details",
-  "highlight_nav": "Highlight",
-  "themes_nav": "Themes"
+  "to_spanish": "Spanish"
 }
