@@ -44,7 +44,7 @@ angular.module("rsfIndex2015").controller "MapCtrl", ($scope, $rootScope, $compi
   # Change the year in the parent scope
   $scope.selectYear = (year)-> angular.extend $scope, selectedYear: year
   # Return the country rank
-  $scope.countryRank = (country)-> -1 * country['ranking_' + $scope.selectedYear]
+  $scope.countryRank = (country)-> 1 * country['ranking_' + $scope.selectedYear]
   $scope.countryColor = (country)-> $scope.data.country(country).color $scope.selectedYear
   $scope.countryContrast = (country)-> colorContrast $scope.countryColor(country)
   # Watch change on the selected country to update the zoom
