@@ -1,4 +1,4 @@
-angular.module("rsfIndex2015").controller "MapCtrl", ($scope, $rootScope, $compile, $q, $state, leafletData)->
+angular.module("rsfIndex2015").controller "MapCtrl", ($scope, $rootScope, $compile, $q, $state, $translate, leafletData)->
 
   countryPopup = null
   # Load marker template
@@ -10,7 +10,7 @@ angular.module("rsfIndex2015").controller "MapCtrl", ($scope, $rootScope, $compi
     # Retreive map instance
     leafletData.getMap($scope.mapId).then (map)->
       # Find the coordinate of the given country
-      center = _.findWhere $scope.data.coordinates, code: country
+      center = do $scope.data.country(country).center
       center = L.latLng(center.lat, center.lng)
       # Zoom to the current place
       map.setView L.latLng(center.lat, center.lng, zoom)
@@ -22,7 +22,10 @@ angular.module("rsfIndex2015").controller "MapCtrl", ($scope, $rootScope, $compi
     countryPopup = L.popup().setLatLng(center).openOn(map)
     # Create a new scope for this popup
     scope = $scope.$new yes
-    scope.country = 'name': country, 'country-code': country
+    scope.useLanguage = $translate.use
+    scope.country =
+      'name': $scope.data.country(country).name
+      'country-code': country
     scope.shoudShowCountryLink = -> $scope.country isnt country
     # Get popup node
     content = angular.element countryPopup._contentNode

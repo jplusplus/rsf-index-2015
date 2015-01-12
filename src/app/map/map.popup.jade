@@ -1,5 +1,5 @@
 .map__workspace__popup
-    h5.map__workspace__popup__title {{ country.name }}
+    h5.map__workspace__popup__title {{ country.name(useLanguage()) }}
     .map__workspace__popup__footer(ng-show='shoudShowCountryLink()')
       button.btn.btn-sm.btn-primary(ui-sref='main.details.country({ country: country["country-code"] })')
         | {{ 'find_out' | translate }}

@@ -178,7 +178,6 @@ gulp.task('csv', function(){
       });
       return dataWithSlug;
     }))
-    .pipe($.rename({ suffix: ".data" }))
     .pipe(gulp.dest('.tmp/assets/json/'))
     .pipe(gulp.dest('dist/assets/json/'));
 });
