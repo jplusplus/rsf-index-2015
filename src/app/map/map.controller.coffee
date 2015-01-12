@@ -1,54 +1,33 @@
-angular.module("rsfIndex2015").controller "MapCtrl", ($scope, $rootScope, $q, leafletData)->
+angular.module("rsfIndex2015").controller "MapCtrl", ($scope, $rootScope, $compile, $q, leafletData)->
 
-  countryMarker = null
-  featureFillScale = chroma.scale(['#FFFFFF', '#F1FB8D', '#EA191E', '#9F042B', '#410E2E']).domain [0, 100]
-
-  featureStyle = (feature)->
-    fillColor: featureFillScale( Math.round(Math.random() * 100) )
-    weight: 1,
-    opacity: 1,
-    color: 'white',
-    fillOpacity: 0.7
+  countryMarker = countryPopup = null
+  # Load marker template
+  markerPopupHtml = '<div ng-include="\'app/map/map.popup.html\'"></div>'
 
   updateMapView = (country, zoom)->
     # Do not zoom pn empty value
     return unless country?
     # Retreive map instance
-    leafletData.getMap().then (map)->
+    leafletData.getMap($scope.mapId).then (map)->
       # Find the coordinate of the given country
       center = _.findWhere $scope.data.coordinates, code: country
+      center = L.latLng(center.lat, center.lng)
       # Zoom to the current place
       map.setView L.latLng(center.lat, center.lng, zoom)
-      # Remove existing marker
-      map.removeLayer countryMarker if countryMarker isnt null
-      # Create a marker on the country
-      countryMarker = L.marker([center.lat, center.lng])
-        .addTo(map)
-        .bindPopup(country)
-        .openPopup()
+      # Open a popup attach to the given country
+      openCountryPopup map, country, center
 
-  # Map settings
-  $scope.settings =
-    center:
-      lat: 40.095
-      lng: -3.823
-      zoom: 2
-    defaults:
-      scrollWheelZoom: no
-
-  # Retreive map instance
-  leafletData.getMap().then (map)->
-    bindClick = (feature, layer)->
-      # Create an event on click
-      layer.on 'click', (ev)->
-        # Trigger a scope digest
-        $scope.$apply ->
-          # Broadcast this event
-          $rootScope.$broadcast 'country:click', ev.target.feature
-    # Create a layer to host topojson
-    layer = L.geoJson null, style: featureStyle, onEachFeature: bindClick
-    # Add the layer to the map
-    omnivore.topojson.parse($scope.data.topojson, null, layer).addTo map
+  openCountryPopup = (map, country, center)=>
+    # Create a popup bellow the given marker
+    countryPopup = L.popup().setLatLng(center).openOn(map)
+    # Create a new scope for this popup
+    scope = $scope.$new yes
+    scope.country = 'name': country, 'country-code': country
+    # Get popup node
+    content = angular.element countryPopup._contentNode
+    content.html markerPopupHtml
+    # Compile template with the new scope
+    $compile(content)(scope)
 
   # Watch change on the selected country
   $scope.$watch('country', (country)->
