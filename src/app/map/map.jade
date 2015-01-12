@@ -15,6 +15,7 @@
     h3.map__ranking__title {{ selectedYear }}
     ul.list-unstyled.map__ranking__overflow
       li.map__ranking__overflow__item(ng-repeat="country in data.ranking | orderBy: 'ranking_' + selectedYear ")
+        //-span.label.label-primary {{ country[ 'ranking_' + selectedYear ] }}
         span.label.label-primary {{ $index + 1 }}
         | &nbsp;{{ data.country(country).name() | titlecase }}
 
