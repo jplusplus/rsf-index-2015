@@ -10,13 +10,14 @@ angular.module "rsfIndex2015"
     link: (scope, attrs)->
       # Color scale
       featureFillScale = chroma.scale(['#FFFFFF', '#F1FB8D', '#EA191E', '#9F042B', '#410E2E']).domain [0, 100]
+      i = 0
       # Color every feature
       featureStyle = (feature)->
-        fillColor: featureFillScale( ~~(Math.random() * 100) )
+        fillColor: featureFillScale( i++  )
         weight: 1,
         opacity: 1,
         color: 'white',
-        fillOpacity: 0.7
+        fillOpacity: if feature.id is scope.country then 1 else 0.7
       # Map settings
       scope.settings =
         center:
