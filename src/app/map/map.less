@@ -1,5 +1,6 @@
 .map {
   display: block;
+  position: relative;
 
   &__workspace {
     height:600px;
@@ -9,5 +10,21 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+  }
+
+  &__ranking {
+    position:absolute;
+    right:20px;
+    top:20px;
+    bottom:20px;
+    width: 250px;
+    overflow: auto;
+    background:fade(white, 80);
+
+    &__title {
+      text-align: center;
+      padding:0;
+      margin:0;
+    }
   }
 }
