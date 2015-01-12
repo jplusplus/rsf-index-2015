@@ -7,7 +7,7 @@ nav.navbar.navbar-static-top.navbar-inverse(ng-controller='NavbarCtrl')
     .collapse.navbar-collapse
       ul.nav.navbar-nav.navbar-right
         li.dropdown(dropdown)
-          a.dropdown-toggle(href,dropdown-toggle)
+          a.dropdown-toggle(dropdown-toggle)
            | {{ "change_language" | translate }} <span class="caret"></span>
           ul.dropdown-menu
             li(ng-class="{ active: useLanguage() === 'fr' }")

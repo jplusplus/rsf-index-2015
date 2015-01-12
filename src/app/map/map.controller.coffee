@@ -37,3 +37,7 @@ angular.module("rsfIndex2015").controller "MapCtrl", ($scope, $rootScope, $compi
   $scope.$watch('country', ( (country)-> updateMapView(country, 4) ), yes)
   # Watch click on a geojson feature
   $scope.$on 'country:click', (ev, feature)-> updateMapView(feature.id)
+  # Default year
+  $scope.selectedYear = 2015
+  # Available year
+  $scope.availableYears = ( y for y in [2003..$scope.selectedYear] ).reverse()

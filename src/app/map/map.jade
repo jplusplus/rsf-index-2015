@@ -1,5 +1,22 @@
 .map(ng-if='settings')
   leaflet.map__workspace.panel.panel-default(center='settings.center', id='{{mapId}}')
+  .map__header
+    label
+      | Select another year:&nbsp;
+      span.dropdown(dropdown)
+        a.dropdown-toggle(dropdown-toggle)
+          {{ selectedYear }} <span class="caret"></span>
+        ul.dropdown-menu.dropdown-menu-right
+          li.text-center(ng-repeat="year in availableYears", ng-class="{ active: year === selectedYear }")
+            a(ng-click="$parent.selectedYear = year")
+              {{ year }}
+
   .map__ranking.panel.panel-default
     .panel-body
-      h3.map__ranking__title 2015
+      h3.map__ranking__title {{ selectedYear }}
+      ul.list-unstyled.map__ranking__overflow
+        li(ng-repeat="country in data.ranking | orderBy: 'ranking_' + selectedYear ")
+          span.label.label-primary {{ $index + 1 }}
+          | &nbsp;{{ data.country(country).name() }}
+
+

@@ -4,6 +4,7 @@
 
   &__workspace {
     height:600px;
+    background:#B5D0D0;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -29,7 +30,6 @@
     top:20px;
     bottom:20px;
     width: 250px;
-    overflow: auto;
     background:fade(white, 80);
 
     &__title {
@@ -37,5 +37,23 @@
       padding:0;
       margin:0;
     }
+
+    &__overflow {
+      position:absolute;
+      top: @line-height-computed * 2px;
+      left:0;
+      right:0;
+      bottom:0;
+      padding:10px;
+      overflow: auto;
+    }
+  }
+
+  &__header {
+    padding:30px;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
   }
 }
