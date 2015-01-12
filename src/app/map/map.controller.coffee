@@ -33,8 +33,20 @@ angular.module("rsfIndex2015").controller "MapCtrl", ($scope, $rootScope, $compi
     # Compile template with the new scope
     $compile(content)(scope)
 
+  # Get the contrast color of the given hexadecimal color
+  colorContrast = (hexcolor)->
+    hexcolor = hexcolor.replace "#", ""
+    r = parseInt(hexcolor.substr(0, 2), 16)
+    g = parseInt(hexcolor.substr(2, 2), 16)
+    b = parseInt(hexcolor.substr(4, 2), 16)
+    yiq = ((r * 299) + (g * 587) + (b * 114)) / 1000
+    (if (yiq >= 128) then "#333" else "#FFF")
   # Change the year in the parent scope
   $scope.selectYear = (year)-> angular.extend $scope, selectedYear: year
+  # Return the country rank
+  $scope.countryRank = (country)-> -1 * country['ranking_' + $scope.selectedYear]
+  $scope.countryColor = (country)-> $scope.data.country(country).color $scope.selectedYear
+  $scope.countryContrast = (country)-> colorContrast $scope.countryColor(country)
   # Watch change on the selected country to update the zoom
   $scope.$watch('country', ( (country)-> updateMapView(country, 4) ), yes)
   # Watch click on a geojson feature

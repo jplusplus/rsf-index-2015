@@ -6,12 +6,18 @@ angular.module('rsfIndex2015').factory 'MapData', ($q, $http, $translate)->
     ranking    : $http.get("assets/json/countries.ranking.json")
   ).then (hash)->
     # Color scale
-    countryColor = chroma.scale(['#FFFFFF', '#F1FB8D', '#EA191E', '#9F042B', '#410E2E']).domain [0, 100]
+    countryColor = chroma.scale(['#410E2E', '#9F042B', '#EA191E', '#F1FB8D', '#FFFFFF']).domain [0, 100]
+    # Create an object with every country to allow fast country lookup
+    rankingTree  = _.reduce(hash.ranking.data, (result, country)->
+      result[country.country_code] = country
+      result
+    , {})
     # Returns an object
     coordinates: hash.coordinates.data
     topojson   : hash.topojson.data
     names      : hash.names.data
     ranking    : hash.ranking.data
+    brewer     : countryColor
     # Help function to retreive country data
     country: (code)->
       code = if code.country_code? then code.country_code else code
@@ -26,12 +32,11 @@ angular.module('rsfIndex2015').factory 'MapData', ($q, $http, $translate)->
         country = _.findWhere(hash.names.data, iso_3: code)
         country[key]
       # Get the ranking of the given country
-      rank: -> _.findWhere(hash.ranking.data, country_code: code)
+      rank: -> rankingTree[code]
       # Compute the color of the country
       color: (year=2015)->
-        rank = _.findWhere(hash.ranking.data, country_code: code)
         # Return null if no score for this country
-        if rank? then countryColor rank["score_" + year] else null
+        if rankingTree[code]? then countryColor(rankingTree[code]["score_" + year]).hex() else null
 
 
 

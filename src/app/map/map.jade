@@ -1,22 +1,42 @@
 .map.panel.panel-default(ng-if='settings')
-  leaflet.map__workspace(center='settings.center', id='{{mapId}}')
+  leaflet.map__workspace(center='settings.center', defaults="settings.defaults" id='{{mapId}}')
+
   .map__header
-    label
-      | {{ 'select_year' | translate }}&nbsp;
-      span.dropdown(dropdown)
-        a.dropdown-toggle(dropdown-toggle)
-          {{ selectedYear }} <span class="caret"></span>
-        ul.dropdown-menu.dropdown-menu-right
-          li.text-center(ng-repeat="year in availableYears", ng-class="{ active: year === selectedYear }")
-            a(ng-click="selectYear(year)")
-              {{ year }}
+    .row.text-center
+      .col-xs-4
+        span.map__header__legend
+          span(ng-style="{ color: data.brewer(0)  }") ◼
+          span(ng-style="{ color: data.brewer(20) }") ◼
+          span(ng-style="{ color: data.brewer(40) }") ◼
+          span(ng-style="{ color: data.brewer(60) }") ◼
+          span(ng-style="{ color: data.brewer(80) }") ◼
+          span.map__header__legend__min -
+          span.map__header__legend__max +
+          span.map__header__legend__label {{ 'score' | translate }}
+
+      .col-xs-4
+        | {{ 'share-embed' | translate }}
+      .col-xs-4
+        | {{ 'select_year' | translate }}&nbsp;
+        span.dropdown(dropdown)
+          a.dropdown-toggle(dropdown-toggle)
+            {{ selectedYear }} <span class="caret"></span>
+          ul.dropdown-menu.dropdown-menu-right
+            li.text-center(ng-repeat="year in availableYears", ng-class="{ active: year === selectedYear }")
+              a(ng-click="selectYear(year)")
+                {{ year }}
 
   .map__ranking
     h3.map__ranking__title {{ selectedYear }}
+    p.map__ranking__desc {{ 'map_desc' | translate }}
     ul.list-unstyled.map__ranking__overflow
-      li.map__ranking__overflow__item(ng-repeat="country in data.ranking | orderBy: 'ranking_' + selectedYear ")
-        //-span.label.label-primary {{ country[ 'ranking_' + selectedYear ] }}
-        span.label.label-primary {{ $index + 1 }}
-        | &nbsp;{{ data.country(country).name() | titlecase }}
+      li.map__ranking__overflow__item(ng-repeat="country in data.ranking | orderBy:countryRank ")
+        em.map__ranking__overflow__item__score(title="{{ 'country_score' | translate }}")
+          {{ country[ 'score_' + selectedYear ] }}
+        span.map__ranking__overflow__item__rank.label(ng-style="{ background: countryColor(country), color: countryContrast(country) }")
+          | {{ country[ 'ranking_' + selectedYear ] }}
+        | &nbsp;{{ data.country(country).name() | titlecase }}<br />
+
+
 
 

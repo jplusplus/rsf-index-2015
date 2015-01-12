@@ -14,7 +14,7 @@ angular.module "rsfIndex2015"
       featureStyle = (feature)->
         color = scope.data.country(feature.id).color scope.selectedYear
         # Returns the style object
-        fillColor: if color? then color.hex() else null
+        fillColor: color
         weight: 1,
         opacity: if color? then 1 else 0,
         color: 'white',
@@ -32,6 +32,7 @@ angular.module "rsfIndex2015"
           lng: -3.823
           zoom: 2
         defaults:
+          zoomControl: no
           scrollWheelZoom: no
       # Retreive map instance
       leafletData.getMap(scope.mapId).then (map)->

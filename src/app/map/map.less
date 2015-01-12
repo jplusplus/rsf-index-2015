@@ -37,29 +37,47 @@
     background:#414141;
     padding:0;
     font-size:0.9em;
+    overflow: auto;
 
     &__title {
-      text-align: center;
-      padding:10px 0;
+      padding:20px;
+      padding-bottom:0;
       margin:0;
     }
 
+    &__desc {
+      padding:20px;
+    }
+
     &__overflow {
-      position:absolute;
+      /* position:absolute;
       top: @line-height-computed * 2px;
       left:0;
       right:0;
-      bottom:0;
+      bottom:0; */
       padding:0;
       margin:0;
       overflow: auto;
 
       &__item {
-        padding:5px 10px;
+        padding:5px 15px;
         white-space:nowrap;
         overflow: hidden;
         &:nth-child(odd) {
           background:lighten(#414141, 5);
+        }
+
+        &__score {
+          float:right;
+          min-width: @line-height-computed;
+          padding-left:5px;
+          white-space: nowrap;
+          text-align: center;
+          display: inline-block;
+          border-left:lighten(#414141, 10) 1px solid;
+        }
+
+        &__rank {
         }
       }
     }
@@ -71,8 +89,32 @@
     top:0;
     left:0;
     right:@ranking-width;
-    text-align: right;
-    background:fade(#414141, 30);
+    background:fade(#414141, 60);
     color:white;
+    font-weight: bold;
+
+    &__legend {
+
+      line-height: 1em;
+      font-size: 1.2em;
+      display: inline-block;
+      position: relative;
+
+      &__min, &__max, &__label {
+        position: absolute;
+        top:100%;
+        text-align: center;
+        font-size:0.8em;
+      }
+
+      &__min, &__label {
+        left:0;
+      }
+
+      &__max, &__label {
+        right:0;
+      }
+
+    }
   }
 }
