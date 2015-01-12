@@ -13,7 +13,7 @@ deploy:
 	gulp --force deploy
 
 crowdin_upload:
-	crowdin upload sources
+	crowdin-cli upload sources
 
 crowdin_download:
-	crowdin download
+	crowdin-cli download
