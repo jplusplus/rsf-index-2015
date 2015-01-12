@@ -3,6 +3,7 @@
 
   display: block;
   position: relative;
+  overflow: hidden;
 
   &__workspace {
     height:600px;
@@ -63,8 +64,15 @@
         padding:5px 15px;
         white-space:nowrap;
         overflow: hidden;
+        cursor: pointer;
+
         &:nth-child(odd) {
           background:lighten(#414141, 5);
+        }
+
+        &--highlight {
+          font-weight: bold;
+          background:lighten(#414141, 30) !important;
         }
 
         &__score {
@@ -75,9 +83,6 @@
           text-align: center;
           display: inline-block;
           border-left:lighten(#414141, 10) 1px solid;
-        }
-
-        &__rank {
         }
       }
     }
@@ -93,12 +98,23 @@
     color:white;
     font-weight: bold;
 
+    a {
+      color:white;
+      text-decoration: underline;
+    }
+
+    .dropdown-menu a {
+      text-decoration: none;
+    }
+
+
     &__legend {
 
       line-height: 1em;
       font-size: 1.2em;
       display: inline-block;
       position: relative;
+      .translate(0, -50%);
 
       &__min, &__max, &__label {
         position: absolute;

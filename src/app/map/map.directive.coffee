@@ -8,7 +8,7 @@ angular.module "rsfIndex2015"
       data        : '='
       mapId       : '@id'
       selectedYear: '=year'
-    link: (scope, attrs)->
+    link: (scope, element, attrs)->
       countryLayer = null
       # Color every feature
       featureStyle = (feature)->
@@ -34,6 +34,12 @@ angular.module "rsfIndex2015"
         defaults:
           zoomControl: no
           scrollWheelZoom: no
+      # Scroll to the country within list
+      scope.$on 'country:highlight', (ev, country)->
+        # Target selector
+        target = "[data-country='#{country}']"
+        # Scroll to the element in 700ms
+        $(".map__ranking", element).scrollTo target, 1200, offset: -100
       # Retreive map instance
       leafletData.getMap(scope.mapId).then (map)->
         bindClick = (feature, layer)->

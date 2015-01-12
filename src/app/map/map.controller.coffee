@@ -16,6 +16,8 @@ angular.module("rsfIndex2015").controller "MapCtrl", ($scope, $rootScope, $compi
       map.setView L.latLng(center.lat, center.lng, zoom)
       # Open a popup attach to the given country
       openCountryPopup map, country, center
+      # Highlight the country without paning
+      $scope.highlightCountry country, no
 
   openCountryPopup = (map, country, center)->
     # Create a popup bellow the given marker
@@ -32,6 +34,14 @@ angular.module("rsfIndex2015").controller "MapCtrl", ($scope, $rootScope, $compi
     content.html markerPopupHtml
     # Compile template with the new scope
     $compile(content)(scope)
+
+  # Highlight the country
+  $scope.highlightCountry = (country, pane=yes)->
+    if $scope.highlightedCountry isnt country
+      $scope.highlightedCountry = country
+      $rootScope.$broadcast 'country:highlight', country
+    # Pan to the country
+    updateMapView country if pane
 
   # Get the contrast color of the given hexadecimal color
   colorContrast = (hexcolor)->

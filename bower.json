@@ -16,7 +16,8 @@
     "angular-translate": "~2.5.2",
     "lodash": "~2.4.1",
     "angular-translate-loader-static-files": "~2.5.2",
-    "leaflet-omnivore": "~0.3.2"
+    "leaflet-omnivore": "~0.3.2",
+    "jquery.scrollTo": "http://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/1.4.14/jquery.scrollTo.min.js"
   },
   "devDependencies": {
     "angular-mocks": "~1.2.27"
