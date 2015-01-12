@@ -1,6 +1,6 @@
-angular.module("rsfIndex2015").controller "MapCtrl", ($scope, $rootScope, $compile, $q, leafletData)->
+angular.module("rsfIndex2015").controller "MapCtrl", ($scope, $rootScope, $compile, $q, $state, leafletData)->
 
-  countryMarker = countryPopup = null
+  countryPopup = null
   # Load marker template
   markerPopupHtml = '<div ng-include="\'app/map/map.popup.html\'"></div>'
 
@@ -23,6 +23,7 @@ angular.module("rsfIndex2015").controller "MapCtrl", ($scope, $rootScope, $compi
     # Create a new scope for this popup
     scope = $scope.$new yes
     scope.country = 'name': country, 'country-code': country
+    scope.shoudShowCountryLink = -> $scope.country isnt country
     # Get popup node
     content = angular.element countryPopup._contentNode
     content.html markerPopupHtml
@@ -30,10 +31,6 @@ angular.module("rsfIndex2015").controller "MapCtrl", ($scope, $rootScope, $compi
     $compile(content)(scope)
 
   # Watch change on the selected country
-  $scope.$watch('country', (country)->
-    updateMapView country, 4
-  , yes)
+  $scope.$watch('country', ( (country)-> updateMapView(country, 4) ), yes)
   # Watch click on a geojson feature
-  $scope.$on 'country:click', (ev, feature)->
-    # Retreive map instance
-    updateMapView feature.id
+  $scope.$on 'country:click', (ev, feature)-> updateMapView(feature.id)
