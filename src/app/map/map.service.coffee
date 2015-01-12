@@ -5,6 +5,9 @@ angular.module('rsfIndex2015').factory 'MapData', ($q, $http, $translate)->
     names      : $http.get("assets/json/countries.names.json")
     ranking    : $http.get("assets/json/countries.ranking.json")
   ).then (hash)->
+    # Color scale
+    countryColor = chroma.scale(['#FFFFFF', '#F1FB8D', '#EA191E', '#9F042B', '#410E2E']).domain [0, 100]
+    # Returns an object
     coordinates: hash.coordinates.data
     topojson   : hash.topojson.data
     names      : hash.names.data
@@ -21,9 +24,14 @@ angular.module('rsfIndex2015').factory 'MapData', ($q, $http, $translate)->
       name: (lang=$translate.use())->
         key = 'country_name_' + lang.toLowerCase()
         country = _.findWhere(hash.names.data, iso_3: code)
-        if country? then country[key] else null
+        country[key]
       # Get the ranking of the given country
-      rank: -> _.findWhere hash.ranking.data, country_code: code
+      rank: -> _.findWhere(hash.ranking.data, country_code: code)
+      # Compute the color of the country
+      color: (year=2015)->
+        rank = _.findWhere(hash.ranking.data, country_code: code)
+        # Return null if no score for this country
+        if rank? then countryColor rank["score_" + year] else null
 
 
 

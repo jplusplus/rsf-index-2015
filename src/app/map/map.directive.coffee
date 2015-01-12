@@ -4,20 +4,27 @@ angular.module "rsfIndex2015"
     controller: "MapCtrl"
     restrict: 'EA'
     scope:
-      country: '='
-      data: '='
-      mapId: '@id'
+      country     : '='
+      data        : '='
+      mapId       : '@id'
+      selectedYear: '=year'
     link: (scope, attrs)->
-      # Color scale
-      featureFillScale = chroma.scale(['#FFFFFF', '#F1FB8D', '#EA191E', '#9F042B', '#410E2E']).domain [0, 100]
-      i = 0
+      countryLayer = null
       # Color every feature
       featureStyle = (feature)->
-        fillColor: featureFillScale( i++  )
+        color = scope.data.country(feature.id).color scope.selectedYear
+        # Returns the style object
+        fillColor: if color? then color.hex() else null
         weight: 1,
-        opacity: 1,
+        opacity: if color? then 1 else 0,
         color: 'white',
         fillOpacity: if feature.id is scope.country then 1 else 0.7
+      # Update every feature
+      updateMapFeatures = (year, oldYear)->
+        # Only when year changes
+        if year isnt oldYear
+          # Retreive map instance
+          countryLayer.setStyle(featureStyle)
       # Map settings
       scope.settings =
         center:
@@ -36,6 +43,9 @@ angular.module "rsfIndex2015"
               # Broadcast this event
               $rootScope.$broadcast 'country:click', ev.target.feature
         # Create a layer to host topojson
-        layer = L.geoJson null, style: featureStyle, onEachFeature: bindClick
+        countryLayer = L.geoJson null, style: featureStyle, onEachFeature: bindClick
         # Add the layer to the map
-        omnivore.topojson.parse(scope.data.topojson, null, layer).addTo map
+        omnivore.topojson.parse(scope.data.topojson, null, countryLayer).addTo map
+        # Watch change on the selectd year to update the color
+        scope.$watch 'selectedYear', updateMapFeatures, yes
+

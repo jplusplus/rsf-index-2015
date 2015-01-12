@@ -17,7 +17,7 @@ angular.module("rsfIndex2015").controller "MapCtrl", ($scope, $rootScope, $compi
       # Open a popup attach to the given country
       openCountryPopup map, country, center
 
-  openCountryPopup = (map, country, center)=>
+  openCountryPopup = (map, country, center)->
     # Create a popup bellow the given marker
     countryPopup = L.popup().setLatLng(center).openOn(map)
     # Create a new scope for this popup
@@ -33,11 +33,11 @@ angular.module("rsfIndex2015").controller "MapCtrl", ($scope, $rootScope, $compi
     # Compile template with the new scope
     $compile(content)(scope)
 
-  # Watch change on the selected country
+  # Change the year in the parent scope
+  $scope.selectYear = (year)-> angular.extend $scope, selectedYear: year
+  # Watch change on the selected country to update the zoom
   $scope.$watch('country', ( (country)-> updateMapView(country, 4) ), yes)
   # Watch click on a geojson feature
   $scope.$on 'country:click', (ev, feature)-> updateMapView(feature.id)
-  # Default year
-  $scope.selectedYear = 2015
   # Available year
-  $scope.availableYears = ( y for y in [2003..$scope.selectedYear] ).reverse()
+  $scope.availableYears = ( y for y in [2013..2015] ).reverse()

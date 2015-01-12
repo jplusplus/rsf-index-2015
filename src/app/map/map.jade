@@ -8,7 +8,7 @@
           {{ selectedYear }} <span class="caret"></span>
         ul.dropdown-menu.dropdown-menu-right
           li.text-center(ng-repeat="year in availableYears", ng-class="{ active: year === selectedYear }")
-            a(ng-click="$parent.selectedYear = year")
+            a(ng-click="selectYear(year)")
               {{ year }}
 
   .map__ranking
