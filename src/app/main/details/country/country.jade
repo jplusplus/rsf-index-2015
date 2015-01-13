@@ -1,6 +1,7 @@
 .main__details__country
   .container
-    map(data="mapData", country="selectedCountry", id="map-country",  year="selectedYear")
+    .panel.panel-default
+      map(data="mapData", country="selectedCountry", id="map-country",  year="selectedYear")
 
     .main__details__country__lead
       p(ng-bind-html="'country_rank_in_year' | translate:countryRankData")

@@ -24,7 +24,7 @@ angular.module("rsfIndex2015").controller "MapCtrl", ($scope, $rootScope, $compi
     countryPopup = L.popup().setLatLng(center).openOn(map)
     rank = $scope.data.country(country).rank()
     # Create a new scope for this popup
-    scope = $scope.$new yes
+    scope = $scope.$new no
     scope.useLanguage = $translate.use
     scope.countryRankData =
       country: $scope.data.country(country).name()
@@ -41,14 +41,6 @@ angular.module("rsfIndex2015").controller "MapCtrl", ($scope, $rootScope, $compi
     # Compile template with the new scope
     $compile(content)(scope)
 
-  # Highlight the country
-  $scope.highlightCountry = (country, pane=yes)->
-    if $scope.highlightedCountry isnt country
-      $scope.highlightedCountry = country
-      $rootScope.$broadcast 'country:highlight', country
-    # Pan to the country
-    updateMapView country if pane
-
   # Get the contrast color of the given hexadecimal color
   colorContrast = (hexcolor)->
     hexcolor = hexcolor.replace "#", ""
@@ -57,6 +49,16 @@ angular.module("rsfIndex2015").controller "MapCtrl", ($scope, $rootScope, $compi
     b = parseInt(hexcolor.substr(4, 2), 16)
     yiq = ((r * 299) + (g * 587) + (b * 114)) / 1000
     (if (yiq >= 128) then "#333" else "#FFF")
+
+
+
+  # Highlight the country
+  $scope.highlightCountry = (country, pane=yes)->
+    if $scope.highlightedCountry isnt country
+      $scope.highlightedCountry = country
+      $rootScope.$broadcast 'country:highlight', country
+    # Pan to the country
+    updateMapView country if pane
 
   $scope.openShareModal = ->
     modalInstance = $modal.open
@@ -69,6 +71,8 @@ angular.module("rsfIndex2015").controller "MapCtrl", ($scope, $rootScope, $compi
   $scope.countryRank = (country)-> 1 * country['ranking_' + $scope.selectedYear]
   $scope.countryColor = (country)-> $scope.data.country(country).color $scope.selectedYear
   $scope.countryContrast = (country)-> colorContrast $scope.countryColor(country)
+  # Return the target of the country link
+  $scope.countryLinkTarget = if $state.is("embed") then "_blank" else "_parent"
   # Watch change on the selected country to update the zoom
   $scope.$watch('country', ( (country)-> updateMapView(country, 4) ), yes)
   # Watch click on a geojson feature
