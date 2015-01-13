@@ -54,5 +54,6 @@
   "to_french": "French",
   "to_spanish": "Spanish",
   "year": "Year",
-  "world": "World"
+  "world": "World",
+  "no_result": "No result"
 }
