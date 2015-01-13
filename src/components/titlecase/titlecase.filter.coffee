@@ -1,6 +1,5 @@
-# @src http://ng.malsup.com/#!/titlecase-filter
+# @src http://stackoverflow.com/questions/196972/convert-string-to-title-case-with-javascript
 angular.module("rsfIndex2015").filter "titlecase", ->
-  (s) ->
-    s = (if (s is "undefined" or s is null) then "" else s)
-    s.toString().toLowerCase().replace /\b([a-z])/g, (ch) ->
-      ch.toUpperCase()
+  (str) ->
+    str.replace /\w\S*/g, (txt) ->
+      txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()
