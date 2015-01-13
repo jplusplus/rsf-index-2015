@@ -26,7 +26,7 @@
 
     p.map__ranking__desc {{ 'map_desc' | translate }}
     ul.list-unstyled.map__ranking__overflow
-      li.map__ranking__overflow__item(ng-repeat="country in data.ranking | orderBy:countryRank ", ng-class="{ 'map__ranking__overflow__item--highlight': highlightedCountry === country.country_code}" data-country="{{  country.country_code }}", ng-click="highlightCountry(country.country_code)")
+      li.map__ranking__overflow__item(ng-repeat="country in data.ranking track by $index | orderBy:countryRank", ng-class="{ 'map__ranking__overflow__item--highlight': highlightedCountry === country.country_code}" data-country="{{  country.country_code }}", ng-click="highlightCountry(country.country_code)")
         em.map__ranking__overflow__item__score(title="{{ 'country_score' | translate }}")
           {{ country[ 'score_' + selectedYear ] }}
         span.map__ranking__overflow__item__rank.label(ng-style="{ background: countryColor(country), color: countryContrast(country) }")
