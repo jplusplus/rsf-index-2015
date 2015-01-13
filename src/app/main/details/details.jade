@@ -4,7 +4,7 @@ ui-view.main__details
     p {{  'detailed_ranking_desc' | translate }}
     form.row
         label.col-xs-7
-          {{ 'show_country_from_label' | translate }}
+          {{ 'show_country_from_label' | translate }}&nbsp;
           select(ng-model="$parent.selectedZone")
             option(value='')        {{ 'world'  | translate }}
             option(value='africa')  {{ 'africa'  | translate }}
