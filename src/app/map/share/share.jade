@@ -1,0 +1,10 @@
+.map__share
+  .modal-body
+    .row
+      .col-sm-6
+        h4 {{ "share" | translate }}
+        p {{ "share_desc" | translate }}
+      .col-sm-6
+        h4 {{ "embed" | translate }}
+        p {{ "embed_desc" | translate }}
+        textarea.form-control(readonly) {{ getIframe() }}

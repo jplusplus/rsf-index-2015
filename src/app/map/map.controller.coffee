@@ -1,4 +1,4 @@
-angular.module("rsfIndex2015").controller "MapCtrl", ($scope, $rootScope, $compile, $q, $state, $translate, leafletData)->
+angular.module("rsfIndex2015").controller "MapCtrl", ($scope, $rootScope, $compile, $q, $state, $translate, $modal, leafletData)->
 
   countryPopup = null
   # Load marker template
@@ -57,6 +57,12 @@ angular.module("rsfIndex2015").controller "MapCtrl", ($scope, $rootScope, $compi
     b = parseInt(hexcolor.substr(4, 2), 16)
     yiq = ((r * 299) + (g * 587) + (b * 114)) / 1000
     (if (yiq >= 128) then "#333" else "#FFF")
+
+  $scope.openShareModal = ->
+    modalInstance = $modal.open
+      templateUrl: 'app/map/share/share.html'
+      controller: 'MapShareCtrl'
+
   # Change the year in the parent scope
   $scope.selectYear = (year)-> angular.extend $scope, selectedYear: year
   # Return the country rank

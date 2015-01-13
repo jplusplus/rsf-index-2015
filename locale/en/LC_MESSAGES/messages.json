@@ -38,5 +38,9 @@
   "to_english": "English",
   "to_french": "French",
   "to_spanish": "Spanish",
-  "year": "Year"
+  "year": "Year",
+  "share": "share",
+  "share_desc": "share_desc",
+  "embed": "embed",
+  "embed_desc": "embed_desc"
 }

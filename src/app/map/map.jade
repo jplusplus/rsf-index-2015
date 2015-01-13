@@ -13,7 +13,7 @@
       span.map__header__legend__label {{ 'score' | translate }}
 
   .map__ranking
-    a.map__ranking__share {{ 'share-embed' | translate }}
+    a(ng-click="openShareModal()").map__ranking__share {{ 'share-embed' | translate }}
     h3.map__ranking__title
       {{ 'ranking' | translate }}&nbsp;
       span.dropdown(dropdown)

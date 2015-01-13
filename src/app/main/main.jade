@@ -2,32 +2,34 @@
   ui-view
     .container
       map(data="mapData", id="map-global", year="selectedYear")
-      .row.main__summary
-        .col-sm-4
-          | Lorem ispum
-        .col-sm-4
-          .panel.panel-default.main__summary__panel
-            .panel-heading.main__summary__panel__heading
-              h3 {{ "details_nav" | translate }}
-            .panel-body {{ "details_desc" | translate }}
-        .col-sm-4
-          .panel.panel-default.main__summary__panel
-            .panel-heading.main__summary__panel__heading
-              h3 {{ "press_nav" | translate }}
-            .panel-body {{ "press_desc" | translate }}
-      .row
-        .col-sm-4
-          .panel.panel-default.main__summary__panel
-            .panel-heading.main__summary__panel__heading
-              h3 {{ "highlight_nav" | translate }}
-            .panel-body {{ "highlight_desc" | translate }}
-        .col-sm-4
-          .panel.panel-default.main__summary__panel
-            .panel-heading.main__summary__panel__heading
-              h3 {{ "themes_nav" | translate }}
-            .panel-body {{ "themes_desc" | translate }}
-        .col-sm-4
-          .panel.panel-default.main__summary__panel
-            .panel-heading.main__summary__panel__heading
-              h3 {{ "help_us_nav" | translate }}
-            .panel-body {{ "help_us_desc" | translate }}
+    .main__summary
+      .container
+        .row
+          .col-sm-4
+            | Lorem ispum
+          .col-sm-4
+            .panel.panel-default.main__summary__panel
+              .panel-heading.main__summary__panel__heading
+                h3 {{ "details_nav" | translate }}
+              .panel-body {{ "details_desc" | translate }}
+          .col-sm-4
+            .panel.panel-default.main__summary__panel
+              .panel-heading.main__summary__panel__heading
+                h3 {{ "press_nav" | translate }}
+              .panel-body {{ "press_desc" | translate }}
+        .row
+          .col-sm-4
+            .panel.panel-default.main__summary__panel
+              .panel-heading.main__summary__panel__heading
+                h3 {{ "highlight_nav" | translate }}
+              .panel-body {{ "highlight_desc" | translate }}
+          .col-sm-4
+            .panel.panel-default.main__summary__panel
+              .panel-heading.main__summary__panel__heading
+                h3 {{ "themes_nav" | translate }}
+              .panel-body {{ "themes_desc" | translate }}
+          .col-sm-4
+            .panel.panel-default.main__summary__panel
+              .panel-heading.main__summary__panel__heading
+                h3 {{ "help_us_nav" | translate }}
+              .panel-body {{ "help_us_desc" | translate }}
