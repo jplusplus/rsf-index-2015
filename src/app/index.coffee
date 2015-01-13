@@ -6,4 +6,5 @@ angular.module "rsfIndex2015", [
 	'ui.bootstrap'
 	'leaflet-directive'
 	'pascalprecht.translate'
+  'ngSocial'
 ]

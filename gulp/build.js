@@ -8,7 +8,7 @@ var $ = require('gulp-load-plugins')({
 });
 
 gulp.task('styles', ['wiredep', 'injector:css:preprocessor'], function () {
-  return gulp.src(['src/app/index.less', 'src/app/vendor.less'])
+  return gulp.src(['src/app/index.less'])
     .pipe($.less({
       paths: [
         'src/bower_components',
@@ -29,7 +29,8 @@ gulp.task('injector:css:preprocessor', function () {
     .pipe($.inject(gulp.src([
         'src/{app,components}/**/*.less',
         '!src/app/index.less',
-        '!src/app/vendor.less'
+        '!src/app/vendor.less',
+        '!src/components/bootstrap/*'
       ], {read: false}), {
       transform: function(filePath) {
         filePath = filePath.replace('src/app/', '');

@@ -64,6 +64,7 @@ angular.module("rsfIndex2015").controller "MapCtrl", ($scope, $rootScope, $compi
     modalInstance = $modal.open
       templateUrl: 'app/map/share/share.html'
       controller: 'MapShareCtrl'
+      size: 'lg'
 
   # Change the year in the parent scope
   $scope.selectYear = (year)-> angular.extend $scope, selectedYear: year

@@ -4,6 +4,14 @@
       .col-sm-6
         h4 {{ "share" | translate }}
         p {{ "share_desc" | translate }}
+        ul(ng-social-buttons
+             data-title="'app_title'  | translate"
+             data-description="'app_desc'  | translate"
+             data-image="'app_img'  | translate")
+            li.ng-social-facebook Facebook
+            li.ng-social-google-plus Google
+            li.ng-social-twitter Twitter
+
       .col-sm-6
         h4 {{ "embed" | translate }}
         p {{ "embed_desc" | translate }}
