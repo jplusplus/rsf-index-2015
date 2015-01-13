@@ -1,5 +1,7 @@
 .map__share
   .modal-body
+    button(type="button", class="close", ng-click="close()")
+      span(aria-hidden="true") &times;
     .row
       .col-sm-6
         h4 {{ "share" | translate }}

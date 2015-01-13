@@ -1,4 +1,4 @@
-angular.module("rsfIndex2015").controller "MapCtrl", ($scope, $rootScope, $compile, $q, $state, $translate, $modal, leafletData)->
+angular.module("rsfIndex2015").controller "MapCtrl", ($scope, $rootScope, $compile, $q, $state, $translate, $modal, $filter, leafletData)->
 
   countryPopup = null
   # Load marker template
@@ -41,17 +41,6 @@ angular.module("rsfIndex2015").controller "MapCtrl", ($scope, $rootScope, $compi
     # Compile template with the new scope
     $compile(content)(scope)
 
-  # Get the contrast color of the given hexadecimal color
-  colorContrast = (hexcolor)->
-    hexcolor = hexcolor.replace "#", ""
-    r = parseInt(hexcolor.substr(0, 2), 16)
-    g = parseInt(hexcolor.substr(2, 2), 16)
-    b = parseInt(hexcolor.substr(4, 2), 16)
-    yiq = ((r * 299) + (g * 587) + (b * 114)) / 1000
-    (if (yiq >= 128) then "#333" else "#FFF")
-
-
-
   # Highlight the country
   $scope.highlightCountry = (country, pane=yes)->
     if $scope.highlightedCountry isnt country
@@ -71,7 +60,7 @@ angular.module("rsfIndex2015").controller "MapCtrl", ($scope, $rootScope, $compi
   # Return the country rank
   $scope.countryRank = (country)-> 1 * country['ranking_' + $scope.selectedYear]
   $scope.countryColor = (country)-> $scope.data.country(country).color $scope.selectedYear
-  $scope.countryContrast = (country)-> colorContrast $scope.countryColor(country)
+  $scope.countryContrast = (country)-> $filter('contrast') $scope.countryColor(country)
   # Return the target of the country link
   $scope.countryLinkTarget = if $state.is("embed") then "_blank" else "_parent"
   # Watch change on the selected country to update the zoom

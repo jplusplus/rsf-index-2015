@@ -2,7 +2,7 @@ nav.navbar.navbar-static-top.navbar-inverse(ng-controller='NavbarCtrl', ng-show=
   .container-fluid
     .navbar-header
       a.navbar-brand(ui-sref='main')
-        img(src='http://rsf.org/squelettes/img/{{useLanguage()}}/logo-{{useLanguage()}}.png', height='25', width='auto')
+        img(ng-src='http://rsf.org/squelettes/img/{{useLanguage()}}/logo-{{useLanguage()}}.png', height='25', width='auto')
 
     .collapse.navbar-collapse
       ul.nav.navbar-nav.navbar-right
