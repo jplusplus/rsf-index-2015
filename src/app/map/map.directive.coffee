@@ -28,12 +28,15 @@ angular.module "rsfIndex2015"
       # Map settings
       scope.settings =
         center:
-          lat: 40.095
-          lng: -3.823
           zoom: 2
         defaults:
           zoomControl: no
           scrollWheelZoom: no
+      # The map may be already centered on a country
+      if scope.country
+        angular.extend scope.settings.center, scope.data.country(scope.country).center()
+      else
+        angular.extend scope.settings.center, { lat: 40.095, lng: -3.823 }
       # Scroll to the country within list
       scope.$on 'country:highlight', (ev, country)->
         # Target selector

@@ -27,7 +27,7 @@ angular.module('rsfIndex2015').factory 'MapData', ($q, $http, $translate)->
       # Get the names of the country
       names: -> _.findWhere hash.names.data, iso_3: code
       # Get the name of the country in the given language
-      name: (lang=$translate.use())->
+      name: (lang=$translate.use() or "en")->
         key = 'country_name_' + lang.toLowerCase()
         country = _.findWhere(hash.names.data, iso_3: code)
         country[key]
