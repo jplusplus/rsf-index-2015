@@ -207,4 +207,4 @@ gulp.task('deploy', ['build'], function() {
 });
 
 
-gulp.task('build', ['html', 'images', 'fonts', 'misc', 'assets', 'locale']);
+gulp.task('build', ['html', 'images', 'fonts', 'misc', 'assets', 'csv', 'locale']);
