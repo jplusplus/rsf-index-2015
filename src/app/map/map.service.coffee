@@ -18,7 +18,7 @@ angular.module('rsfIndex2015').factory 'MapData', ($q, $http, $translate, $filte
         # Only name attribute
         if key.indexOf('country_name_') is 0
           # Use the titlecase filter
-          country[key] = $filter("titlecase") country[key]
+          country[key] = $filter("titlecase")(country[key] or "")
       result[country.iso_3] = country
       result
     , {})
@@ -39,7 +39,7 @@ angular.module('rsfIndex2015').factory 'MapData', ($q, $http, $translate, $filte
       # Get the name of the country in the given language
       name: (lang=$translate.use() or "en")->
         key = 'country_name_' + lang.toLowerCase()
-        namesTree[code][key]
+        if namesTree[code]? then namesTree[code][key] else ""
       # Get the ranking of the given country
       rank: -> rankingTree[code]
       # Compute the color of the country
