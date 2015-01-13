@@ -19,7 +19,7 @@
     "leaflet-omnivore": "~0.3.2",
     "jquery.scrollTo": "http://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/1.4.14/jquery.scrollTo.min.js",
     "angular-social": "~0.1.1",
-    "title-case": "http://ejohn.org/files/titleCaps.js"
+    "to-title-case": "https://raw.githubusercontent.com/gouch/to-title-case/master/to-title-case.js"
   },
   "devDependencies": {
     "angular-mocks": "~1.2.27"
