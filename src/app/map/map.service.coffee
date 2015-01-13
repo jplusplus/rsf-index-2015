@@ -1,4 +1,4 @@
-angular.module('rsfIndex2015').factory 'MapData', ($q, $http, $translate)->
+angular.module('rsfIndex2015').factory 'MapData', ($q, $http, $translate, $filter)->
   $q.all(
     coordinates: $http.get("assets/json/countries.coordinates.json")
     topojson   : $http.get("assets/json/countries.topo.json")
@@ -12,11 +12,21 @@ angular.module('rsfIndex2015').factory 'MapData', ($q, $http, $translate)->
       result[country.country_code] = country
       result
     , {})
+    # Convert name to titlecase
+    namesTree = _.reduce( hash.names.data, (result, country)->
+      for key of country
+        # Only name attribute
+        if key.indexOf('country_name_') is 0
+          # Use the titlecase filter
+          country[key] = $filter("titlecase") country[key]
+      result[country.iso_3] = country
+      result
+    , {})
     # Returns an object
     coordinates: hash.coordinates.data
     topojson   : hash.topojson.data
-    names      : hash.names.data
     ranking    : hash.ranking.data
+    names      : namesTree
     brewer     : countryColor
     # Help function to retreive country data
     country: (code)->
@@ -25,11 +35,11 @@ angular.module('rsfIndex2015').factory 'MapData', ($q, $http, $translate)->
       # Get the center of the country
       center: -> _.findWhere hash.coordinates.data, code: code
       # Get the names of the country
-      names: -> _.findWhere hash.names.data, iso_3: code
+      names: -> namesTree[code]
       # Get the name of the country in the given language
       name: (lang=$translate.use() or "en")->
         key = 'country_name_' + lang.toLowerCase()
-        country = _.findWhere(hash.names.data, iso_3: code)
+        country = namesTree[code]
         country[key]
       # Get the ranking of the given country
       rank: -> rankingTree[code]

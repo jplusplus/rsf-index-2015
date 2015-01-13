@@ -36,7 +36,7 @@ ui-view.main__details
             strong {{ country['ranking_2015'] }}
           td
             a(ui-sref="main.details.country({ country: country.country_code })")
-              {{ mapData.country(country).name() | titlecase }}
+              {{ mapData.country(country).name() }}
           td.text-center {{ country["pluralisme_2015"] }}
           td.text-center {{ country["media_independence_2015"] }}
           td.text-center {{ country["environment_and_self_censorship_2015"] }}

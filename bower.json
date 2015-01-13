@@ -18,7 +18,8 @@
     "angular-translate-loader-static-files": "~2.5.2",
     "leaflet-omnivore": "~0.3.2",
     "jquery.scrollTo": "http://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/1.4.14/jquery.scrollTo.min.js",
-    "angular-social": "~0.1.1"
+    "angular-social": "~0.1.1",
+    "to-title-case": "https://raw.githubusercontent.com/gouch/to-title-case/master/to-title-case.js"
   },
   "devDependencies": {
     "angular-mocks": "~1.2.27"

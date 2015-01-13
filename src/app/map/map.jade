@@ -31,7 +31,7 @@
           | {{ country[ 'score_' + selectedYear ] }}
         span.map__ranking__overflow__item__rank.label(ng-style="{ background: countryColor(country), color: countryContrast(country) }")
           | {{ country[ 'ranking_' + selectedYear ] }}
-        | &nbsp;{{ data.country(country).name() | titlecase }}<br />
+        | &nbsp;{{ data.country(country).name() }}<br />
 
 
 
