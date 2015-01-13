@@ -141,7 +141,7 @@ gulp.task('images', function () {
 });
 
 gulp.task('assets', function () {
-  return gulp.src('src/assets/{fonts,json}/*')
+  return gulp.src('src/assets/{fonts,json}/**/*')
     .pipe(gulp.dest('dist/assets/'));
 });
 
