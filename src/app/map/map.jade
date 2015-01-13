@@ -1,30 +1,16 @@
 .map.panel.panel-default(ng-if='settings')
   leaflet.map__workspace(center='settings.center', defaults="settings.defaults" id='{{mapId}}')
 
-  .map__header.hidden
-    .row.text-center
-      .col-xs-4
-        span.map__header__legend
-          span(ng-style="{ color: data.brewer(0)  }") ◼
-          span(ng-style="{ color: data.brewer(20) }") ◼
-          span(ng-style="{ color: data.brewer(40) }") ◼
-          span(ng-style="{ color: data.brewer(60) }") ◼
-          span(ng-style="{ color: data.brewer(80) }") ◼
-          span.map__header__legend__min -
-          span.map__header__legend__max +
-          span.map__header__legend__label {{ 'score' | translate }}
-
-      .col-xs-4
-        {{ 'share-embed' | translate }}
-      .col-xs-4
-        {{ 'select_year' | translate }}&nbsp;
-        span.dropdown(dropdown)
-          a.dropdown-toggle(dropdown-toggle)
-            {{ selectedYear }} <span class="caret"></span>
-          ul.dropdown-menu.dropdown-menu-right
-            li.text-center(ng-repeat="year in availableYears", ng-class="{ active: year === selectedYear }")
-              a(ng-click="selectYear(year)")
-                {{ year }}
+  .map__header
+    span.map__header__legend.panel.panel-default
+      span(ng-style="{ color: data.brewer(0)  }") ◼
+      span(ng-style="{ color: data.brewer(20) }") ◼
+      span(ng-style="{ color: data.brewer(40) }") ◼
+      span(ng-style="{ color: data.brewer(60) }") ◼
+      span(ng-style="{ color: data.brewer(80) }") ◼
+      span.map__header__legend__min -
+      span.map__header__legend__max +
+      span.map__header__legend__label {{ 'score' | translate }}
 
   .map__ranking
     a.map__ranking__share {{ 'share-embed' | translate }}

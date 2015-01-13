@@ -122,10 +122,8 @@
   &__header {
     padding:30px;
     position:absolute;
-    top:0;
+    bottom:0;
     left:0;
-    right:@ranking-width;
-    background:fade(#414141, 60);
     color:white;
     font-weight: bold;
 
@@ -141,6 +139,9 @@
 
     &__legend {
 
+      padding:1px;
+      height:20px;
+      line-height:20px;
       line-height: 1em;
       font-size: 1.2em;
       display: inline-block;
@@ -152,6 +153,7 @@
         top:100%;
         text-align: center;
         font-size:0.8em;
+        text-shadow:0 0 2px black, 0 2px 1px fade(black, 80);
       }
 
       &__min, &__label {
