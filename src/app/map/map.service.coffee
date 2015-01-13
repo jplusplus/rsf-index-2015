@@ -39,8 +39,7 @@ angular.module('rsfIndex2015').factory 'MapData', ($q, $http, $translate, $filte
       # Get the name of the country in the given language
       name: (lang=$translate.use() or "en")->
         key = 'country_name_' + lang.toLowerCase()
-        country = namesTree[code]
-        country[key]
+        namesTree[code][key]
       # Get the ranking of the given country
       rank: -> rankingTree[code]
       # Compute the color of the country
