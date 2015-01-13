@@ -55,5 +55,9 @@
   "to_spanish": "Spanish",
   "year": "Year",
   "world": "World",
-  "no_result": "No result"
+  "no_result": "No result",
+  "download_data_url": "",
+  "download_data_label": "Download the data",
+  "download_methodo_url": "",
+  "download_methodo_label": "Download the methodology"
 }

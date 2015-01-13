@@ -1,21 +1,36 @@
 ui-view.main__details
   .container
     h2 {{  'detailed_ranking_title' | translate }}
-    p {{  'detailed_ranking_desc' | translate }}
+    .row
+      .col-sm-7
+        p {{  'detailed_ranking_desc' | translate }}
+      .col-sm-5
+        ul.list-inline
+          li
+            a(ng-href="{{ 'download_data_url' | translate }}")
+              i.fa.fa-download.fa-fw
+              | &nbsp;
+              | {{ 'download_data_label' | translate }}
+            | &nbsp;
+          li
+            a(ng-href="{{ 'download_methodo_url' | translate }}")
+              i.fa.fa-flask.fa-fw
+              | &nbsp;
+              | {{ 'download_methodo_label' | translate }}
     form.row
-        label.col-xs-7
-          {{ 'show_country_from_label' | translate }}&nbsp;
-          select(ng-model="$parent.selectedZone")
-            option(value='')        {{ 'world'  | translate }}
-            option(value='africa')  {{ 'africa'  | translate }}
-            option(value='america') {{ 'america' | translate }}
-            option(value='asia')    {{ 'asia'    | translate }}
-            option(value='europe')  {{ 'europe'  | translate }}
-        label.col-xs-5
-          .input-group
-            input.form-control(type='text', ng-model="$parent.selectedName", placeholder='{{ "search_placeholder" | translate }}')
-            span.input-group-btn
-              button.btn.btn-primary(type='button') {{ 'search_btn' | translate }}
+      label.col-sm-7
+        {{ 'show_country_from_label' | translate }}&nbsp;
+        select(ng-model="$parent.selectedZone")
+          option(value='')        {{ 'world'  | translate }}
+          option(value='africa')  {{ 'africa'  | translate }}
+          option(value='america') {{ 'america' | translate }}
+          option(value='asia')    {{ 'asia'    | translate }}
+          option(value='europe')  {{ 'europe'  | translate }}
+      label.col-sm-5
+        .input-group
+          input.form-control(type='text', ng-model="$parent.selectedName", placeholder='{{ "search_placeholder" | translate }}')
+          span.input-group-btn
+            button.btn.btn-primary(type='button') {{ 'search_btn' | translate }}
 
     .table-responsive.panel.panel-default
       table.table.table-condensed.table-striped.table-hover
