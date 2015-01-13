@@ -8,5 +8,5 @@ gulp.task('watch', ['consolidate', 'wiredep', 'injector:css', 'injector:js', 'lo
   gulp.watch('src/assets/images/**/*', ['images']);
   gulp.watch('bower.json', ['wiredep']);
   gulp.watch('src/{app,components}/**/*.jade', ['consolidate:jade']);
-  gulp.watch('locale//**/*.json', ['locale']);
+  gulp.watch('locale/**/*.json', ['locale']);
 });

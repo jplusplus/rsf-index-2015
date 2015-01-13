@@ -6,7 +6,7 @@ angular.module('rsfIndex2015').factory 'MapData', ($q, $http, $translate)->
     ranking    : $http.get("assets/json/countries.ranking.json")
   ).then (hash)->
     # Color scale
-    countryColor = chroma.scale(['#410E2E', '#9F042B', '#EA191E', '#F1FB8D', '#FFFFFF']).domain [0, 100]
+    countryColor = chroma.scale(['#410E2E', '#9F042B', '#EA191E', '#F1FB8D', '#FFFFFF']).domain [100, 0]
     # Create an object with every country to allow fast country lookup
     rankingTree  = _.reduce(hash.ranking.data, (result, country)->
       result[country.country_code] = country
