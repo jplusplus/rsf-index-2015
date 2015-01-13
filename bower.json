@@ -19,12 +19,15 @@
     "leaflet-omnivore": "~0.3.2",
     "jquery.scrollTo": "http://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/1.4.14/jquery.scrollTo.min.js",
     "angular-social": "~0.1.1",
-    "to-title-case": "https://raw.githubusercontent.com/gouch/to-title-case/master/to-title-case.js"
+    "to-title-case": "https://raw.githubusercontent.com/gouch/to-title-case/master/to-title-case.js",
+    "angular-translate-storage-cookie": "~2.5.2",
+    "angular-cookies": "~1.2.27"
   },
   "devDependencies": {
     "angular-mocks": "~1.2.27"
   },
   "resolutions": {
-    "angular": "1.2.28"
+    "angular": "1.2.28",
+    "angular-cookies": "~1.2.27"
   }
 }

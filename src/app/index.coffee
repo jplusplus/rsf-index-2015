@@ -1,7 +1,8 @@
 angular.module "rsfIndex2015", [
 	'ngAnimate'
 	'ngTouch'
-	'ngSanitize'
+  'ngSanitize'
+	'ngCookies'
 	'ui.router'
 	'ui.bootstrap'
 	'leaflet-directive'
