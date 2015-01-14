@@ -61,7 +61,7 @@ ui-view.main__details
             td.text-center {{ country["infrastructures_2015"] }}
             td.text-center {{ country["exactions_2015"] }}
             td.text-center {{ country["score_2015"] }}
-          tr.warning(ng-hide="ranking.length")
+          tr.warning.text-warning(ng-hide="ranking.length")
             td(colspan=10).text-center {{ 'no_result' | translate }}
 
 
