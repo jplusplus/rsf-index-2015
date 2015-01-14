@@ -10,6 +10,11 @@
     height:600px;
     margin-right:@ranking-width;
     background:#B5D0D0;
+
+    .map--country-selected & {
+      margin-right: 0;
+    }
+
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -50,6 +55,7 @@
   }
 
   &__ranking {
+
     position:absolute;
     right:0px;
     top:0px;
@@ -60,6 +66,10 @@
     padding:0;
     font-size:0.9em;
     overflow: auto;
+
+    .map--country-selected & {
+      right: -1px * @ranking-width;
+    }
 
     &__title {
       padding:20px;

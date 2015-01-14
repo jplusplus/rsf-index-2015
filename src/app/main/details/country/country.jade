@@ -3,31 +3,33 @@
     h1(ng-bind-html="'details_about_title' | translate:{ country: country.name() }")
     p.lead(ng-bind-html="'see_detail_on_rsf' | translate:{ url: country.url() }")
 
-    .panel.panel-default
-      map(data="mapData", country="selectedCountry", id="map-country",  year="selectedYear")
+    .row
+      .col-md-12
+        .panel.panel-default
+          map(data="mapData", country="selectedCountry", id="map-country",  year="selectedYear")
+      .col-md-12
+        .main__details__country__lead.lead
+          p
+            span(ng-bind-html="'country_rank_in_year' | translate:countryRankData")
+            br
+            {{ 'score_without_exactions' | translate }}&nbsp;
+          p
+            span.text-muted {{ 'ranking_indicator' | translate }}&nbsp;
+            i.fa.fa-fw.fa-arrow-up.text-success-bg(ng-show='countryIndicatorProgression("ranking", 2015) ===  1')
+            i.fa.fa-fw.fa-arrow-down.text-danger-bg(ng-show='countryIndicatorProgression("ranking", 2015) === -1')
+            span.label(ng-class="countryIndicatorLabel('ranking', 2015)")
+              | {{ rank.ranking_2015 - rank.ranking_2014 | positive }}
+            | &nbsp;
+            small(ng-bind-html="'ranking_in_2014' | translate:{ ranking: rank.ranking_2014 }")
 
-    .main__details__country__lead.lead
-      p
-        span(ng-bind-html="'country_rank_in_year' | translate:countryRankData")
-        br
-        {{ 'score_without_exactions' | translate }}&nbsp;
-      p
-        span.text-muted {{ 'ranking_indicator' | translate }}&nbsp;
-        i.fa.fa-fw.fa-arrow-up.text-success-bg(ng-show='countryIndicatorProgression("ranking", 2015) ===  1')
-        i.fa.fa-fw.fa-arrow-down.text-danger-bg(ng-show='countryIndicatorProgression("ranking", 2015) === -1')
-        span.label(ng-class="countryIndicatorLabel('ranking', 2015)")
-          | {{ rank.ranking_2015 - rank.ranking_2014 | positive }}
-        | &nbsp;
-        small(ng-bind-html="'ranking_in_2014' | translate:{ ranking: rank.ranking_2014 }")
-
-        br
-        span.text-muted {{ 'score_indicator' | translate }}&nbsp;
-        i.fa.fa-fw.fa-arrow-up.text-success-bg(ng-show='countryIndicatorProgression("score", 2015) ===  1')
-        i.fa.fa-fw.fa-arrow-down.text-danger-bg(ng-show='countryIndicatorProgression("score", 2015) === -1')
-        span.label(ng-class="countryIndicatorLabel('score', 2015)")
-          | {{ rank.score_2015 - rank.score_2014 | positive }}
-        | &nbsp;
-        small(ng-bind-html="'score_in_2014' | translate:{ score: rank.score_2014 }")
+            br
+            span.text-muted {{ 'score_indicator' | translate }}&nbsp;
+            i.fa.fa-fw.fa-arrow-up.text-success-bg(ng-show='countryIndicatorProgression("score", 2015) ===  1')
+            i.fa.fa-fw.fa-arrow-down.text-danger-bg(ng-show='countryIndicatorProgression("score", 2015) === -1')
+            span.label(ng-class="countryIndicatorLabel('score', 2015)")
+              | {{ rank.score_2015 - rank.score_2014 | positive }}
+            | &nbsp;
+            small(ng-bind-html="'score_in_2014' | translate:{ score: rank.score_2014 }")
 
     .main__details__country__detailed
       h3 {{ 'detailed_title' | translate }}

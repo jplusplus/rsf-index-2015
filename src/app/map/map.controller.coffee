@@ -64,7 +64,7 @@ angular.module("rsfIndex2015").controller "MapCtrl", ($scope, $rootScope, $compi
   # Return the target of the country link
   $scope.countryLinkTarget = if $state.is("embed") then "_blank" else "_parent"
   # Watch change on the selected country to update the zoom
-  $scope.$watch('country', ( (country)-> updateMapView(country, 4) ), yes)
+  $scope.$watch('country', ( (country)-> updateMapView(country, 6) ), yes)
   # Watch click on a geojson feature
   $scope.$on 'country:click', (ev, feature)-> updateMapView(feature.id)
   # Available year

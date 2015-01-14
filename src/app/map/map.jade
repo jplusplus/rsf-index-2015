@@ -1,4 +1,4 @@
-.map(ng-if='settings')
+.map(ng-if='settings', ng-class="{ 'map--country-selected': country }")
   leaflet.map__workspace(center='settings.center', defaults="settings.defaults" id='{{mapId}}')
 
   .map__header
@@ -12,7 +12,7 @@
       span.map__header__legend__max +
       span.map__header__legend__label {{ 'score' | translate }}
 
-  .map__ranking
+  .map__ranking(ng-if='!country')
     a(ng-click="openShareModal()").map__ranking__share {{ 'share-embed' | translate }}
     h3.map__ranking__title
       | {{ 'ranking' | translate }}&nbsp;
