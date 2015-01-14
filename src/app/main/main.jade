@@ -7,30 +7,47 @@
       .container
         .row
           .col-sm-4
-            | Lorem ispum
+            p Lorem ispum
+            .text-right
+              a(ui-sref="presentation") {{ "more_info" | translate }}
           .col-sm-4
             .panel.panel-default.main__summary__panel
               .panel-heading.main__summary__panel__heading
                 h3 {{ "details_nav" | translate }}
-              .panel-body {{ "details_desc" | translate }}
+              .panel-body
+                p {{ "details_desc" | translate }}
+                .text-right
+                  a(ui-sref="main.details") {{ "more_info" | translate }}
           .col-sm-4
             .panel.panel-default.main__summary__panel
               .panel-heading.main__summary__panel__heading
                 h3 {{ "press_nav" | translate }}
-              .panel-body {{ "press_desc" | translate }}
+              .panel-body
+                p {{ "press_desc" | translate }}              	
+                .text-right
+                  a(ui-sref="press") {{ "more_info" | translate }}
         .row
           .col-sm-4
             .panel.panel-default.main__summary__panel
               .panel-heading.main__summary__panel__heading
                 h3 {{ "highlight_nav" | translate }}
-              .panel-body {{ "highlight_desc" | translate }}
+              .panel-body 
+                p {{ "highlight_desc" | translate }}
+                .text-right
+                  a(ui-sref="highlights") {{ "more_info" | translate }}
           .col-sm-4
             .panel.panel-default.main__summary__panel
               .panel-heading.main__summary__panel__heading
                 h3 {{ "themes_nav" | translate }}
-              .panel-body {{ "themes_desc" | translate }}
+              .panel-body 
+                p {{ "themes_desc" | translate }}
+                .text-right
+                  a(ui-sref="themes") {{ "more_info" | translate }}
           .col-sm-4
             .panel.panel-default.main__summary__panel
               .panel-heading.main__summary__panel__heading
                 h3 {{ "help_us_nav" | translate }}
-              .panel-body {{ "help_us_desc" | translate }}
+              .panel-body
+                p {{ "help_us_desc" | translate }}
+                .text-right
+                  a(ui-sref="help-us") {{ "more_info" | translate }}
