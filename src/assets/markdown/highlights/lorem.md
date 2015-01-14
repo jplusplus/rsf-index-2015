@@ -1,5 +1,5 @@
 ---
-slug: loreme
+slug: lorem
 title: Lorem ispum dolor sit article
 description: This is an example file
 lang: en

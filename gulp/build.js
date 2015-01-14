@@ -231,5 +231,4 @@ gulp.task('deploy', ['build'], function() {
   }));
 });
 
-
 gulp.task('build', ['html', 'images', 'fonts', 'misc', 'csv', 'markdown', 'assets', 'locale']);
