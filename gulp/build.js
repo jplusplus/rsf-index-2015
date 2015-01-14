@@ -2,10 +2,13 @@
 
 var gulp = require('gulp');
 var slug = require('slug');
+var gutil = require('gulp-util');
+var markdown = require('gulp-markdown-to-json');
 
 var $ = require('gulp-load-plugins')({
-  pattern: ['gulp-*', 'main-bower-files', 'uglify-save-license', 'del']
+  pattern: ['gulp-*', 'main-bower-files', 'uglify-save-license', 'del', 'markdown']
 });
+
 
 gulp.task('styles', ['wiredep', 'injector:css:preprocessor'], function () {
   return gulp.src(['src/app/index.less'])
@@ -141,11 +144,6 @@ gulp.task('images', function () {
     .pipe(gulp.dest('dist/assets/images/'));
 });
 
-gulp.task('assets', function () {
-  return gulp.src('src/assets/{fonts,json}/**/*')
-    .pipe(gulp.dest('dist/assets/'));
-});
-
 gulp.task('locale', function () {
   return gulp.src('locale/*/LC_MESSAGES/messages.json')
     .pipe($.rename(function (path) {
@@ -190,15 +188,42 @@ gulp.task('fonts', function () {
     .pipe(gulp.dest('dist/assets/fonts/'));
 });
 
+gulp.task('markdown:highlights', function () {
+  return gulp.src('src/assets/markdown/highlights/**/*.md')
+    .pipe(gutil.buffer())
+    .pipe(markdown('highlights.json'))
+    .pipe(gulp.dest('dist/assets/json/'));
+});
+
+gulp.task('markdown:themes', function () {
+  return gulp.src('src/assets/markdown/themes/**/*.md')
+    .pipe(gutil.buffer())
+    .pipe(markdown('themes.json'))
+    .pipe(gulp.dest('dist/assets/json/'));
+});
+
+gulp.task('markdown', ['markdown:highlights', 'markdown:themes']);
+
 gulp.task('misc', function () {
   return gulp.src('src/**/*.ico')
     .pipe(gulp.dest('dist/'));
 });
 
+gulp.task('assets:dist', function () {
+  return gulp.src('src/assets/{fonts,json}/**/*')
+    .pipe(gulp.dest('dist/assets/'));
+});
+
+gulp.task('assets:tmp', function () {
+  return gulp.src('dist/assets/{fonts,json}/**/*')
+    .pipe(gulp.dest('.tmp/assets/'));
+});
+
+gulp.task('assets', ['assets:dist', 'assets:tmp']);
+
 gulp.task('clean', function (done) {
   $.del(['dist/', '.tmp/'], done);
 });
-
 
 gulp.task('deploy', ['build'], function() {
   gulp.src("./dist/**/*").pipe($.ghPages({
@@ -207,4 +232,4 @@ gulp.task('deploy', ['build'], function() {
 });
 
 
-gulp.task('build', ['html', 'images', 'fonts', 'misc', 'assets', 'csv', 'locale']);
+gulp.task('build', ['html', 'images', 'fonts', 'misc', 'csv', 'markdown', 'assets', 'locale']);
