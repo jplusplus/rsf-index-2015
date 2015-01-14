@@ -59,5 +59,6 @@
   "download_data_url": "",
   "download_data_label": "Download the data",
   "download_methodo_url": "",
-  "download_methodo_label": "Download the methodology"
+  "download_methodo_label": "Download the methodology",
+  "page_lang_not_available": "This page is not available in your language."
 }
