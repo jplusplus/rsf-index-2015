@@ -3,14 +3,16 @@
   .page__single__header
     .container
       .row
-        .col-sm-6.col-sm-push-3
+        .col-sm-10.col-sm-offset-1
           h1 {{ single.title }}
           p.lead {{ single.description }}
   .page__single__body
     .container
       .row
-        .col-sm-6.col-sm-push-3
+        .col-sm-6.col-sm-offset-1
           .alert.alert-warning(ng-show="single.lang !== lang")
             i.fa.fa-globe.fa-fw
             | &nbsp;{{ 'page_lang_not_available' | translate }}
           article(ng-bind-html="single.body")
+        .col-sm-4
+          .well
