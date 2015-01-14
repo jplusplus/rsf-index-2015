@@ -66,5 +66,9 @@
   "source_code": "Source code",
   "by_jpp": "Made by <a href='http://jplusplus.org' target='_blank'>Journalism++</a>",
   "details_about_title": "Details about <strong>{{country}}</strong>",
-  "see_detail_on_rsf": "See details about this country <a href='{{ url }}' target='_blank'>on RSF.org</a>"
+  "see_detail_on_rsf": "See details about this country <a href='{{ url }}' target='_blank'>on RSF.org</a>",
+  "ranking_in_2014": "(<strong>{{ranking}}</strong> in 2014)",
+  "score_in_2014": "(<strong>{{score}}</strong> in 2014)",
+  "ranking_indicator": "Ranking:",
+  "score_indicator": "Score:"
 }

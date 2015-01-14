@@ -1,0 +1,48 @@
+.navbar {
+  border:0;
+  border-bottom:2px @brand-primary solid;
+  .box-shadow( 0 4px 5px -3px fade(#000, 30));
+
+  .navbar-brand {
+    position: relative;
+    z-index:10;
+
+    &, &:hover, &:active, &:focus {
+      background: white;
+    }
+
+    &:after {
+      content:"";
+      position:absolute;
+      left:100%;
+      top:50%;
+      width:16px;
+      height:16px;
+      margin-top:-8px;
+      margin-left:-8px;
+      background:white;
+      .rotate(45deg);
+      display: block;
+    }
+
+    &:before {
+      content:"";
+      position:absolute;
+      top:0;
+      right:100%;
+      width:1000%;
+      height:@navbar-height;
+      background: white;
+    }
+
+  }
+
+  .navbar-nav > li:first-child > a {
+    padding-left:10px + 10px;
+  }
+
+  .navbar-nav > li.active > a {
+    position:relative;
+  }
+
+}
