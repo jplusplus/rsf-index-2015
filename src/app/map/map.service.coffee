@@ -9,6 +9,9 @@ angular.module('rsfIndex2015').factory 'MapData', ($q, $http, $translate, $filte
     countryColor = chroma.scale(['#410E2E', '#9F042B', '#EA191E', '#F1FB8D', '#FFFFFF']).domain [100, 0]
     # Create an object with every country to allow fast country lookup
     rankingTree  = _.reduce(hash.ranking.data, (result, country)->
+      # Pre-calculate 2015 colors
+      country["score_2015_color"] = countryColor(country["score_2015"]).hex()
+      # Save the country with it code as key
       result[country.country_code] = country
       result
     , {})
@@ -44,8 +47,20 @@ angular.module('rsfIndex2015').factory 'MapData', ($q, $http, $translate, $filte
       rank: -> rankingTree[code]
       # Compute the color of the country
       color: (year=2015)->
+        colorKey = "score_" + year + "_color"
         # Return null if no score for this country
-        if rankingTree[code]? then countryColor(rankingTree[code]["score_" + year]).hex() else null
+        if rankingTree[code]?
+          # Should we use a pre-calculated color?
+          if rankingTree[code][colorKey]?
+            # Yes we do!
+            rankingTree[code][colorKey]
+          else
+            # Calculate the color now
+            color = countryColor( rankingTree[code]["score_" + year] ).hex()
+            # And save it
+            rankingTree[code][colorKey] = color
+        else
+          null
 
 
 
