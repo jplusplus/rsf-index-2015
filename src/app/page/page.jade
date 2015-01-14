@@ -3,10 +3,10 @@ ui-view.page
     ul.list-unstyled
       li(ng-repeat='single in page.all()')
         .media
-          a.media-left(ui-sref="highlights.single(single)")
+          a.media-left(ng-href="{{ link(single) }}")
             img.img-thumbnail(ng-src="{{ single.thumbnail || single.picture }}", width="150", alt)
           .media-body
             h3.media-heading
-              a(ui-sref="highlights.single(single)")
+              a(ng-href="{{ link(single) }}")
                 {{ single.title }}
             p.lead.text-muted {{ single.description }}
