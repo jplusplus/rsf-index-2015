@@ -22,11 +22,17 @@ angular.module('rsfIndex2015').factory 'Page', ($http, $q, $translate)->
     # Get the list of every pages for the current language
     all: -> _.filter @list,  lang: $translate.use()
 
-  (domain)->
+  (domain, slug)->
     deferred = $q.defer()
     # Get the data for the domain
-    $http.get("assets/json/#{domain}.json").then (res)->
+    $http.get("assets/json/#{domain}.json", cache: yes).then (res)->
+      # Create an instance of the Page class
+      page = new Page(domain, res.data)
+      # A slug is given, we only return the page we ask for
+      if slug?
+        deferred.resolve page.get(slug)
       # Resolve the service promise with an instance of the Page class.
       # This class receives the whole dataset and the current domain name.
-      deferred.resolve( new Page(domain, res.data) )
+      else
+        deferred.resolve page
     deferred.promise
