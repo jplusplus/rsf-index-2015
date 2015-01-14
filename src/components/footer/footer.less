@@ -1,0 +1,25 @@
+.footer {
+  padding-top:30px;
+  margin:0;
+  background:@body-bg;
+
+  &__container {
+
+    padding:30px;
+    position:relative;
+
+    &:after {
+      position:absolute;
+      top:0;
+      left:50%;
+      width:33%;
+      height:1px;
+      background: darken(@body-bg, 20);
+      .translate(-50%, 0);
+    }
+
+    &__links {
+      margin:0;
+    }
+  }
+}

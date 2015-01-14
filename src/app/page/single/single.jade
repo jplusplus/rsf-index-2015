@@ -3,13 +3,13 @@
   .page__single__header
     .container
       .row
-        .col-sm-6.col-sm-push-3
+        .col-lg-6.col-lg-push-3.col-md-8.col-md-push-2
           h1 {{ single.title }}
           p.lead {{ single.description }}
   .page__single__body
     .container
       .row
-        .col-sm-6.col-sm-push-3
+        .col-lg-6.col-lg-push-3.col-md-8.col-md-push-2
           .alert.alert-warning(ng-show="single.lang !== lang")
             i.fa.fa-globe.fa-fw
             | &nbsp;{{ 'page_lang_not_available' | translate }}
