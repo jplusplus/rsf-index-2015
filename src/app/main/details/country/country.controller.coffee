@@ -7,6 +7,5 @@ angular.module("rsfIndex2015").controller "MainDetailsCountryCtrl", ($scope, $st
     rank   : $scope.rank["ranking_2015"]
     score  : $scope.rank["score_2015"]
     year   : 2015
-  $scope.rank
   $scope.positionYears = ( y for y in [2002..2014] ).reverse()
   $scope.mapData = mapData

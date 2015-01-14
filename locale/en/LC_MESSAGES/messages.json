@@ -64,5 +64,7 @@
   "more_info": "More info",
   "presentation": "Presentation",
   "source_code": "Source code",
-  "by_jpp": "Made by <a href='http://jplusplus.org' target='_blank'>Journalism++</a>"
+  "by_jpp": "Made by <a href='http://jplusplus.org' target='_blank'>Journalism++</a>",
+  "details_about_title": "Details about <strong>{{country}}</strong>",
+  "see_detail_on_rsf": "See details about this country <a href='{{ url }}' target='_blank'>on RSF.org</a>"
 }

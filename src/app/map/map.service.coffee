@@ -43,6 +43,8 @@ angular.module('rsfIndex2015').factory 'MapData', ($q, $http, $translate, $filte
       name: (lang=$translate.use() or "en")->
         key = 'country_name_' + lang.toLowerCase()
         if namesTree[code]? then namesTree[code][key] else ""
+      # Get the url of the country
+      url: (lang=$translate.use() or "en")-> rankingTree[code]["url_country_page_" + lang]
       # Get the ranking of the given country
       rank: -> rankingTree[code]
       # Compute the color of the country

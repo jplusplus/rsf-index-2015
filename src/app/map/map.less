@@ -28,6 +28,10 @@
       .box-shadow( 0 4px 5px -3px fade(#000, 70));
     }
 
+    .leaflet-popup a.leaflet-popup-close-button {
+      color:white;
+    }
+
     &__popup {
 
       &__title {
@@ -41,6 +45,7 @@
         text-align: right;
         a { color:white; }
       }
+
     }
   }
 
@@ -84,11 +89,6 @@
     }
 
     &__overflow {
-      /* position:absolute;
-      top: @line-height-computed * 2px;
-      left:0;
-      right:0;
-      bottom:0; */
       padding:0;
       margin:0;
       overflow: auto;

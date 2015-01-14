@@ -1,9 +1,11 @@
 .main__details__country
   .container
+    h1(ng-bind-html="'details_about_title' | translate:{ country: country.name() }")
+    p.lead(ng-bind-html="'see_detail_on_rsf' | translate:{ url: country.url() }")
     .panel.panel-default
       map(data="mapData", country="selectedCountry", id="map-country",  year="selectedYear")
 
-    .main__details__country__lead
+    .main__details__country__lead.lead
       p(ng-bind-html="'country_rank_in_year' | translate:countryRankData")
       p {{ 'score_without_exactions' | translate }}&nbsp;
 
