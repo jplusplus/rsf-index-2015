@@ -3,3 +3,5 @@ angular.module "rsfIndex2015"
     $stateProvider
       .state "themes",
         url: "/themes"
+        resolve:
+          list: (Page)-> Page("themes")
