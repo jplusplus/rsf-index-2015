@@ -1,0 +1,16 @@
+.page__single
+  img.page__single__picture(ng-src="{{ single.picture }}")
+  .page__single__header
+    .container
+      .row
+        .col-sm-6.col-sm-push-3
+          h1 {{ single.title }}
+          p.lead {{ single.description }}
+  .page__single__body
+    .container
+      .row
+        .col-sm-6.col-sm-push-3
+          .alert.alert-warning(ng-show="single.lang !== lang")
+            i.fa.fa-globe.fa-fw
+            | &nbsp;{{ 'page_lang_not_available' | translate }}
+          article(ng-bind-html="single.body")

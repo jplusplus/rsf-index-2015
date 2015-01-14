@@ -4,4 +4,4 @@ angular.module "rsfIndex2015"
       .state "themes",
         url: "/themes"
         resolve:
-          list: (Page)-> Page("themes")
+          page: (Page)-> Page("themes")

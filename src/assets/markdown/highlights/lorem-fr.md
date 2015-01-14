@@ -1,11 +1,10 @@
 ---
 slug: lorem
-title: Lorem ispum dolor sit article
-description: This is an example file
-lang: en
+title: Lorem ispum dolor sit une baguette
+description: C'est un fichier d'exemple. Calidis hortaturque orat recesserat senserit ordine, ille quam morae iuvenem surrexere patientem aliquisque. Duorum late rapacibus arma Paean solitaeque tantum hanc inque!
+lang: fr
+picture: http://www.danstapub.com/wp-content/uploads/2013/05/danstapub-reporter-sans-frontiere-betc-liberte-presse-dictateur-nouvelle-campagne.jpg
 ---
-
-# Tu lyra vertentia vacant audaci
 
 ## Quaerere educere ruunt contraxerat in nullus pendebant
 

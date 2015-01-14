@@ -2,7 +2,7 @@
 
 var gulp = require('gulp');
 
-gulp.task('watch', ['consolidate', 'wiredep', 'injector:css', 'injector:js', 'markdown', 'assets', 'locale'] ,function () {
+gulp.task('watch', ['consolidate', 'wiredep', 'injector:css', 'injector:js', 'markdown', 'csv', 'assets', 'locale'] ,function () {
   gulp.watch('src/{app,components}/**/*.less', ['injector:css']);
   gulp.watch('src/{app,components}/**/*.{js,coffee}', ['injector:js']);
   gulp.watch('src/assets/images/**/*', ['images']);
