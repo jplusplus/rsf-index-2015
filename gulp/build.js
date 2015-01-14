@@ -188,21 +188,16 @@ gulp.task('fonts', function () {
     .pipe(gulp.dest('dist/assets/fonts/'));
 });
 
-gulp.task('markdown:highlights', function () {
-  return gulp.src('src/assets/markdown/highlights/**/*.md')
-    .pipe(gutil.buffer())
-    .pipe(markdown('highlights.json'))
-    .pipe(gulp.dest('dist/assets/json/'));
-});
+['highlights', 'themes', 'commons'].forEach(function(domain) {
+  gulp.task('markdown:' + domain, function () {
+    return gulp.src('src/assets/markdown/' + domain + '/**/*.md')
+      .pipe(gutil.buffer())
+      .pipe(markdown(domain + '.json'))
+      .pipe(gulp.dest('dist/assets/json/'));
+  });
+})
 
-gulp.task('markdown:themes', function () {
-  return gulp.src('src/assets/markdown/themes/**/*.md')
-    .pipe(gutil.buffer())
-    .pipe(markdown('themes.json'))
-    .pipe(gulp.dest('dist/assets/json/'));
-});
-
-gulp.task('markdown', ['markdown:highlights', 'markdown:themes']);
+gulp.task('markdown', ['markdown:highlights', 'markdown:themes', 'markdown:commons']);
 
 gulp.task('misc', function () {
   return gulp.src('src/**/*.ico')
