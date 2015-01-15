@@ -1,50 +1,50 @@
-.main__details__country
-  .main__details__country__header
+.details__country
+  .details__country__header
     map(data="mapData", country="selectedCountry", id="map-country",  year="selectedYear")
 
-  .main__details__country__body
-    .main__details__country__body__title
+  .details__country__body
+    .details__country__body__title
       .container
         h1(ng-bind-html="'details_about_title' | translate:{ country: country.name() }")
         p.lead
           span(ng-bind-html="'country_rank_in_year' | translate:countryRankData")
           br
           span(ng-bind-html="'see_detail_on_rsf' | translate:{ url: country.url() }")
-      .main__details__country__body__title__banner
+      .details__country__body__title__banner
         .container
           .row
-            .col-xs-3.main__details__country__body__title__banner__figure
-              .main__details__country__body__title__banner__figure__rank
+            .col-xs-3.details__country__body__title__banner__figure
+              .details__country__body__title__banner__figure__rank
                 | \#{{ rank['ranking_2015'] }}
-            .col-xs-3.main__details__country__body__title__banner__figure
+            .col-xs-3.details__country__body__title__banner__figure
               .lead
                 | {{ 'ranking_indicator' | translate }}
-                .main__details__country__body__title__banner__figure__label
+                .details__country__body__title__banner__figure__label
                   i.fa.fa-fw.fa-arrow-up.text-success-bg(ng-show='countryIndicatorProgression("ranking", 2015) ===  -1')
                   i.fa.fa-fw.fa-arrow-down.text-danger-bg(ng-show='countryIndicatorProgression("ranking", 2015) ===  1')
                   i(ng-show='countryIndicatorProgression("ranking", 2015) === 0') =&nbsp;
                   span.label(ng-class="countryIndicatorLabel('ranking', 2015)")
                     | {{ rank.ranking_2015 - rank.ranking_2014 | number:2 | decimal | positive }}
               span(ng-bind-html="'ranking_in_2014' | translate:{ ranking: rank.ranking_2014 }")
-            .col-xs-3.main__details__country__body__title__banner__figure
+            .col-xs-3.details__country__body__title__banner__figure
               .lead
                 | {{ 'score_indicator' | translate }}
-                .main__details__country__body__title__banner__figure__label
+                .details__country__body__title__banner__figure__label
                   i.fa.fa-fw.fa-arrow-up.text-success-bg(ng-show='countryIndicatorProgression("score", 2015) ===  -1')
                   i.fa.fa-fw.fa-arrow-down.text-danger-bg(ng-show='countryIndicatorProgression("score", 2015) ===  1')
                   strong(ng-show='countryIndicatorProgression("score", 2015) === 0') =&nbsp;
                   span.label(ng-class="countryIndicatorLabel('score', 2015)")
                     | {{ rank.score_2015 - rank.score_2014 | number:2 | decimal | positive }}
               span(ng-bind-html="'score_in_2014' | translate:{ score: decimal(rank.score_2014) }")
-            .col-xs-3.main__details__country__body__title__banner__figure
+            .col-xs-3.details__country__body__title__banner__figure
               .lead
                 | {{ 'score_without_exactions' | translate }}
-                .main__details__country__body__title__banner__figure__label
+                .details__country__body__title__banner__figure__label
                   span.label.label-inverse
                     | {{ rank.score_2015 - 0.4 | number:2 | decimal }}
 
     .container
-      .main__details__country__body__detailed
+      .details__country__body__detailed
         h3 {{ 'detailed_title' | translate }}
         table.table.table-condensed.table-striped.panel.panel-default
           thead
@@ -112,7 +112,7 @@
               td
       .row
         .col-sm-5
-          .main__details__country__body__position
+          .details__country__body__position
             h3 {{ 'position_title' | translate }}
             table.table.table-condensed.table-striped.panel.panel-default
               thead
@@ -130,7 +130,7 @@
                     i.fa.fa-fw.fa-arrow-up(ng-show='countryIndicatorProgression("ranking", year) ===  -1')
                     i.fa.fa-fw.fa-arrow-down(ng-show='countryIndicatorProgression("ranking", year) === 1')
         .col-sm-7
-          .main__details__country__body__barometer
+          .details__country__body__barometer
             h3 {{ 'barometer_title' | translate }}
             .well.well-sm
               .row

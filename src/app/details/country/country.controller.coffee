@@ -1,4 +1,4 @@
-angular.module("rsfIndex2015").controller "MainDetailsCountryCtrl", ($scope, $stateParams, $filter, mapData)->
+angular.module("rsfIndex2015").controller "DetailsCountryCtrl", ($scope, $stateParams, $filter, mapData)->
   $scope.selectedCountry = $stateParams.country
   $scope.country         = mapData.country $stateParams.country
   $scope.rank            = $scope.country.rank()
@@ -8,7 +8,7 @@ angular.module("rsfIndex2015").controller "MainDetailsCountryCtrl", ($scope, $st
   $scope.countryRankData =
     country: $scope.country.name()
     rank   : $scope.rank["ranking_2015"]
-    score  : $scope.rank["score_2015"]
+    score  : $scope.decimal($scope.rank["score_2015"])
     year   : 2015
 
   $scope.countryIndicatorProgression = (indicator, year)->
