@@ -13,7 +13,7 @@
   "change_language":"Change the language",
   "country": "Country ",
   "country_note": "Country note",
-  "country_rank_in_year": "<strong>{{country}}</strong> is ranked at <em>#{{rank}}</em> in the <strong>{{year}}</strong> index with a score of <em>{{score}}</em>.",
+  "country_rank_in_year": "<strong>{country}</strong> is ranked at <em>#{rank}</em> in the <strong>{year}</strong> index with a score of <em>{score}</em>.",
   "decimal_mark": ".",
   "detailed_ranking_desc": "detailed_ranking_desc",
   "detailed_ranking_title": "detailed_ranking_title",
@@ -69,10 +69,11 @@
   "presentation": "Presentation",
   "source_code": "Source code",
   "by_jpp": "Made by <a href='http://jplusplus.org' target='_blank'>Journalism++</a>",
-  "details_about_title": "Details about <strong>{{country}}</strong>",
-  "see_detail_on_rsf": "See details about this country <a href='{{ url }}' target='_blank'>on RSF.org</a>",
-  "ranking_in_2014": "#<strong>{{ranking}}</strong> in 2014",
-  "score_in_2014": "<strong>{{score}}</strong> in 2014",
+  "details_about_title": "Details about <strong>{country}</strong>",
+  "see_detail_on_rsf": "See details about this country <a href='{ url }' target='_blank'>on RSF.org</a>",
+  "ranking_in_2014": "#<strong>{ranking}</strong> in 2014",
+  "score_in_2014": "<strong>{score}</strong> in 2014",
   "ranking_indicator": "Ranking",
-  "score_indicator": "Score"
+  "score_indicator": "Score",
+  "barometer_sentence": "In <strong>2014</strong>, {journalists, plural, one{1 journalist was} other{# journalists were}} killed and {netcitizens, plural, one{1 net-citizen} other{# net-citizens}}."
 }

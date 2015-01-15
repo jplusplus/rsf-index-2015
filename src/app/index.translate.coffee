@@ -13,5 +13,6 @@ angular.module "rsfIndex2015"
         'es_ES': 'es'
       .preferredLanguage 'en'
       .fallbackLanguage 'en'
+      .useMessageFormatInterpolation()
       .determinePreferredLanguage()
       .useCookieStorage()

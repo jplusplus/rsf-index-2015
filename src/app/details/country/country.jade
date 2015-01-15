@@ -116,11 +116,5 @@
         .col-sm-7
           .details__country__body__barometer
             h3 {{ 'barometer_title' | translate }}
-            .well.well-sm
-              .row
-                .col-xs-6
-                  h4 2014
-                  {{ 'journalists_killed' | translate }}: {{ rank["journalists_killed_2014"] }}<br />
-                  {{ 'netcitizen_killed' | translate }}: {{ rank["net_citizens_killed_2014"] }}
-                .col-xs-6
-                  h4 2015
+            .lead
+              p(ng-bind-html="'barometer_sentence' | translate:'{ journalists: rank.journalists_killed_2014, netcitizens: rank.net_citizens_killed_2014 }'")
