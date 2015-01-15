@@ -193,7 +193,10 @@ gulp.task('fonts', function () {
 gulp.task('markdown', ['markdown:highlights', 'markdown:themes', 'markdown:commons']);
 
 gulp.task('misc', function () {
-  return gulp.src('src/**/*.ico')
+  return gulp.src([
+      'src/**/*.ico',
+      'src/.htaccess'
+    ])
     .pipe(gulp.dest('dist/'));
 });
 
