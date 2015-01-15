@@ -7,3 +7,4 @@ angular.module "rsfIndex2015"
         templateUrl: "app/details/details.html"
         resolve:
           mapData: (MapData)-> MapData
+          lang: ($translate)-> $translate.use()
