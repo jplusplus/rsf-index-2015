@@ -1,5 +1,5 @@
 angular.module "rsfIndex2015"
-  .controller "DetailsCtrl", ($scope, $filter, mapData) ->
+  .controller "DetailsAllCtrl", ($scope, $filter, mapData) ->
     $scope.mapData = mapData
     # Function to filter by name
     countryFilter = (name, zone)->

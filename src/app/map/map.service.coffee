@@ -4,6 +4,8 @@ angular.module('rsfIndex2015').factory 'MapData', ($q, $http, $translate, $filte
     topojson   : $http.get("assets/json/countries.topo.json")
     names      : $http.get("assets/json/countries.names.json")
     ranking    : $http.get("assets/json/countries.ranking.json")
+    # Do not start before the translation is loaded
+    decimal    : ($translate)-> $translate('decimal_mark')
   ).then (hash)->
     # Color scale
     countryColor = chroma.scale(['#410E2E', '#9F042B', '#EA191E', '#F1FB8D', '#FFFFFF']).domain [100, 0]

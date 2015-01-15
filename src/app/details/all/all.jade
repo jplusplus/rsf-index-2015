@@ -1,0 +1,70 @@
+.details__all
+  .container
+    h2 {{  'detailed_ranking_title' | translate }}
+    .row
+      .col-sm-7
+        p {{  'detailed_ranking_desc' | translate }}
+      .col-sm-5
+        ul.list-inline
+          li
+            a(ng-href="{{ 'download_data_url' | translate }}")
+              i.fa.fa-download.fa-fw
+              | &nbsp;
+              | {{ 'download_data_label' | translate }}
+            | &nbsp;
+          li
+            a(ng-href="{{ 'download_methodo_url' | translate }}")
+              i.fa.fa-flask.fa-fw
+              | &nbsp;
+              | {{ 'download_methodo_label' | translate }}
+    form.row
+      label.col-sm-7
+        {{ 'show_country_from_label' | translate }}&nbsp;
+        select(ng-model="$parent.selectedZone")
+          option(value='')        {{ 'world'  | translate }}
+          option(value='Africa') {{ 'africa' | translate }}
+          option(value='Americas') {{ 'americas' | translate }}
+          option(value='Asia-Pacific') {{ 'asia-pacific' | translate }}
+          option(value='EECA') {{ 'eeca' | translate }}
+          option(value='EU and Western Balkans') {{ 'eu-and-western-balkans' | translate }}
+          option(value='MENA') {{ 'mena' | translate }}
+
+      label.col-sm-5
+        .input-group
+          input.form-control(type='text', ng-model="$parent.selectedName", placeholder='{{ "search_placeholder" | translate }}')
+          span.input-group-btn
+            button.btn.btn-primary(type='button') {{ 'search_btn' | translate }}
+
+    .table-responsive.panel.panel-default
+      table.table.table-condensed.table-striped.table-hover
+        thead
+          tr
+            th(style="width: 30px") {{ 'rank' | translate }}
+            th {{ 'country' | translate }}
+            th {{ 'pluralism' | translate }}
+            th {{ 'media_independence' | translate }}
+            th {{ 'environment_selfcensorship' | translate }}
+            th {{ 'legal_framework' | translate }}
+            th {{ 'institutional_transparency' | translate }}
+            th {{ 'infrastructures' | translate }}
+            th {{ 'exactions' | translate }}
+            th {{ 'global_score' | translate }}
+        tbody
+          tr(ng-repeat='country in ranking | orderBy:countryRank', )
+            td.text-center(ng-style="{ background: countryColor(country), color: countryContrast(country) }")
+              strong {{ country['ranking_2015'] }}
+            td
+              a(ui-sref="details.country({ country: country.country_code })")
+                {{ mapData.country(country).name() }}
+            td.text-center {{ country["pluralism_2015"] | decimal }}
+            td.text-center {{ country["media_independence_2015"] | decimal }}
+            td.text-center {{ country["environment_and_self_censorship_2015"] | decimal }}
+            td.text-center {{ country["legal_framework_2015"] | decimal }}
+            td.text-center {{ country["institutional_transparency_2015"] | decimal }}
+            td.text-center {{ country["infrastructures_2015"] | decimal }}
+            td.text-center {{ country["exactions_2015"] | decimal }}
+            td.text-center {{ country["score_2015"] | decimal }}
+          tr.warning.text-warning(ng-hide="ranking.length")
+            td(colspan=10).text-center {{ 'no_result' | translate }}
+
+

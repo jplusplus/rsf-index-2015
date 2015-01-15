@@ -3,7 +3,7 @@ angular.module "rsfIndex2015"
     $stateProvider
       .state "details.country",
         controller: "DetailsCountryCtrl"
-        url: "/:country"
+        url: "/details/:country"
         templateUrl: "app/details/country/country.html"
         resolve:
           predators: ($http)->
