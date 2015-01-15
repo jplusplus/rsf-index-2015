@@ -15,7 +15,7 @@ angular.module "rsfIndex2015"
         color = scope.data.country(feature.id).color scope.selectedYear
         # Returns the style object
         fillColor: color
-        weight: 1,
+        weight: if feature.id is scope.country then 3 else 1,
         opacity: if color? then 1 else 0,
         color: 'white',
         fillOpacity: if feature.id is scope.country then 1 else 0.7
