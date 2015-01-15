@@ -2,5 +2,5 @@
     h4.map__workspace__popup__title {{ country.name( useLanguage() ) }}
     p(ng-bind-html="'country_rank_in_year' | translate:countryRankData")
     .map__workspace__popup__footer(ng-show='shoudShowCountryLink()')
-      a.btn.btn-sm.btn-primary(ui-sref='main.details.country({ country: country["country-code"] })', target="{{ countryLinkTarget }}")
+      a.btn.btn-sm.btn-primary(ui-sref='details.country({ country: country["country-code"] })', target="{{ countryLinkTarget }}")
         | {{ 'find_out' | translate }}
