@@ -41,43 +41,64 @@
           thead
             tr
               th
-              th {{ 'pluralisme' | translate }}
-              th {{ 'media_independence' | translate }}
-              th {{ 'environment_selfcensorship' | translate }}
-              th {{ 'legal_framework' | translate }}
-              th {{ 'institutional_transparency' | translate }}
-              th {{ 'infrastructures' | translate }}
-              th {{ 'exactions' | translate }}
-              th {{ 'global_score' | translate }}
-          tbody
+              th {{ 'country_note' | translate }}
+              th {{ 'avg_zone_note' | translate }}
+              th {{ 'avg_world' | translate }}
+          tbody.text-center
             tr
-              td {{ 'country_note' | translate }}
-              td.text-center {{ rank["pluralisme_2015"] }}
-              td.text-center {{ rank["media_independence_2015"] }}
-              td.text-center {{ rank["environment_and_self_censorship_2015"] }}
-              td.text-center {{ rank["legal_framework_2015"] }}
-              td.text-center {{ rank["institutional_transparency_2015"] }}
-              td.text-center {{ rank["infrastructures_2015"] }}
-              td.text-center {{ rank["exactions_2015"] }}
-              td.text-center {{ rank["score_2015"] }}
-            tr
-              td {{ 'avg_zone_note' | translate }}
+              td.text-left
+                {{ 'pluralisme' | translate }}
               td
-              td
-              td
-              td
-              td
-              td
+                {{ rank["pluralisme_2015"] }}
               td
               td
             tr
-              td {{ 'avg_world' | translate }}
+              td.text-left
+                {{ 'media_independence' | translate }}
+              td
+                {{ rank["media_independence_2015"] }}
               td
               td
+            tr
+              td.text-left
+                {{ 'environment_selfcensorship' | translate }}
+              td
+                {{ rank["environment_and_self_censorship_2015"] }}
               td
               td
+            tr
+              td.text-left
+                {{ 'legal_framework' | translate }}
+              td
+                {{ rank["legal_framework_2015"] }}
               td
               td
+            tr
+              td.text-left
+                {{ 'institutional_transparency' | translate }}
+              td
+                {{ rank["institutional_transparency_2015"] }}
+              td
+              td
+            tr
+              td.text-left
+                {{ 'infrastructures' | translate }}
+              td
+                {{ rank["infrastructures_2015"] }}
+              td
+              td
+            tr
+              td.text-left
+                {{ 'exactions' | translate }}
+              td
+                {{ rank["exactions_2015"] }}
+              td
+              td
+            tr
+              td.text-left
+                {{ 'global_score' | translate }}
+              td
+                {{ rank["score_2015"] }}
               td
               td
       .row
