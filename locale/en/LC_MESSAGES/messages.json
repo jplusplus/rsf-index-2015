@@ -75,5 +75,7 @@
   "score_in_2014": "<strong>{score}</strong> in 2014",
   "ranking_indicator": "Ranking",
   "score_indicator": "Score",
-  "barometer_sentence": "In <strong>2014</strong>, {journalists, plural, one{1 journalist was} other{# journalists were}} killed and {netcitizens, plural, one{1 net-citizen} other{# net-citizens}}."
+  "barometer_sentence": "In <strong>2014</strong>, {journalists, plural, one{1 journalist was} other{# journalists were}} killed and {netcitizens, plural, one{1 net-citizen} other{# net-citizens}}.",
+  "barometer_warning": "Journalists killed” in the table includes only cases in which Reporters Without Borders has clearly established that the victim was killed because of his/her activities as a journalist. It does not include cases in which the motives were not related to the victim’s work or in which a link has not yet been confirmed.",
+  "barometer_2015_link": "<a href='' target='_blank'>See the detailed barometer for 2015</a>"
 }

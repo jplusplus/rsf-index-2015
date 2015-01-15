@@ -118,3 +118,8 @@
             h3 {{ 'barometer_title' | translate }}
             .lead
               p(ng-bind-html="'barometer_sentence' | translate:'{ journalists: rank.journalists_killed_2014, netcitizens: rank.net_citizens_killed_2014 }'")
+              p
+                i.fa.fa-tachometer.fa-fw
+                | &nbsp;
+                span(ng-bind-html="'barometer_2015_link' | translate")
+            .alert.alert-warning {{ 'barometer_warning' | translate }}
