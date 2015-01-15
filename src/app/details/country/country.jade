@@ -108,7 +108,7 @@
                 tr(ng-repeat="year in positionYears", ng-class='countryIndicatorClass("ranking", year)')
                   td.lead {{ year }}
                   td
-                    strong.lead {{ rank["ranking_" + year] }}
+                    strong.lead \#{{ rank["ranking_" + year] }}
                     | &nbsp;/&nbsp;180
                   td.text-right
                     i.fa.fa-fw.fa-arrow-up(ng-show='countryIndicatorProgression("ranking", year) ===  -1')
@@ -116,10 +116,12 @@
         .col-sm-7
           .details__country__body__barometer
             h3 {{ 'barometer_title' | translate }}
-            .lead
-              p(ng-bind-html="'barometer_sentence' | translate:'{ journalists: rank.journalists_killed_2014, netcitizens: rank.net_citizens_killed_2014 }'")
-              p
-                i.fa.fa-tachometer.fa-fw
-                | &nbsp;
-                span(ng-bind-html="'barometer_2015_link' | translate")
-            .alert.alert-warning {{ 'barometer_warning' | translate }}
+            .panel.panel-primary
+              .panel-body
+                .lead
+                  p(ng-bind-html="'barometer_sentence' | translate:'{ journalists: rank.journalists_killed_2014, netcitizens: rank.net_citizens_killed_2014 }'")
+                  p
+                    i.fa.fa-tachometer.fa-fw
+                    | &nbsp;
+                    span(ng-bind-html="'barometer_2015_link' | translate")
+              .panel-footer {{ 'barometer_warning' | translate }}
