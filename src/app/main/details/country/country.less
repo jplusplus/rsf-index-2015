@@ -1,8 +1,8 @@
 .main__details__country {
 
-  @header-height: 500px;
+  @header-height: 600px;
 
-  padding-top: @header-height - @navbar-height - @navbar-margin-bottom;
+  padding-top: @header-height - @navbar-height - @navbar-margin-bottom - 2px;
 
   &__header {
     position: fixed;
@@ -38,10 +38,29 @@
       left:0;
       right:0;
       color:white;
-      padding:50px 0;
       pointer-events: none;
+
       a {
         pointer-events: auto;
+      }
+
+      &__banner {
+        margin-top: 30px;
+        width:100%;
+        min-height: 100px;
+        background: fade(#000, 30);
+        text-align: center;
+
+        &__figure {
+          padding:10px 0;
+          white-space: nowrap;
+          .lead { margin-bottom: 5px; }
+
+          &__rank {
+            font-size: 60px;
+            font-weight: 300;
+          }
+        }
       }
     }
 
