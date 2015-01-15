@@ -5,10 +5,11 @@ angular.module("rsfIndex2015").controller "MapCtrl", ($scope, $rootScope, $compi
   markerPopupHtml = '<div ng-include="\'app/map/map.popup.html\'"></div>'
 
   updateMapView = (country, zoom)->
+    return if not country?
     data = $scope.data.country(country)
     rank = data.rank()
     # Do not zoom pn empty value
-    return if not country? or not rank? or rank['ranking_' + $scope.selectedYear] is ""
+    return if not rank? or rank['ranking_' + $scope.selectedYear] is ""
     # Retreive map instance
     leafletData.getMap($scope.mapId).then (map)->
       # Find the coordinate of the given country

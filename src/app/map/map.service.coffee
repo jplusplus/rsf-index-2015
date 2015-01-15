@@ -33,6 +33,7 @@ angular.module('rsfIndex2015').factory 'MapData', ($q, $http, $translate, $filte
     brewer     : countryColor
     # Help function to retreive country data
     country: (code)->
+      console.log code unless code?
       code = if code.country_code? then code.country_code else code
       code = code.toUpperCase()
       # Get the center of the country
