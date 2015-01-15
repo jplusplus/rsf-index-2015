@@ -1,5 +1,5 @@
-angular.module("rsfIndex2015").controller "DetailsCountryCtrl", ($scope, $stateParams, $filter, mapData)->
-  $scope.selectedCountry = $stateParams.country
+angular.module("rsfIndex2015").controller "DetailsCountryCtrl", ($scope, $stateParams, $filter, $translate, mapData, predators)->
+  $scope.selectedCountry = $stateParams.country.toUpperCase()
   $scope.selectedYear    = 2015
   $scope.country         = mapData.country $stateParams.country
   $scope.rank            = $scope.country.rank()
@@ -11,6 +11,23 @@ angular.module("rsfIndex2015").controller "DetailsCountryCtrl", ($scope, $stateP
     rank   : $scope.rank["ranking_2015"]
     score  : $scope.decimal($scope.rank["score_2015"])
     year   : 2015
+
+  $scope.$watch (-> $translate.use() ), (lang)->
+    # Filter the list of the predator and putit to the scope
+    $scope.predators = _.filter predators, (predator)->
+      # Only predators of the current country
+      predator.countries.toUpperCase().indexOf($scope.selectedCountry) isnt -1
+    # Lang suffix
+    suffix = "_" + lang
+    # Simplify key (by remove language suffix)
+    angular.forEach $scope.predators, (predator)->
+      for own key, value of predator
+        # Key end with lang code
+        if key.indexOf(suffix) is (key.length - suffix.length)
+          # Create a new key without the suffix
+          newKey = key.substring(0, key.length - suffix.length)
+          # And copy the value
+          predator[newKey] = value
 
   $scope.countryIndicatorProgression = (indicator, year)->
     previousYear = year - 1

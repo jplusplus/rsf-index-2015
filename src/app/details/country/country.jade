@@ -125,3 +125,15 @@
                     | &nbsp;
                     span(ng-bind-html="'barometer_2015_link' | translate")
               .panel-footer.small {{ 'barometer_warning' | translate }}
+          .details__country__body__predators(ng-show="predators.length")
+            h3 {{ 'predators_title' | translate }}
+            ul.list-unstyled
+              li(ng-repeat='predator in predators')
+                .media
+                  a.media-left(ng-href="{{ predator.link_url }}", target="_blank")
+                    img.img-thumbnail(ng-src="{{ predator.picture_url }}", width="150", alt)
+                  .media-body
+                    h3.media-heading
+                      a(ng-href="{{ predator.link_url }}", target="_blank")
+                        {{ predator.name }}
+                    p.lead.text-muted {{ predator.details }}
