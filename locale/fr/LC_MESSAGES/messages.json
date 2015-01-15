@@ -1,4 +1,5 @@
 {
+  "africa":"Africa",
   "americas":"Americas",
   "asia-pacific":"Asia-Pacific",
   "eeca":"EECA",
@@ -35,7 +36,7 @@
   "legal_framework":"Legal framework",
   "map_desc":"Ranking of every country in 2015 according to the RWB index.",
   "media_independence":"Media independence",
-  "pluralism":"Pluralisme",
+  "pluralism":"Pluralism",
   "position":"Position",
   "position_title":"Position since 2012",
   "press_desc":"Press description",
@@ -74,7 +75,8 @@
   "score_in_2014":"<strong>{score}<\/strong> in 2014",
   "ranking_indicator":"Ranking",
   "score_indicator":"Score",
-  "barometer_sentence": "En <strong>2014</strong>, {journalists, select, =0{aucun journaliste tué} =1{# journaliste tué} other {# journalistes tués}} et {netcitizens, select, =0{aucun net-citoyen} =1{# net-citoyen} other{# net-citoyens}}.",
-  "barometer_warning": "Attention : le tableau « journalistes tués » ne recense que les professionnels des médias dont Reporters sans frontières a pu établir de façon avérée qu’ils ont été tués à cause de leurs activités de journaliste. Il ne comprend pas ceux, tués ou assassinés pour des motifs indépendants de leur profession ou pour lesquels le lien avec leur travail n’a pas pu encore être confirmé.",
-  "predators_title": "Prédateurs de la liberté de l'information"
+  "barometer_sentence":"En <strong>2014<\/strong>, {journalists, select, =0{aucun journaliste tué} =1{# journaliste tué} other {# journalistes tués}} et {netcitizens, select, =0{aucun net-citoyen} =1{# net-citoyen} other{# net-citoyens}}.",
+  "barometer_warning":"Journalists killed” in the table includes only cases in which Reporters Without Borders has clearly established that the victim was killed because of his\/her activities as a journalist. It does not include cases in which the motives were not related to the victim’s work or in which a link has not yet been confirmed.",
+  "barometer_2015_link":"<a href='' target='_blank'>See the detailed barometer for 2015<\/a>",
+  "predators_title":"Predators of freedom of information"
 }

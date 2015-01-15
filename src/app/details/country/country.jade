@@ -119,7 +119,7 @@
             .panel.panel-primary
               .panel-body
                 .lead
-                  p(ng-bind-html="'barometer_sentence' | translate:'{ journalists: rank.journalists_killed_2014, netcitizens: rank.net_citizens_killed_2014 }'")
+                  p(ng-bind-html="'barometer_sentence' | translate:'{ journalists: 1*rank.journalists_killed_2014, netcitizens: 1*rank.net_citizens_killed_2014 }'")
                   p
                     i.fa.fa-tachometer.fa-fw
                     | &nbsp;
