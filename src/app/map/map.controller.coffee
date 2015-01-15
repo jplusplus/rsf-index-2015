@@ -13,7 +13,7 @@ angular.module("rsfIndex2015").controller "MapCtrl", ($scope, $rootScope, $compi
       center = do $scope.data.country(country).center
       center = L.latLng(center.lat, center.lng)
       # Zoom to the current place
-      map.setView L.latLng(center.lat, center.lng, zoom)
+      map.setView L.latLng(center.lat, center.lng), zoom
       # Open a popup attach to the given country
       openCountryPopup map, country, center
       # Highlight the country without paning
@@ -64,7 +64,7 @@ angular.module("rsfIndex2015").controller "MapCtrl", ($scope, $rootScope, $compi
   # Return the target of the country link
   $scope.countryLinkTarget = if $state.is("embed") then "_blank" else "_parent"
   # Watch change on the selected country to update the zoom
-  $scope.$watch('country', ( (country)-> updateMapView(country, 6) ), yes)
+  $scope.$watch('country', ( (country)-> updateMapView(country, 4) ), yes)
   # Watch click on a geojson feature
   $scope.$on 'country:click', (ev, feature)-> updateMapView(feature.id)
   # Available year

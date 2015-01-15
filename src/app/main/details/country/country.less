@@ -1,6 +1,52 @@
 .main__details__country {
 
-  &__position table > tbody > tr > td {
-    vertical-align: middle;
+  @header-height: 500px;
+
+  padding-top: @header-height - @navbar-height - @navbar-margin-bottom;
+
+  &__header {
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 100;
+
+    &:after {
+      z-index: 110;
+      content:"";
+      position:absolute;
+      top:0;
+      left:0;
+      right:0;
+      bottom:0;
+      #gradient > .radial( fade(#000, 0), fade(#000, 100) );
+      pointer-events: none;
+    }
+
+    .map { height: @header-height; }
+  }
+
+  &__body {
+    min-height: @header-height;
+    background:@body-bg;
+    position:relative;
+    z-index: 200;
+
+    &__title {
+      position:absolute;
+      bottom:100%;
+      left:0;
+      right:0;
+      color:white;
+      padding:50px 0;
+      pointer-events: none;
+      a {
+        pointer-events: auto;
+      }
+    }
+
+    &__position table > tbody > tr > td {
+      vertical-align: middle;
+    }
   }
 }

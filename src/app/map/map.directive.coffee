@@ -28,7 +28,7 @@ angular.module "rsfIndex2015"
       # Map settings
       scope.settings =
         center:
-          zoom: 2
+          zoom: if scope.country then 4 else 2
         defaults:
           zoomControl: no
           scrollWheelZoom: no
