@@ -1,7 +1,18 @@
 .navbar {
   border:0;
-  border-bottom:2px @brand-primary solid;
   .box-shadow( 0 4px 5px -3px fade(#000, 30));
+
+  &:before {
+    z-index:100;
+    background:fade(@brand-primary, 90);
+    height:2px;
+    content:"";
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    display: block;
+  }
 
   .navbar-brand {
     position: relative;
