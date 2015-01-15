@@ -20,7 +20,7 @@
         a.dropdown-toggle(dropdown-toggle)
           | {{ selectedYear }} <span class="caret"></span>
         ul.dropdown-menu.dropdown-menu-left
-          li.text-center(ng-repeat="year in availableYears", ng-class="{ active: year === selectedYear }")
+          li(ng-repeat="year in availableYears", ng-class="{ active: year === selectedYear }")
             a(ng-click="selectYear(year)")
               | {{ year }}
 
