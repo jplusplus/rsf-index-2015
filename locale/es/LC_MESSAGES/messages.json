@@ -12,7 +12,7 @@
   "change_language":"Change the language",
   "country":"Country ",
   "country_note":"Country note",
-  "country_rank_in_year":"<strong>{{country}}<\/strong> is ranked at <em>#{{rank}}<\/em> in the <strong>{{year}}<\/strong> index with a score of <em>{{21.6}}<\/em>.",
+  "country_rank_in_year":"<strong>{{country}}<\/strong> is ranked at <em>#{{rank}}<\/em> in the <strong>{{year}}<\/strong> index with a score of <em>{{score}}<\/em>.",
   "decimal_mark":".",
   "detailed_ranking_desc":"detailed_ranking_desc",
   "detailed_ranking_title":"detailed_ranking_title",
