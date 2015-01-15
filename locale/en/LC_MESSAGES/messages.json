@@ -1,6 +1,9 @@
 {
-  "africa": "Africa",
-  "america": "America",
+  "americas": "Americas",
+  "asia-pacific": "Asia-Pacific",
+  "eeca": "EECA",
+  "eu-and-western-balkans": "EU and Western Balkans",
+  "mena": "MENA",
   "app_title": "RWB: Index 2015",
   "asia": "Asia",
   "avg_world": "World average",

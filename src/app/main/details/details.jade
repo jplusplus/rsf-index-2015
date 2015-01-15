@@ -22,10 +22,13 @@ ui-view.main__details
         {{ 'show_country_from_label' | translate }}&nbsp;
         select(ng-model="$parent.selectedZone")
           option(value='')        {{ 'world'  | translate }}
-          option(value='africa')  {{ 'africa'  | translate }}
-          option(value='america') {{ 'america' | translate }}
-          option(value='asia')    {{ 'asia'    | translate }}
-          option(value='europe')  {{ 'europe'  | translate }}
+          option(value='Africa') {{ 'africa' | translate }}
+          option(value='Americas') {{ 'americas' | translate }}
+          option(value='Asia-Pacific') {{ 'asia-pacific' | translate }}
+          option(value='EECA') {{ 'eeca' | translate }}
+          option(value='EU and Western Balkans') {{ 'eu-and-western-balkans' | translate }}
+          option(value='MENA') {{ 'mena' | translate }}
+
       label.col-sm-5
         .input-group
           input.form-control(type='text', ng-model="$parent.selectedName", placeholder='{{ "search_placeholder" | translate }}')
