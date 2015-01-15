@@ -41,7 +41,7 @@ ui-view.details
           tr
             th(style="width: 30px") {{ 'rank' | translate }}
             th {{ 'country' | translate }}
-            th {{ 'pluralisme' | translate }}
+            th {{ 'pluralism' | translate }}
             th {{ 'media_independence' | translate }}
             th {{ 'environment_selfcensorship' | translate }}
             th {{ 'legal_framework' | translate }}
@@ -56,7 +56,7 @@ ui-view.details
             td
               a(ui-sref="details.country({ country: country.country_code })")
                 {{ mapData.country(country).name() }}
-            td.text-center {{ country["pluralisme_2015"] | decimal }}
+            td.text-center {{ country["pluralism_2015"] | decimal }}
             td.text-center {{ country["media_independence_2015"] | decimal }}
             td.text-center {{ country["environment_and_self_censorship_2015"] | decimal }}
             td.text-center {{ country["legal_framework_2015"] | decimal }}
