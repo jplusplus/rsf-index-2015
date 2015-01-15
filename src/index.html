@@ -2,7 +2,7 @@
 <html class="no-js" ng-app="rsfIndex2015">
   <head>
     <meta charset="utf-8">
-    <title>{{ 'app_title'  | translate }}</title>
+    <title ng-bind="'app_title'| translate">RWB: Index 2015</title>
     <!-- _                   _
         | | ___    ___ _   _(_)___
      _  | |/ _ \  / __| | | | / __|
@@ -32,7 +32,7 @@
       document.write("<base href='" + href + "' />");
     </script>
   </head>
-  <body>
+  <body ng-cloak>
     <!--[if lt IE 10]>
       <p class="browsehappy">
         You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
