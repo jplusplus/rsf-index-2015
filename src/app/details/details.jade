@@ -56,14 +56,14 @@ ui-view.details
             td
               a(ui-sref="details.country({ country: country.country_code })")
                 {{ mapData.country(country).name() }}
-            td.text-center {{ country["pluralisme_2015"] }}
-            td.text-center {{ country["media_independence_2015"] }}
-            td.text-center {{ country["environment_and_self_censorship_2015"] }}
-            td.text-center {{ country["legal_framework_2015"] }}
-            td.text-center {{ country["institutional_transparency_2015"] }}
-            td.text-center {{ country["infrastructures_2015"] }}
-            td.text-center {{ country["exactions_2015"] }}
-            td.text-center {{ country["score_2015"] }}
+            td.text-center {{ country["pluralisme_2015"] | decimal }}
+            td.text-center {{ country["media_independence_2015"] | decimal }}
+            td.text-center {{ country["environment_and_self_censorship_2015"] | decimal }}
+            td.text-center {{ country["legal_framework_2015"] | decimal }}
+            td.text-center {{ country["institutional_transparency_2015"] | decimal }}
+            td.text-center {{ country["infrastructures_2015"] | decimal }}
+            td.text-center {{ country["exactions_2015"] | decimal }}
+            td.text-center {{ country["score_2015"] | decimal }}
           tr.warning.text-warning(ng-hide="ranking.length")
             td(colspan=10).text-center {{ 'no_result' | translate }}
 
