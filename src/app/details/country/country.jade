@@ -55,61 +55,45 @@
               th {{ 'avg_world' | translate }}
           tbody.text-center
             tr
-              td.text-left
-                {{ 'pluralisme' | translate }}
-              td
-                {{ rank["pluralisme_2015"] | decimal }}
-              td
-              td
+              td.text-left {{ 'pluralisme' | translate }}
+              td {{ rank["pluralisme_2015"] | decimal }}
+              td {{ zoneAverage("pluralisme_2015") | number:2 | decimal }}
+              td {{ worldAverage("pluralisme_2015") | number:2 | decimal }}
             tr
-              td.text-left
-                {{ 'media_independence' | translate }}
-              td
-                {{ rank["media_independence_2015"] | decimal }}
-              td
-              td
+              td.text-left {{ 'media_independence' | translate }}
+              td {{ rank["media_independence_2015"] | decimal }}
+              td {{ zoneAverage("media_independence_2015") | number:2 | decimal }}
+              td {{ worldAverage("media_independence_2015") | number:2 | decimal }}
             tr
-              td.text-left
-                {{ 'environment_selfcensorship' | translate }}
-              td
-                {{ rank["environment_and_self_censorship_2015"] | decimal }}
-              td
-              td
+              td.text-left {{ 'environment_selfcensorship' | translate }}
+              td {{ rank["environment_and_self_censorship_2015"] | decimal }}
+              td {{ zoneAverage("environment_and_self_censorship_2015") | number:2 | decimal }}
+              td {{ worldAverage("environment_and_self_censorship_2015") | number:2 | decimal }}
             tr
-              td.text-left
-                {{ 'legal_framework' | translate }}
-              td
-                {{ rank["legal_framework_2015"] | decimal }}
-              td
-              td
+              td.text-left {{ 'legal_framework' | translate }}
+              td {{ rank["legal_framework_2015"] | decimal }}
+              td {{ zoneAverage("legal_framework_2015") | number:2 | decimal }}
+              td {{ worldAverage("legal_framework_2015") | number:2 | decimal }}
             tr
-              td.text-left
-                {{ 'institutional_transparency' | translate }}
-              td
-                {{ rank["institutional_transparency_2015"] | decimal }}
-              td
-              td
+              td.text-left {{ 'institutional_transparency' | translate }}
+              td {{ rank["institutional_transparency_2015"] | decimal }}
+              td {{ zoneAverage("institutional_transparency_2015") | number:2 | decimal }}
+              td {{ worldAverage("institutional_transparency_2015") | number:2 | decimal }}
             tr
-              td.text-left
-                {{ 'infrastructures' | translate }}
-              td
-                {{ rank["infrastructures_2015"] | decimal }}
-              td
-              td
+              td.text-left {{ 'infrastructures' | translate }}
+              td {{ rank["infrastructures_2015"] | decimal }}
+              td {{ zoneAverage("infrastructures_2015") | number:2 | decimal }}
+              td {{ worldAverage("infrastructures_2015") | number:2 | decimal }}
             tr
-              td.text-left
-                {{ 'exactions' | translate }}
-              td
-                {{ rank["exactions_2015"] | decimal }}
-              td
-              td
+              td.text-left {{ 'exactions' | translate }}
+              td {{ rank["exactions_2015"] | decimal }}
+              td {{ zoneAverage("exactions_2015") | number:2 | decimal }}
+              td {{ worldAverage("exactions_2015") | number:2 | decimal }}
             tr
-              td.text-left
-                {{ 'global_score' | translate }}
-              td
-                {{ rank["score_2015"] | decimal }}
-              td
-              td
+              td.text-left {{ 'global_score' | translate }}
+              td {{ rank["score_2015"] | decimal }}
+              td {{ zoneAverage("score_2015") | number:2 | decimal }}
+              td {{ worldAverage("score_2015") | number:2 | decimal }}
       .row
         .col-sm-5
           .details__country__body__position

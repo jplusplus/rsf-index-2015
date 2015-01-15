@@ -1,7 +1,7 @@
 nav.navbar.navbar-static-top.navbar-default(ng-controller='NavbarCtrl', ng-show="shoudShowNavbar()")
   .container
     .navbar-header
-      a.navbar-brand(ui-sref='main')
+      a.navbar-brand(ui-sref='main', ng-if='useLanguage()')
         img(ng-src='http://rsf.org/squelettes/img/{{useLanguage()}}/logo-{{useLanguage()}}.png', height='25', width='auto')
 
     .collapse.navbar-collapse

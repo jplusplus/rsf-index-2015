@@ -31,5 +31,18 @@ angular.module("rsfIndex2015").controller "DetailsCountryCtrl", ($scope, $stateP
     switch $scope.countryIndicatorProgression(indicator, year)
       when -1 then 'label-success'
       when  1 then 'label-danger'
-      when  0 then 'label-inverse
-        '
+      when  0 then 'label-inverse'
+
+  $scope.average = (subset, indicator)->
+    # Only keep numbers
+    subset = _.filter subset, (item)-> not isNaN(item[indicator])
+    _.reduce(subset, (memo, rank)->
+      return 1*memo + 1*rank[indicator]
+    , 0) / Math.max(subset.length, 1)
+
+  $scope.worldAverage = (indicator)->
+    $scope.average mapData.ranking, indicator
+
+  zoneRanking = _.filter mapData.ranking, zone: $scope.rank["zone"]
+  $scope.zoneAverage = (indicator)->
+    $scope.average zoneRanking, indicator
