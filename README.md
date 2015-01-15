@@ -10,7 +10,7 @@ Install `node` and `npm` then run:
 make install
 ```
 
-You can now start serving static files with Grunt!
+You can now start serving static files with gulp!
 
 ```bash
 make run
@@ -35,4 +35,4 @@ This small application uses the following tools and opensource projects:
 * [LoDash](http://lodash.com/) - Utility library
 * [Bootstrap](http://getbootstrap.com/) - HTML and CSS framework
 * [Less](http://lesscss.org/) - CSS pre-processor
-* [CoffeeScript](http://coffeescript.org/)
+* [CoffeeScript](http://coffeescript.org/) - Javascript pre-processor
