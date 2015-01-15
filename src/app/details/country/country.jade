@@ -24,7 +24,7 @@
                   i.fa.fa-fw.fa-arrow-down.text-danger-bg(ng-show='countryIndicatorProgression("ranking", 2015) ===  1')
                   i(ng-show='countryIndicatorProgression("ranking", 2015) === 0') =&nbsp;
                   span.label(ng-class="countryIndicatorLabel('ranking', 2015)")
-                    | {{ rank.ranking_2015 - rank.ranking_2014 | number:2 | decimal | positive }}
+                    | {{ rank.ranking_2014 - rank.ranking_2015 | number:2 | decimal | positive }}
               span(ng-bind-html="'ranking_in_2014' | translate:{ ranking: rank.ranking_2014 }")
             .col-xs-3.details__country__body__title__banner__figure
               .lead
@@ -34,7 +34,7 @@
                   i.fa.fa-fw.fa-arrow-down.text-danger-bg(ng-show='countryIndicatorProgression("score", 2015) ===  1')
                   strong(ng-show='countryIndicatorProgression("score", 2015) === 0') =&nbsp;
                   span.label(ng-class="countryIndicatorLabel('score', 2015)")
-                    | {{ rank.score_2015 - rank.score_2014 | number:2 | decimal | positive }}
+                    | {{ rank.score_2014 - rank.score_2015 | number:2 | decimal | positive }}
               span(ng-bind-html="'score_in_2014' | translate:{ score: decimal(rank.score_2014) }")
             .col-xs-3.details__country__body__title__banner__figure
               .lead

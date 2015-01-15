@@ -74,6 +74,6 @@
   "score_in_2014":"<strong>{score}<\/strong> in 2014",
   "ranking_indicator":"Ranking",
   "score_indicator":"Score",
-  "barometer_sentence": "En <strong>2014</strong>, {journalists, plural, one{# journaliste a été tué} other{# journalistes ont été tués}} et {netcitizens, plural, one{# net-citoyen} other{# net-citoyens}}.",
+  "barometer_sentence": "En <strong>2014</strong>, {journalists, select, =0{aucun journaliste tué} =1{# journaliste tué} other {# journalistes tués}} et {netcitizens, select, =0{aucun net-citoyen} =1{# net-citoyen} other{# net-citoyens}}.",
   "barometer_warning": "Attention : le tableau « journalistes tués » ne recense que les professionnels des médias dont Reporters sans frontières a pu établir de façon avérée qu’ils ont été tués à cause de leurs activités de journaliste. Il ne comprend pas ceux, tués ou assassinés pour des motifs indépendants de leur profession ou pour lesquels le lien avec leur travail n’a pas pu encore être confirmé."
 }
