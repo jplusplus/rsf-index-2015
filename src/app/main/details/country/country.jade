@@ -24,7 +24,7 @@
                   i.fa.fa-fw.fa-arrow-down.text-danger-bg(ng-show='countryIndicatorProgression("ranking", 2015) ===  1')
                   i(ng-show='countryIndicatorProgression("ranking", 2015) === 0') =&nbsp;
                   span.label(ng-class="countryIndicatorLabel('ranking', 2015)")
-                    | {{ rank.ranking_2015 - rank.ranking_2014 | number:2 | positive }}
+                    | {{ rank.ranking_2015 - rank.ranking_2014 | number:2 | decimal | positive }}
               span(ng-bind-html="'ranking_in_2014' | translate:{ ranking: rank.ranking_2014 }")
             .col-xs-3.main__details__country__body__title__banner__figure
               .lead
@@ -34,14 +34,14 @@
                   i.fa.fa-fw.fa-arrow-down.text-danger-bg(ng-show='countryIndicatorProgression("score", 2015) ===  1')
                   strong(ng-show='countryIndicatorProgression("score", 2015) === 0') =&nbsp;
                   span.label(ng-class="countryIndicatorLabel('score', 2015)")
-                    | {{ rank.score_2015 - rank.score_2014 | number:2 | positive }}
-              span(ng-bind-html="'score_in_2014' | translate:{ score: rank.score_2014 }")
+                    | {{ rank.score_2015 - rank.score_2014 | number:2 | decimal | positive }}
+              span(ng-bind-html="'score_in_2014' | translate:{ score: decimal(rank.score_2014) }")
             .col-xs-3.main__details__country__body__title__banner__figure
               .lead
                 | {{ 'score_without_exactions' | translate }}
                 .main__details__country__body__title__banner__figure__label
                   span.label.label-inverse
-                    | {{ rank.score_2015 - 0.4 | number:2 }}
+                    | {{ rank.score_2015 - 0.4 | number:2 | decimal }}
 
     .container
       .main__details__country__body__detailed
@@ -58,56 +58,56 @@
               td.text-left
                 {{ 'pluralisme' | translate }}
               td
-                {{ rank["pluralisme_2015"] }}
+                {{ rank["pluralisme_2015"] | decimal }}
               td
               td
             tr
               td.text-left
                 {{ 'media_independence' | translate }}
               td
-                {{ rank["media_independence_2015"] }}
+                {{ rank["media_independence_2015"] | decimal }}
               td
               td
             tr
               td.text-left
                 {{ 'environment_selfcensorship' | translate }}
               td
-                {{ rank["environment_and_self_censorship_2015"] }}
+                {{ rank["environment_and_self_censorship_2015"] | decimal }}
               td
               td
             tr
               td.text-left
                 {{ 'legal_framework' | translate }}
               td
-                {{ rank["legal_framework_2015"] }}
+                {{ rank["legal_framework_2015"] | decimal }}
               td
               td
             tr
               td.text-left
                 {{ 'institutional_transparency' | translate }}
               td
-                {{ rank["institutional_transparency_2015"] }}
+                {{ rank["institutional_transparency_2015"] | decimal }}
               td
               td
             tr
               td.text-left
                 {{ 'infrastructures' | translate }}
               td
-                {{ rank["infrastructures_2015"] }}
+                {{ rank["infrastructures_2015"] | decimal }}
               td
               td
             tr
               td.text-left
                 {{ 'exactions' | translate }}
               td
-                {{ rank["exactions_2015"] }}
+                {{ rank["exactions_2015"] | decimal }}
               td
               td
             tr
               td.text-left
                 {{ 'global_score' | translate }}
               td
-                {{ rank["score_2015"] }}
+                {{ rank["score_2015"] | decimal }}
               td
               td
       .row

@@ -32,7 +32,7 @@ angular.module("rsfIndex2015").controller "MapCtrl", ($scope, $rootScope, $compi
     scope.countryRankData =
       country: $scope.data.country(country).name()
       rank   : rank["ranking_" + $scope.selectedYear]
-      score  : rank["score_" + $scope.selectedYear]
+      score  : $filter('decimal') rank["score_" + $scope.selectedYear]
       year   : 2015
     scope.country =
       'name': $scope.data.country(country).name

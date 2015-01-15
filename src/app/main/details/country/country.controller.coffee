@@ -1,9 +1,10 @@
-angular.module("rsfIndex2015").controller "MainDetailsCountryCtrl", ($scope, $stateParams, mapData)->
+angular.module("rsfIndex2015").controller "MainDetailsCountryCtrl", ($scope, $stateParams, $filter, mapData)->
   $scope.selectedCountry = $stateParams.country
   $scope.country         = mapData.country $stateParams.country
   $scope.rank            = $scope.country.rank()
   $scope.positionYears   = ( y for y in [2002..2014] ).reverse()
   $scope.mapData         = mapData
+  $scope.decimal         = $filter 'decimal'
   $scope.countryRankData =
     country: $scope.country.name()
     rank   : $scope.rank["ranking_2015"]
