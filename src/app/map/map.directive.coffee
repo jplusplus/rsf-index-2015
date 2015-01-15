@@ -12,13 +12,17 @@ angular.module "rsfIndex2015"
       countryLayer = null
       # Color every feature
       featureStyle = (feature)->
-        color = scope.data.country(feature.id).color scope.selectedYear
-        # Returns the style object
-        fillColor: color
-        weight: if feature.id is scope.country then 3 else 1,
-        opacity: if color? then 1 else 0,
-        color: 'white',
-        fillOpacity: if feature.id is scope.country then 1 else 0.7
+        country = scope.data.country(feature.id)
+        if country.rank()?
+          # Returns the style object
+          fillColor: country.color scope.selectedYear
+          weight: if feature.id is scope.country then 3 else 1,
+          opacity: 1
+          color: 'white',
+          fillOpacity: if feature.id is scope.country then 1 else 0.7
+        else
+          opacity: 0
+          fillOpacity: 0
       # Update every feature
       updateMapFeatures = (year, oldYear)->
         # Only when year changes

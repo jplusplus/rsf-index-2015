@@ -5,12 +5,14 @@ angular.module("rsfIndex2015").controller "MapCtrl", ($scope, $rootScope, $compi
   markerPopupHtml = '<div ng-include="\'app/map/map.popup.html\'"></div>'
 
   updateMapView = (country, zoom)->
+    data = $scope.data.country(country)
+    rank = data.rank()
     # Do not zoom pn empty value
-    return unless country?
+    return if not country? or not rank? or rank['ranking_' + $scope.selectedYear] is ""
     # Retreive map instance
     leafletData.getMap($scope.mapId).then (map)->
       # Find the coordinate of the given country
-      center = do $scope.data.country(country).center
+      center = do data.center
       center = L.latLng(center.lat, center.lng)
       # Zoom to the current place
       map.setView L.latLng(center.lat, center.lng), zoom
@@ -61,6 +63,7 @@ angular.module("rsfIndex2015").controller "MapCtrl", ($scope, $rootScope, $compi
   $scope.countryRank = (country)-> 1 * country['ranking_' + $scope.selectedYear]
   $scope.countryColor = (country)-> $scope.data.country(country).color $scope.selectedYear
   $scope.countryContrast = (country)-> $filter('contrast') $scope.countryColor(country)
+  $scope.withRank = (country)-> country['ranking_' + $scope.selectedYear] isnt ""
   # Return the target of the country link
   $scope.countryLinkTarget = if $state.is("embed") then "_blank" else "_parent"
   # Watch change on the selected country to update the zoom
