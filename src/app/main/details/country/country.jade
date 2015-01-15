@@ -20,28 +20,28 @@
               .lead
                 | {{ 'ranking_indicator' | translate }}
                 .main__details__country__body__title__banner__figure__label
-                  i.fa.fa-fw.fa-arrow-up.text-success-bg(ng-show='countryIndicatorProgression("ranking", 2015) ===  1')
-                  i.fa.fa-fw.fa-arrow-down.text-danger-bg(ng-show='countryIndicatorProgression("ranking", 2015) === -1')
+                  i.fa.fa-fw.fa-arrow-up.text-success-bg(ng-show='countryIndicatorProgression("ranking", 2015) ===  -1')
+                  i.fa.fa-fw.fa-arrow-down.text-danger-bg(ng-show='countryIndicatorProgression("ranking", 2015) ===  1')
                   i(ng-show='countryIndicatorProgression("ranking", 2015) === 0') =&nbsp;
                   span.label(ng-class="countryIndicatorLabel('ranking', 2015)")
-                    | {{ rank.ranking_2015 - rank.ranking_2014 | positive }}
+                    | {{ rank.ranking_2015 - rank.ranking_2014 | number:2 | positive }}
               span(ng-bind-html="'ranking_in_2014' | translate:{ ranking: rank.ranking_2014 }")
             .col-xs-3.main__details__country__body__title__banner__figure
               .lead
                 | {{ 'score_indicator' | translate }}
                 .main__details__country__body__title__banner__figure__label
-                  i.fa.fa-fw.fa-arrow-up.text-success-bg(ng-show='countryIndicatorProgression("score", 2015) ===  1')
-                  i.fa.fa-fw.fa-arrow-down.text-danger-bg(ng-show='countryIndicatorProgression("score", 2015) === -1')
-                  strong(gng-show='countryIndicatorProgression("score", 2015) === 0') =&nbsp;
+                  i.fa.fa-fw.fa-arrow-up.text-success-bg(ng-show='countryIndicatorProgression("score", 2015) ===  -1')
+                  i.fa.fa-fw.fa-arrow-down.text-danger-bg(ng-show='countryIndicatorProgression("score", 2015) ===  1')
+                  strong(ng-show='countryIndicatorProgression("score", 2015) === 0') =&nbsp;
                   span.label(ng-class="countryIndicatorLabel('score', 2015)")
-                    | {{ rank.score_2015 - rank.score_2014 | positive }}
+                    | {{ rank.score_2015 - rank.score_2014 | number:2 | positive }}
               span(ng-bind-html="'score_in_2014' | translate:{ score: rank.score_2014 }")
             .col-xs-3.main__details__country__body__title__banner__figure
               .lead
                 | {{ 'score_without_exactions' | translate }}
                 .main__details__country__body__title__banner__figure__label
                   span.label.label-inverse
-                    | {{ rank.score_2015 - 0.4 }}
+                    | {{ rank.score_2015 - 0.4 | number:2 }}
 
     .container
       .main__details__country__body__detailed
@@ -127,8 +127,8 @@
                     strong.lead {{ rank["ranking_" + year] }}
                     | &nbsp;/&nbsp;180
                   td.text-right
-                    i.fa.fa-fw.fa-arrow-up(ng-show='countryIndicatorProgression("ranking", year) ===  1')
-                    i.fa.fa-fw.fa-arrow-down(ng-show='countryIndicatorProgression("ranking", year) === -1')
+                    i.fa.fa-fw.fa-arrow-up(ng-show='countryIndicatorProgression("ranking", year) ===  -1')
+                    i.fa.fa-fw.fa-arrow-down(ng-show='countryIndicatorProgression("ranking", year) === 1')
         .col-sm-7
           .main__details__country__body__barometer
             h3 {{ 'barometer_title' | translate }}

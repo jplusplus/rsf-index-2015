@@ -23,12 +23,12 @@ angular.module("rsfIndex2015").controller "MainDetailsCountryCtrl", ($scope, $st
 
   $scope.countryIndicatorClass = (indicator, year)->
     switch $scope.countryIndicatorProgression(indicator, year)
-      when  1 then 'success text-success'
-      when -1 then 'danger text-danger'
+      when -1 then 'success text-success'
+      when  1 then 'danger text-danger'
 
   $scope.countryIndicatorLabel = (indicator, year)->
     switch $scope.countryIndicatorProgression(indicator, year)
-      when  1 then 'label-success'
-      when -1 then 'label-danger'
+      when -1 then 'label-success'
+      when  1 then 'label-danger'
       when  0 then 'label-inverse
         '
