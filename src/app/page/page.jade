@@ -1,9 +1,9 @@
 ui-view.page
   .container
-    ul.list-unstyled
+    ul.list-unstyled.page__list
       li(ng-repeat='single in page.all()')
         .media
-          a.media-left(ng-href="{{ link(single) }}")
+          a.media-left.page__list__media(ng-href="{{ link(single) }}")
             img.img-thumbnail(ng-src="{{ single.thumbnail || single.picture }}", width="150", alt)
           .media-body
             h3.media-heading
