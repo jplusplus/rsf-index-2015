@@ -1,14 +1,15 @@
 .main {
 
+  margin-top:-1px * @navbar-margin-bottom;
+
   &__map {
     height:600px;
   }
 
   &__summary {
-    @summary-bg: darken(#414141, 40);
+    @summary-bg: darken(#414141, 20);
     background:@summary-bg;
     padding:60px 0;
-    margin-top:30px;
     color:white;
     // Removes the gap between the body and the footer
     margin-bottom:-60px;

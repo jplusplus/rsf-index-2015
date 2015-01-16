@@ -1,5 +1,6 @@
 .map {
   @ranking-width: 370px;
+  @ranking-bg: darken(#414141, 10);
 
   display: block;
   position: relative;
@@ -66,7 +67,7 @@
     bottom:0px;
     width: @ranking-width;
     color:white;
-    background:#414141;
+    background:@ranking-bg;
     padding:0;
     font-size:0.9em;
     overflow: auto;
@@ -79,7 +80,7 @@
       padding:20px;
       padding-bottom:0;
       margin:0;
-      color:mix(white, #414141);
+      color:mix(white, @ranking-bg);
 
       .dropdown-toggle {
         color:white;
@@ -103,7 +104,7 @@
       .label();
       background:white;
       html body &:hover, & {
-        color:#414141;
+        color:@ranking-bg;
       }
     }
 
@@ -118,12 +119,12 @@
         cursor: pointer;
 
         &:nth-child(odd) {
-          background:lighten(#414141, 5);
+          background:lighten(@ranking-bg, 5);
         }
 
         &--highlight {
           font-weight: bold;
-          background:lighten(#414141, 30) !important;
+          background:lighten(@ranking-bg, 30) !important;
         }
 
         &__score {
@@ -134,7 +135,7 @@
           white-space: nowrap;
           text-align: center;
           display: inline-block;
-          border-left:lighten(#414141, 10) 1px solid;
+          border-left:lighten(@ranking-bg, 10) 1px solid;
         }
       }
     }
