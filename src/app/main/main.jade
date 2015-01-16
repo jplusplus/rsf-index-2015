@@ -7,9 +7,13 @@
       .container
         .row
           .col-sm-4
-            p Lorem ispum
-            .text-right
-              a(ui-sref="presentation") {{ "more_info" | translate }}
+            .panel.panel-default.main__summary__panel
+              .panel-heading.main__summary__panel__heading
+                h3 {{ "presentation" | translate }}
+              .panel-body
+                p {{ "presentation_desc" | translate }}
+                .text-right
+                  a(ui-sref="presentation") {{ "more_info" | translate }}
           .col-sm-4
             .panel.panel-default.main__summary__panel
               .panel-heading.main__summary__panel__heading
