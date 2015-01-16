@@ -57,6 +57,8 @@ angular.module('rsfIndex2015').factory 'MapData', ($q, $http, $translate, $filte
       url: (lang=$translate.use() or "en")-> rankingTree[code]["url_country_page_" + lang]
       # Get the ranking of the given country
       rank: -> rankingTree[code]
+      # True if the country is ranked in the given year
+      hasRanking: (year=2015)-> rankingTree[code] and rankingTree[code]["ranking_" + year]
       # Compute the color of the country
       color: (year=2015)->
         colorKey = "score_" + year + "_color"

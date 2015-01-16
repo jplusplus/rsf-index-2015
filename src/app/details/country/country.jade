@@ -7,10 +7,11 @@
       .container
         h1(ng-bind-html="'details_about_title' | translate:{ country: country.name() }")
         p.lead
-          span(ng-bind-html="'country_rank_in_year' | translate:countryRankData")
-          br
+          span(ng-show='country.hasRanking()')
+            span(ng-bind-html="'country_rank_in_year' | translate:countryRankData")
+            br
           span(ng-bind-html="'see_detail_on_rsf' | translate:{ url: country.url() }")
-      .details__country__body__title__banner
+      .details__country__body__title__banner(ng-show='country.hasRanking()')
         .container
           .row
             .col-xs-3.details__country__body__title__banner__figure
@@ -108,11 +109,15 @@
                 tr(ng-repeat="year in positionYears", ng-class='countryIndicatorClass("ranking", year)')
                   td.lead {{ year }}
                   td
-                    strong.lead \#{{ rank["ranking_" + year] }}
-                    | &nbsp;/&nbsp;180
+                    span(ng-show="rank['ranking_' + year]")
+                      strong.lead \#{{ rank["ranking_" + year] }}
+                      | &nbsp;/&nbsp;180
+                    span(ng-hide="rank['ranking_' + year]")
+                      | {{ 'no_ranking_this_year' | translate }}
                   td.text-right
-                    i.fa.fa-fw.fa-arrow-up(ng-show='countryIndicatorProgression("ranking", year) ===  -1')
-                    i.fa.fa-fw.fa-arrow-down(ng-show='countryIndicatorProgression("ranking", year) === 1')
+                    span(ng-show="rank['ranking_' + year]")
+                      i.fa.fa-fw.fa-arrow-up(ng-show='countryIndicatorProgression("ranking", year) ===  -1')
+                      i.fa.fa-fw.fa-arrow-down(ng-show='countryIndicatorProgression("ranking", year) === 1')
         .col-sm-7
           .details__country__body__barometer
             h3 {{ 'barometer_title' | translate }}

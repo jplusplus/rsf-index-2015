@@ -29,8 +29,17 @@ angular.module("rsfIndex2015").controller "DetailsCountryCtrl", ($scope, $stateP
           # And copy the value
           predator[newKey] = value
 
-  $scope.countryIndicatorProgression = (indicator, year)->
+  lastYearWithData = (indicator, year)->
     previousYear = year - 1
+    if $scope.rank[indicator + "_" + previousYear]
+      return previousYear
+    else if previousYear > 2002
+      return lastYearWithData indicator, previousYear
+    else
+      return -1
+
+  $scope.countryIndicatorProgression = (indicator, year)->
+    previousYear = lastYearWithData indicator, year
     if previousYear >= 2002
       diff = $scope.rank[indicator + "_" + year] - $scope.rank[indicator + "_" + previousYear]
       # Go up
@@ -41,9 +50,12 @@ angular.module("rsfIndex2015").controller "DetailsCountryCtrl", ($scope, $stateP
     return 0
 
   $scope.countryIndicatorClass = (indicator, year)->
-    switch $scope.countryIndicatorProgression(indicator, year)
-      when -1 then 'success text-success'
-      when  1 then 'danger text-danger'
+    if $scope.rank[indicator + "_" + year]
+      switch $scope.countryIndicatorProgression(indicator, year)
+        when -1 then 'success text-success'
+        when  1 then 'danger text-danger'
+    else
+      'text-muted'
 
   $scope.countryIndicatorLabel = (indicator, year)->
     switch $scope.countryIndicatorProgression(indicator, year)
