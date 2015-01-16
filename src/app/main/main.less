@@ -1,21 +1,65 @@
 .main {
 
   &__summary {
-
-    border-top:2px @brand-primary solid;
-    background:#414141;
+    @summary-bg: darken(#414141, 40);
+    background:@summary-bg;
     padding:60px 0;
     margin-top:30px;
     color:white;
 
     &__panel {
+      display: block;
       color:@text-color;
       margin-bottom:30px;
+      color: white;
+      background:lighten(@summary-bg, 10);
+      height:250px;
+      position: relative;
+      overflow: hidden;
+
+      &, &__heading, &__body {
+        .transition(0.4s);
+      }
+
+      &:hover {
+        color:white;
+        text-decoration: none;
+      }
+
+      &:hover & {
+
+       &__heading {
+          border-color:white;
+          padding:20px 0;
+        }
+
+        &__body {
+          .translate(0, 0);
+          opacity:1;
+        }
+      }
 
       &__heading {
+        margin:0 20px;
+        padding:30px 0;
+        border-bottom: 3px solid fade(white, 0) ;
+
         h3 {
           margin:0;
+          text-align: right;
         }
+      }
+
+      &__body {
+        position:absolute;
+        bottom:0;
+        left:0;
+        right:0;
+        padding:30px;
+        font-size:1.1em;
+        font-weight: 300;
+        opacity:0;
+        .translate(0, 100%);
       }
     }
   }
