@@ -9,4 +9,5 @@ angular.module "rsfIndex2015", [
   'pascalprecht.translate'
   'ngSocial'
   'tableSort'
+  'perfect_scrollbar'
 ]
