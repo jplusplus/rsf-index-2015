@@ -17,10 +17,18 @@ angular.module "rsfIndex2015"
         _.every searchWords, (searchWord)-> countryName.search( searchWord.toLowerCase() ) isnt -1
       # Returns a function that tests both of the filters
       (country)-> isZone(country) and isName(country)
+
     # Return the country rank
-    $scope.countryRank = (country)-> 1 * country['ranking_2015']
     $scope.countryColor = (country)-> $scope.mapData.country(country).color(2015)
     $scope.countryContrast = (country)-> $filter('contrast') $scope.countryColor(country)
+    $scope.countryName = (country)-> $scope.mapData.country(country).name()
+    # Prepare data
+    angular.forEach mapData.ranking, (rank)->
+      # Convert every sortable key to numbers
+      for key of rank
+        # A sortable key ends by '_2015'
+        if key.indexOf("_2015") is ( key.length - 5)
+          rank[key] = 1 * rank[key]
     # List of the country, updated each time the user look for something
     $scope.ranking = mapData.ranking
     # Watch the filter

@@ -1,0 +1,42 @@
+table th.tablesort-sortable {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+
+    cursor: pointer;
+    position:relative;
+
+
+    i {
+        position:absolute;
+        bottom:0;
+        left:50%;
+        .translate(-50%, 0);
+    }
+
+
+    &:hover i:before {
+        content: "";
+    }
+
+    &.tablesort-desc i:before {
+        content: "";
+    }
+
+    &.tablesort-asc i:before {
+        content: "";
+    }
+
+
+    &.tablesort-asc,
+    &.tablesort-desc{
+        background-color:#414141;
+        color:white;
+    }
+}
+
+.showIfLast { .hidden() }
+
+

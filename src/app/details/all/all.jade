@@ -36,21 +36,41 @@
             button.btn.btn-primary(type='button') {{ 'search_btn' | translate }}
 
     .table-responsive.panel.panel-default
-      table.table.table-condensed.table-striped.table-hover
+      table.table.table-condensed.table-striped.table-hover(ts-wrapper)
         thead
           tr
-            th(style="width: 30px") {{ 'rank' | translate }}
-            th {{ 'country' | translate }}
-            th {{ 'pluralism' | translate }}
-            th {{ 'media_independence' | translate }}
-            th {{ 'environment_selfcensorship' | translate }}
-            th {{ 'legal_framework' | translate }}
-            th {{ 'institutional_transparency' | translate }}
-            th {{ 'infrastructures' | translate }}
-            th {{ 'exactions' | translate }}
-            th {{ 'global_score' | translate }}
+            th(ts-criteria="ranking_2015", ts-default, style="width: 30px")
+              | {{ 'rank' | translate }}
+              i.fa
+            th(ts-criteria="country_code | filter:countryName ")
+              | {{ 'country' | translate }}
+              i.fa
+            th(ts-criteria="pluralism_2015")
+              | {{ 'pluralism' | translate }}
+              i.fa
+            th(ts-criteria="media_independence_2015")
+              | {{ 'media_independence' | translate }}
+              i.fa
+            th(ts-criteria="environment_and_self_censorship_2015")
+              | {{ 'environment_selfcensorship' | translate }}
+              i.fa
+            th(ts-criteria="legal_framework_2015")
+              | {{ 'legal_framework' | translate }}
+              i.fa
+            th(ts-criteria="institutional_transparency_2015")
+              | {{ 'institutional_transparency' | translate }}
+              i.fa
+            th(ts-criteria="infrastructures_2015")
+              | {{ 'infrastructures' | translate }}
+              i.fa
+            th(ts-criteria="exactions_2015")
+              | {{ 'exactions' | translate }}
+              i.fa
+            th(ts-criteria="score_2015")
+              | {{ 'global_score' | translate }}
+              i.fa
         tbody
-          tr(ng-repeat='country in ranking | orderBy:countryRank', )
+          tr(ng-repeat='country in ranking track by $index', ts-repeat)
             td.text-center(ng-style="{ background: countryColor(country), color: countryContrast(country) }")
               strong {{ country['ranking_2015'] }}
             td

@@ -8,4 +8,5 @@ angular.module "rsfIndex2015", [
   'leaflet-directive'
   'pascalprecht.translate'
   'ngSocial'
+  'tableSort'
 ]
