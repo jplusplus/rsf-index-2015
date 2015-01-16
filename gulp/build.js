@@ -222,4 +222,4 @@ gulp.task('deploy', ['build'], function() {
   }));
 });
 
-gulp.task('build', ['html', 'images', 'fonts', 'misc', 'csv', 'markdown', 'locale', 'assets']);
+gulp.task('build', ['html', 'images', 'fonts', 'csv', 'markdown', 'locale', 'misc', 'assets']);
