@@ -27,10 +27,4 @@ angular.module "rsfIndex2015"
     # Watch the filter
     $scope.$watchCollection '[selectedName, selectedZone]', (filters)->
       $scope.ranking = _.filter mapData.ranking, countryFilter.apply(@, filters)
-      # Prepare data
-      angular.forEach $scope.ranking, (rank)->
-        # Convert every sortable key to numbers
-        for key of rank
-          # Value must be a number to be casted
-          rank[key] = 1 * rank[key] unless isNaN rank[key]
 

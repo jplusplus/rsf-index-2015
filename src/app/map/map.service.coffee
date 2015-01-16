@@ -9,6 +9,14 @@ angular.module('rsfIndex2015').factory 'MapData', ($q, $http, $translate, $filte
   ).then (hash)->
     # Color scale
     countryColor = chroma.scale(['#410E2E', '#9F042B', '#EA191E', '#F1FB8D', '#FFFFFF']).domain [100, 0]
+    # Prepare data
+    angular.forEach hash.ranking.data, (rank)->
+      # Convert every sortable key to numbers
+      for key of rank
+        # Must have a value
+        if ["", null, undefined].indexOf(rank[key]) is -1
+          # Value must be a number to be casted
+          rank[key] = 1 * rank[key] unless isNaN rank[key]
     # Create an object with every country to allow fast country lookup
     rankingTree  = _.reduce(hash.ranking.data, (result, country)->
       # Pre-calculate 2015 colors
