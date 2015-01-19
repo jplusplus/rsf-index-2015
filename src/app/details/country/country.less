@@ -20,9 +20,9 @@
       left:0;
       right:0;
       bottom:0;
-      background: fade(#000, 50);
-      #gradient > .radial( fade(#000, 0), fade(#000, 100) );
       pointer-events: none;
+      #gradient > .radial( fade(#000, 0), fade(#000, 100) );
+      .ie9 & { background: fade(#000, 50); }
     }
 
     .map { height: @header-height; }
