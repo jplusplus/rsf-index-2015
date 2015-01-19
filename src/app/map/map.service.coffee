@@ -41,7 +41,6 @@ angular.module('rsfIndex2015').factory 'MapData', ($q, $http, $translate, $filte
       result[value.year] = 1* value.count
       result
     , {})
-    console.log countTree
     # Returns an object
     coordinates: hash.coordinates.data
     topojson   : hash.topojson.data
