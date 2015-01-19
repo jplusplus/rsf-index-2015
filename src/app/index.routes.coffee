@@ -3,7 +3,7 @@ angular.module "rsfIndex2015"
     $urlRouterProvider.otherwise '/'
     $locationProvider.hashPrefix '!'
     $locationProvider.html5Mode no
-	.run  ($rootScope, Progress) ->
+  .run  ($rootScope, Progress) ->
     $rootScope.$on "$stateChangeStart", ->
       # Go to the top of the window
       $("body").scrollTo 0, 400
