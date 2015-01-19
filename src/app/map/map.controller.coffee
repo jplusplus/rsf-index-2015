@@ -28,7 +28,6 @@ angular.module("rsfIndex2015").controller "MapCtrl", ($scope, $rootScope, $compi
     rank = $scope.data.country(country).rank()
     # Create a new scope for this popup
     scope = $scope.$new no
-    scope.useLanguage = $translate.use
     scope.countryRankData =
       country: $scope.data.country(country).name()
       rank   : rank["ranking_" + $scope.selectedYear]
@@ -58,6 +57,7 @@ angular.module("rsfIndex2015").controller "MapCtrl", ($scope, $rootScope, $compi
       controller: 'MapShareCtrl'
       size: 'lg'
 
+  $scope.useLanguage = $translate.use
   # Change the year in the parent scope
   $scope.selectYear = (year)-> angular.extend $scope, selectedYear: year
   # Return the country rank

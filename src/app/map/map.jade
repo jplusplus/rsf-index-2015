@@ -1,6 +1,9 @@
 .map(ng-if='settings', ng-class="{ 'map--country-selected': country }")
   leaflet.map__workspace(center='settings.center', defaults="settings.defaults" id='{{mapId}}')
 
+  .map__brand.panel.panel-default(ng-show=" 'embed' | isState ")
+    a(href="http://rsf.org", target="_blank")
+      img(ng-src='http://rsf.org/squelettes/img/{{useLanguage()}}/logo-{{useLanguage()}}.png', height='25')
   .map__header
     span.map__header__legend.panel.panel-default
       span(ng-style="{ color: data.brewer(0)  }") ◼
