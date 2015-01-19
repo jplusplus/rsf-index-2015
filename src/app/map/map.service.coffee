@@ -4,6 +4,7 @@ angular.module('rsfIndex2015').factory 'MapData', ($q, $http, $translate, $filte
     topojson   : $http.get("assets/json/countries.topo.json")
     names      : $http.get("assets/json/countries.names.json")
     ranking    : $http.get("assets/json/countries.ranking.json")
+    count      : $http.get("assets/json/countries.count.json")
     # Do not start before the translation is loaded
     decimal    : ($translate)-> $translate('decimal_mark')
   ).then (hash)->
@@ -35,11 +36,18 @@ angular.module('rsfIndex2015').factory 'MapData', ($q, $http, $translate, $filte
       result[country.iso_3] = country
       result
     , {})
+    # Convert count by year into a tree
+    countTree = _.reduce( hash.count.data, (result, value)->
+      result[value.year] = 1* value.count
+      result
+    , {})
+    console.log countTree
     # Returns an object
     coordinates: hash.coordinates.data
     topojson   : hash.topojson.data
     ranking    : hash.ranking.data
     names      : namesTree
+    count      : countTree
     brewer     : countryColor
     # Help function to retreive country data
     country: (code)->

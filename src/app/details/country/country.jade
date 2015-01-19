@@ -111,7 +111,8 @@
                   td
                     span(ng-show="rank['ranking_' + year]")
                       strong.lead \#{{ rank["ranking_" + year] }}
-                      | &nbsp;/&nbsp;180
+                      | &nbsp;/&nbsp;
+                      | {{ mapData.count[year] }}
                     span(ng-hide="rank['ranking_' + year]")
                       | {{ 'no_ranking_this_year' | translate }}
                   td.text-right
