@@ -46,7 +46,7 @@ angular.module "rsfIndex2015"
         # Target selector
         target = "[data-country='#{country}']"
         # Scroll to the element in 700ms
-        $(".map__ranking", element).scrollTo target, 1200, offset: -100
+        $(".map__ranking .scroller", element).scrollTo target, 1200, offset: -100
       # Retreive map instance
       leafletData.getMap(scope.mapId).then (map)->
         bindClick = (feature, layer)->
