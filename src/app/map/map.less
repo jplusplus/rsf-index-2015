@@ -1,11 +1,14 @@
 .map {
   @ranking-width: 370px;
-  @ranking-bg: darken(#414141, 10);
+  @ranking-bg: @gray-darker;
+  @ranking-color: contrast(@ranking-bg);
+  @ranking-highlight-bg: white;
 
   display: block;
   position: relative;
   overflow: hidden;
   height: 600px;
+
 
   &__workspace {
     height:100%;
@@ -66,8 +69,8 @@
     top:0px;
     bottom:0px;
     width: @ranking-width;
-    color:white;
     background:@ranking-bg;
+    color:@ranking-color;
     padding:0;
     font-size:0.9em;
     overflow: hidden;
@@ -90,10 +93,10 @@
       padding:20px;
       padding-bottom:0;
       margin:0;
-      color:mix(white, @ranking-bg);
+      color:mix(@ranking-color, @ranking-bg);
 
       .dropdown-toggle {
-        color:white;
+        color:@ranking-color;
         text-decoration:underline;
       }
 
@@ -130,12 +133,13 @@
         cursor: pointer;
 
         &:nth-child(odd) {
-          background:lighten(@ranking-bg, 5);
+          background:mix(@ranking-bg, @ranking-color, 90);
         }
 
         &--highlight {
           font-weight: bold;
-          background:lighten(@ranking-bg, 30) !important;
+          background:@ranking-highlight-bg !important;
+          color:contrast(@ranking-highlight-bg);
         }
 
         &__score {
@@ -152,6 +156,9 @@
     }
   }
 
+  & &__brand, &  &__header__legend {
+    .box-shadow( 0 4px 5px -3px fade(#000, 70));
+  }
 
   &__brand {
     display: block;

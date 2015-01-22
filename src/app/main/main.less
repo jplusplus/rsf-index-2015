@@ -7,8 +7,7 @@
   }
 
   &__summary {
-    @summary-bg: darken(#414141, 20);
-    background:@summary-bg;
+    background: white;
     padding:60px 0;
     color:white;
     // Removes the gap between the body and the footer
@@ -16,10 +15,9 @@
 
     &__panel {
       display: block;
-      color:@text-color;
       margin-bottom:30px;
-      color: white;
-      background:lighten(@summary-bg, 10);
+      color: @navbar-default-link-color;
+      background:@navbar-default-bg;
       height:250px;
       position: relative;
       overflow: hidden;
@@ -29,14 +27,14 @@
       }
 
       &:hover {
-        color:white;
+        color:@navbar-default-link-color;
         text-decoration: none;
       }
 
       &:hover & {
 
        &__heading {
-          border-color:white;
+          border-color:@navbar-default-link-color;
           padding:20px 0;
         }
 
@@ -49,7 +47,7 @@
       &__heading {
         margin:0 20px;
         padding:30px 0;
-        border-bottom: 3px solid fade(white, 0) ;
+        border-bottom: 3px solid fade(@navbar-default-link-color, 0) ;
 
         h3 {
           margin:0;

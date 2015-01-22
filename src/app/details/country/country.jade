@@ -107,7 +107,7 @@
                   th(style='width: 200px') {{ 'position' | translate }}
                   th
               tbody.text-center
-                tr(ng-repeat="year in positionYears", ng-class='countryIndicatorClass("ranking", year)')
+                tr(ng-repeat="year in positionYears")
                   td.lead {{ year }}
                   td
                     span(ng-show="rank['ranking_' + year]")
@@ -116,7 +116,7 @@
                       | {{ mapData.count[year] }}
                     span(ng-hide="rank['ranking_' + year]")
                       | {{ 'no_ranking_this_year' | translate }}
-                  td.text-right
+                  td.text-right(ng-class='countryIndicatorClass("ranking", year)')
                     span(ng-show="rank['ranking_' + year]")
                       i.fa.fa-fw.fa-arrow-up(ng-show='countryIndicatorProgression("ranking", year) ===  -1')
                       i.fa.fa-fw.fa-arrow-down(ng-show='countryIndicatorProgression("ranking", year) === 1')

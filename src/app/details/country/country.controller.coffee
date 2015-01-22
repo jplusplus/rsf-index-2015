@@ -52,8 +52,8 @@ angular.module("rsfIndex2015").controller "DetailsCountryCtrl", ($scope, $stateP
   $scope.countryIndicatorClass = (indicator, year)->
     if $scope.rank[indicator + "_" + year]
       switch $scope.countryIndicatorProgression(indicator, year)
-        when -1 then 'success text-success'
-        when  1 then 'danger text-danger'
+        when -1 then 'text-success'
+        when  1 then 'text-danger'
     else
       'text-muted'
 
