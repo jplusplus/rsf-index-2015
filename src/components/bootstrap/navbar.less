@@ -13,7 +13,14 @@
     display: block;
   }
 
-  .navbar-brand {
+  .navbar-title.navbar-brand {
+    padding-left:20px;
+    margin-left:0;
+    font-weight: bold;
+    font-family: @headings-font-family;
+  }
+
+  .navbar-logo {
     position: relative;
     z-index:10;
     padding-bottom:0;
@@ -50,10 +57,6 @@
       background: white;
     }
 
-  }
-
-  .navbar-nav > li:first-child > a {
-    padding-left:10px + 10px;
   }
 
   .navbar-nav > li.active > a {

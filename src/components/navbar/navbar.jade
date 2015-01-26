@@ -1,8 +1,10 @@
 nav.navbar.navbar-static-top.navbar-default(ng-controller='NavbarCtrl', ng-show="shoudShowNavbar()")
   .container(ng-init="collapseMenu = true")
     .navbar-header
-      a.navbar-brand(ui-sref='main', ng-if='useLanguage()')
+      a.navbar-brand.navbar-logo(ui-sref='main', ng-if='useLanguage()')
         img(ng-src='http://rsf.org/squelettes/img/{{useLanguage()}}/logo-{{useLanguage()}}.png', height='25')
+      span.navbar-brand.navbar-title
+        | {{ "app_title" | translate }}
 
       .button(type="button", class="navbar-toggle collapsed", ng-click="collapseMenu = !collapseMenu")
         span.sr-only Toggle navigation</span>
@@ -14,15 +16,15 @@ nav.navbar.navbar-static-top.navbar-default(ng-controller='NavbarCtrl', ng-show=
       ul.nav.navbar-nav
         li(ui-sref-active='active')
           a(ui-sref='details.all')
-            {{ "details_nav" | translate }}
+            | {{ "details_nav" | translate }}
 
         li(ui-sref-active='active')
           a(ui-sref='highlights')
-            {{ "highlight_nav" | translate }}
+            | {{ "highlight_nav" | translate }}
 
         li(ui-sref-active='active')
           a(ui-sref='themes')
-            {{ "themes_nav" | translate }}
+            | {{ "themes_nav" | translate }}
       ul.nav.navbar-nav.navbar-right
         li.dropdown(dropdown)
           a.dropdown-toggle(dropdown-toggle)
@@ -30,12 +32,12 @@ nav.navbar.navbar-static-top.navbar-default(ng-controller='NavbarCtrl', ng-show=
           ul.dropdown-menu
             li(ng-class="{ active: useLanguage() === 'fr' }")
               a(ng-click="useLanguage('fr')")
-                {{ "to_french" | translate }}
+                | {{ "to_french" | translate }}
 
             li(ng-class="{ active: useLanguage() === 'en' }")
               a(ng-click="useLanguage('en')")
-                {{ "to_english" | translate }}
+                | {{ "to_english" | translate }}
 
             li(ng-class="{ active: useLanguage() === 'es' }")
               a(ng-click="useLanguage('es')")
-                {{ "to_spanish" | translate }}
+                | {{ "to_spanish" | translate }}
