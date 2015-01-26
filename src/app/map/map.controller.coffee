@@ -28,14 +28,16 @@ angular.module("rsfIndex2015").controller "MapCtrl", ($scope, $rootScope, $compi
     rank = $scope.data.country(country).rank()
     # Create a new scope for this popup
     scope = $scope.$new no
-    scope.countryRankData =
-      country: $scope.data.country(country).name()
-      rank   : rank["ranking_" + $scope.selectedYear]
-      score  : $filter('decimal') rank["score_" + $scope.selectedYear]
-      year   : 2015
     scope.country =
       'name': $scope.data.country(country).name
       'country-code': country
+    # Update popup on year change
+    scope.$watch 'selectedYear', ->
+      scope.countryRankData =
+        country: $scope.data.country(country).name()
+        rank   : rank["ranking_" + $scope.selectedYear]
+        score  : $filter('decimal') rank["score_" + $scope.selectedYear]
+        year   : $scope.selectedYear
     scope.shoudShowCountryLink = -> $scope.country isnt country
     # Get popup node
     content = angular.element countryPopup._contentNode
