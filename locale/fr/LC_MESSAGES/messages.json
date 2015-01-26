@@ -75,7 +75,7 @@
   "score_in_2014":"<strong>{score}<\/strong> in 2014",
   "ranking_indicator":"Ranking",
   "score_indicator":"Score",
-  "barometer_sentence":"En <strong>2014<\/strong>, {journalists, select, =0{aucun journaliste tué} =1{# journaliste tué} other {# journalistes tués}} et {netcitizens, select, =0{aucun net-citoyen} =1{# net-citoyen} other{# net-citoyens}}.",
+  "barometer_sentence":"En <strong>2014<\/strong>, {journalists, select, =0{aucun journaliste} =1{# journaliste} other {# journalistes}} et {netcitizens, select, =0{aucun net-citoyen} =1{# net-citoyen} other{# net-citoyens}} {total, select, =0{n'a été tué} other{ont été tués} }.",
   "barometer_warning":"”Journalists killed” in the table includes only cases in which Reporters Without Borders has clearly established that the victim was killed because of his\/her activities as a journalist. It does not include cases in which the motives were not related to the victim’s work or in which a link has not yet been confirmed.",
   "barometer_2015_link":"<a href='' target='_blank'>See the detailed barometer for 2015<\/a>",
   "predators_title":"Predators of freedom of information",
