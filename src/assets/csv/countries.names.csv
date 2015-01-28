@@ -1,181 +1,181 @@
-country_name_fr,country name en,country name es,ISO 3
-Afganistán,Afghanistan,Afghanistan,AFG
-Sudáfrica,Afrique du Sud,South Africa,ZAF
-Albania,Albanie,Albania,ALB
-Argelia,Algérie,Algeria,DZA
-Alemania,Allemagne,Germany,DEU
-Andorra,Andorre,Andorra,AND
+country_name_fr,country_name_en,country_name_es,ISO 3
+Afghanistan,Afghanistan,Afganistán,AFG
+Afrique du Sud,South Africa,Sudáfrica,ZAF
+Albanie,Albania,Albania,ALB
+Algérie,Algeria,Argelia,DZA
+Allemagne,Germany,Alemania,DEU
+Andorre,Andorra,Andorra,AND
 Angola,Angola,Angola,AGO
-Arabia Saudita,Arabie saoudite,Saudi Arabia,SAU
-Argentina,Argentine,Argentina,ARG
-Armenia,Arménie,Armenia,ARM
-Australia,Australie,Australia,AUS
-Austria,Autriche,Austria,AUT
-Azerbaiyán,Azerbaïdjan,Azerbaijan,AZE
-Baréin,Bahreïn,Bahrain,BHR
-Bangladés,Bangladesh,Bangladesh,BGD
-Bielorrusia,Bélarus,Belarus,BLR
-Bélgica,Belgique,Belgium,BEL
-Belice,Bélize,Belize,BLZ
-Benín,Bénin,Benin,BEN
-Bután,Bhoutan,Bhutan,BTN
-Birmania,Birmanie,Myanmar,MMR
-Bolivia,Bolivie,Bolivia,BOL
-Bosnia-Herzegovina,Bosnie-Herzégovine,Bosnia and Herzegovina,BIH
-Botsuana,Botswana,Botswana,BWA
-Brasil,Brésil,Brazil,BRA
-Brunéi,Brunei,Brunei Darussalam,BRN
-Bulgaria,Bulgarie,Bulgaria,BGR
+Arabie saoudite,Saudi Arabia,Arabia Saudita,SAU
+Argentine,Argentina,Argentina,ARG
+Arménie,Armenia,Armenia,ARM
+Australie,Australia,Australia,AUS
+Autriche,Austria,Austria,AUT
+Azerbaïdjan,Azerbaijan,Azerbaiyán,AZE
+Bahreïn,Bahrain,Baréin,BHR
+Bangladesh,Bangladesh,Bangladés,BGD
+Bélarus,Belarus,Bielorrusia,BLR
+Belgique,Belgium,Bélgica,BEL
+Bélize,Belize,Belice,BLZ
+Bénin,Benin,Benín,BEN
+Bhoutan,Bhutan,Bután,BTN
+Birmanie,Myanmar,Birmania,MMR
+Bolivie,Bolivia,Bolivia,BOL
+Bosnie-Herzégovine,Bosnia and Herzegovina,Bosnia-Herzegovina,BIH
+Botswana,Botswana,Botsuana,BWA
+Brésil,Brazil,Brasil,BRA
+Brunei,Brunei Darussalam,Brunéi,BRN
+Bulgarie,Bulgaria,Bulgaria,BGR
 Burkina Faso,Burkina Faso,Burkina Faso,BFA
 Burundi,Burundi,Burundi,BDI
-Camboya,Cambodge,Cambodia,KHM
-Camerún,Cameroun,Cameroon,CMR
-Canadá,Canada,Canada,CAN
-Cabo Verde,Cap-Vert,Cape Verde,CPV
-Chile,Chili,Chile,CHL
-China,Chine,China,CHN
-Chipre,Chypre,Cyprus,CYP
-Chipre Norte,Chypre (partie Nord),Cyprus North,NCYP
-Colombia,Colombie,Colombia,COL
-Comoras,Comores,Comoros,COM
-República del Congo,Congo,Republic of the Congo,COG
-Corea del Norte,Corée du Nord,Democratic People's Republic of Korea,PRK
-Corea del Sur,Corée du Sud,Republic of Korea,KOR
+Cambodge,Cambodia,Camboya,KHM
+Cameroun,Cameroon,Camerún,CMR
+Canada,Canada,Canadá,CAN
+Cap-Vert,Cape Verde,Cabo Verde,CPV
+Chili,Chile,Chile,CHL
+Chine,China,China,CHN
+Chypre,Cyprus,Chipre,CYP
+Chypre (partie Nord),Cyprus North,Chipre Norte,NCYP
+Colombie,Colombia,Colombia,COL
+Comores,Comoros,Comoras,COM
+Congo,Republic of the Congo,República del Congo,COG
+Corée du Nord,Democratic People's Republic of Korea,Corea del Norte,PRK
+Corée du Sud,Republic of Korea,Corea del Sur,KOR
 Costa Rica,Costa Rica,Costa Rica,CRI
-Costa de Marfil,Côte d'Ivoire,Côte d'Ivoire,CIV
-Croacia,Croatie,Croatia,HRV
+Côte d'Ivoire,Côte d'Ivoire,Costa de Marfil,CIV
+Croatie,Croatia,Croacia,HRV
 Cuba,Cuba,Cuba,CUB
-Dinamarca,Danemark,Denmark,DNK
-Yibuti,Djibouti,Djibouti,DJI
-Egipto,Égypte,Egypt,EGY
+Danemark,Denmark,Dinamarca,DNK
+Djibouti,Djibouti,Yibuti,DJI
+Égypte,Egypt,Egipto,EGY
 El Salvador,El Salvador,El Salvador,SLV
-Emiratos Árabes Unidos,Émirats arabes unis,United Arab Emirates,ARE
-Ecuador,Équateur,Ecuador,ECU
-Eritrea,Érythrée,Eritrea,ERI
-España,Espagne,Spain,ESP
-Estonia,Estonie,Estonia,EST
-Estados Unidos,États-Unis,United States,USA
-Etiopía,Éthiopie,Ethiopia,ETH
-Fiyi,Fidji,Fiji,FJI
-Finlandia,Finlande,Finland,FIN
-Francia,France,France,FRA
-República Gabonesa,Gabon,Gabon,GAB
-Gambia,Gambie,Gambia,GMB
-Georgia,Géorgie,Georgia,GEO
+Émirats arabes unis,United Arab Emirates,Emiratos Árabes Unidos,ARE
+Équateur,Ecuador,Ecuador,ECU
+Érythrée,Eritrea,Eritrea,ERI
+Espagne,Spain,España,ESP
+Estonie,Estonia,Estonia,EST
+États-Unis,United States,Estados Unidos,USA
+Éthiopie,Ethiopia,Etiopía,ETH
+Fidji,Fiji,Fiyi,FJI
+Finlande,Finland,Finlandia,FIN
+France,France,Francia,FRA
+Gabon,Gabon,República Gabonesa,GAB
+Gambie,Gambia,Gambia,GMB
+Géorgie,Georgia,Georgia,GEO
 Ghana,Ghana,Ghana,GHA
-Grecia,Grèce,Greece,GRC
+Grèce,Greece,Grecia,GRC
 Guatemala,Guatemala,Guatemala,GTM
-Guinea,Guinée,Guinea,GIN
-Guinea Ecuatorial,Guinée équatoriale,Equatorial Guinea,GNQ
-Guinea-Bisáu,Guinée-Bissau,Guinea-Bissau,GNB
+Guinée,Guinea,Guinea,GIN
+Guinée équatoriale,Equatorial Guinea,Guinea Ecuatorial,GNQ
+Guinée-Bissau,Guinea-Bissau,Guinea-Bisáu,GNB
 Guyana,Guyana,Guyana,GUY
-Haití,Haïti,Haiti,HTI
+Haïti,Haiti,Haití,HTI
 Honduras,Honduras,Honduras,HND
-Hong Kong,Hong-Kong,Hong Kong,HKG
-Hungría,Hongrie,Hungary,HUN
-India,Inde,India,IND
-Indonesia,Indonésie,Indonesia,IDN
-Irak,Irak,Iraq,IRQ
-Irán,Iran,Islamic Republic of Iran,IRN
-Irlanda,Irlande,Ireland,IRL
-Islandia,Islande,Iceland,ISL
-Israel,Israël,Israel,ISR
-Italia,Italie,Italy,ITA
-Jamaica,Jamaïque,Jamaica,JAM
-Japón,Japon,Japan,JPN
-Jordania,Jordanie,Jordan,JOR
-Kazajistán,Kazakhstan,Kazakhstan,KAZ
-Kenia,Kenya,Kenya,KEN
-Kirguistán,Kirghizstan,Kyrgyzstan,KGZ
+Hong-Kong,Hong Kong,Hong Kong,HKG
+Hongrie,Hungary,Hungría,HUN
+Inde,India,India,IND
+Indonésie,Indonesia,Indonesia,IDN
+Irak,Iraq,Irak,IRQ
+Iran,Islamic Republic of Iran,Irán,IRN
+Irlande,Ireland,Irlanda,IRL
+Islande,Iceland,Islandia,ISL
+Israël,Israel,Israel,ISR
+Italie,Italy,Italia,ITA
+Jamaïque,Jamaica,Jamaica,JAM
+Japon,Japan,Japón,JPN
+Jordanie,Jordan,Jordania,JOR
+Kazakhstan,Kazakhstan,Kazajistán,KAZ
+Kenya,Kenya,Kenia,KEN
+Kirghizstan,Kyrgyzstan,Kirguistán,KGZ
 Kosovo,Kosovo,Kosovo,KOS
-Kuwait,Koweït,Kuwait,KWT
-Laos,Laos,Lao People's Democratic Republic,LAO
-Lesoto,Lesotho,Lesotho,LSO
-Letonia,Lettonie,Latvia,LVA
-Líbano,Liban,Lebanon,LBN
+Koweït,Kuwait,Kuwait,KWT
+Laos,Lao People's Democratic Republic,Laos,LAO
+Lesotho,Lesotho,Lesoto,LSO
+Lettonie,Latvia,Letonia,LVA
+Liban,Lebanon,Líbano,LBN
 Liberia,Liberia,Liberia,LBR
-Libia,Libye,Libya,LBY
+Libye,Libya,Libia,LBY
 Liechtenstein,Liechtenstein,Liechtenstein,LIE
-Lituania,Lituanie,Lithuania,LTU
-Luxemburgo,Luxembourg,Luxembourg,LUX
-República de Macedonia,Macédoine,Macedonia,MKD
+Lituanie,Lithuania,Lituania,LTU
+Luxembourg,Luxembourg,Luxemburgo,LUX
+Macédoine,Macedonia,República de Macedonia,MKD
 Madagascar,Madagascar,Madagascar,MDG
-Malasia,Malaisie,Malaysia,MYS
-Malaui,Malawi,Malawi,MWI
-Maldivas,Maldives,Maldives,MDV
-Malí,Mali,Mali,MLI
-Malta,Malte,Malta,MLT
-Marruecos,Maroc,Morocco,MAR
-Mauricio,Maurice,Mauritius,MUS
-Mauritania,Mauritanie,Mauritania,MRT
-México,Mexique,Mexico,MEX
-Moldavia,Moldavie,Republic of Moldova,MDA
-Mongolia,Mongolie,Mongolia,MNG
-Montenegro,Monténégro,Montenegro,MNE
+Malaisie,Malaysia,Malasia,MYS
+Malawi,Malawi,Malaui,MWI
+Maldives,Maldives,Maldivas,MDV
+Mali,Mali,Malí,MLI
+Malte,Malta,Malta,MLT
+Maroc,Morocco,Marruecos,MAR
+Maurice,Mauritius,Mauricio,MUS
+Mauritanie,Mauritania,Mauritania,MRT
+Mexique,Mexico,México,MEX
+Moldavie,Republic of Moldova,Moldavia,MDA
+Mongolie,Mongolia,Mongolia,MNG
+Monténégro,Montenegro,Montenegro,MNE
 Mozambique,Mozambique,Mozambique,MOZ
-Namibia,Namibie,Namibia,NAM
-Nepal,Népal,Nepal,NPL
+Namibie,Namibia,Namibia,NAM
+Népal,Nepal,Nepal,NPL
 Nicaragua,Nicaragua,Nicaragua,NIC
 Niger,Niger,Niger,NER
 Nigeria,Nigeria,Nigeria,NGA
-Noruega,Norvège,Norway,NOR
-Nueva Zelanda,Nouvelle-Zélande,New Zealand,NZL
+Norvège,Norway,Noruega,NOR
+Nouvelle-Zélande,New Zealand,Nueva Zelanda,NZL
 OECS,OECS,OECS,ATG
-Omán,Oman,Oman,OMN
-Uganda,Ouganda,Uganda,UGA
-Uzbekistán,Ouzbékistan,Uzbekistan,UZB
-Pakistán,Pakistan,Pakistan,PAK
-Palestina,Palestine,Palestine,PSE
-Panamá,Panama,Panama,PAN
-Papúa Nueva Guinea,Papouasie-Nouvelle-Guinée,Papua New Guinea,PNG
+Oman,Oman,Omán,OMN
+Ouganda,Uganda,Uganda,UGA
+Ouzbékistan,Uzbekistan,Uzbekistán,UZB
+Pakistan,Pakistan,Pakistán,PAK
+Palestine,Palestine,Palestina,PSE
+Panama,Panama,Panamá,PAN
+Papouasie-Nouvelle-Guinée,Papua New Guinea,Papúa Nueva Guinea,PNG
 Paraguay,Paraguay,Paraguay,PRY
-Países Bajos,Pays-Bas,Netherlands,NLD
-Peru,Pérou,Peru,PER
-Filipinas,Philippines,Philippines,PHL
-Polonia,Pologne,Poland,POL
+Pays-Bas,Netherlands,Países Bajos,NLD
+Pérou,Peru,Peru,PER
+Philippines,Philippines,Filipinas,PHL
+Pologne,Poland,Polonia,POL
 Portugal,Portugal,Portugal,PRT
-Catar,Qatar,Qatar,QAT
-RD Congo,RD Congo,The Democratic Republic Of The Congo,COD
-República Centroafricana,République centrafricaine,Central African,CAF
-República Dominicana,République dominicaine,Dominican Republic,DOM
-República Checa,République tchèque,Czech Republic,CZE
-Rumania,Roumanie,Romania,ROU
-Reino Unido,Royaume-Uni,United Kingdom,GBR
-Rusia,Russie,Russian Federation,RUS
-Ruanda,Rwanda,Rwanda,RWA
+Qatar,Qatar,Catar,QAT
+RD Congo,The Democratic Republic Of The Congo,RD Congo,COD
+République centrafricaine,Central African,República Centroafricana,CAF
+République dominicaine,Dominican Republic,República Dominicana,DOM
+République tchèque,Czech Republic,República Checa,CZE
+Roumanie,Romania,Rumania,ROU
+Royaume-Uni,United Kingdom,Reino Unido,GBR
+Russie,Russian Federation,Rusia,RUS
+Rwanda,Rwanda,Ruanda,RWA
 Samoa,Samoa,Samoa,WSM
-Senegal,Sénégal,Senegal,SEN
-Serbia,Serbie,Serbia,SRB
+Sénégal,Senegal,Senegal,SEN
+Serbie,Serbia,Serbia,SRB
 Seychelles,Seychelles,Seychelles,SYC
-Sierra Leona,Sierra Leone,Sierra Leone,SLE
-Singapur,Singapour,Singapore,SGP
-Eslovaquia,Slovaquie,Slovakia,SVK
-Eslovenia,Slovénie,Slovenia,SVN
-Somalia,Somalie,Somalia,SOM
-Sudán,Soudan,Sudan,SDN
-Sudán del Sur,Soudan du Sud,South Sudan,SSD
+Sierra Leone,Sierra Leone,Sierra Leona,SLE
+Singapour,Singapore,Singapur,SGP
+Slovaquie,Slovakia,Eslovaquia,SVK
+Slovénie,Slovenia,Eslovenia,SVN
+Somalie,Somalia,Somalia,SOM
+Soudan,Sudan,Sudán,SDN
+Soudan du Sud,South Sudan,Sudán del Sur,SSD
 Sri Lanka,Sri Lanka,Sri Lanka,LKA
-Suecia,Suède,Sweden,SWE
-Suiza,Suisse,Switzerland,CHE
-Surinam,Surinam,Suriname,SUR
-Suazilandia,Swaziland,Swaziland,SWZ
-Siria,Syrie,Syrian Arab Republic,SYR
-Tayikistán,Tadjikistan,Tajikistan,TJK
-Taiwán,Taïwan,Taiwan,TWN
-Tanzania,Tanzanie,United Republic Of Tanzania,TZA
-Chad,Tchad,Chad,TCD
-Tailandia,Thaïlande,Thailand,THA
-Timor Oriental,Timor-Leste,Timor-Leste,TLS
+Suède,Sweden,Suecia,SWE
+Suisse,Switzerland,Suiza,CHE
+Surinam,Suriname,Surinam,SUR
+Swaziland,Swaziland,Suazilandia,SWZ
+Syrie,Syrian Arab Republic,Siria,SYR
+Tadjikistan,Tajikistan,Tayikistán,TJK
+Taïwan,Taiwan,Taiwán,TWN
+Tanzanie,United Republic Of Tanzania,Tanzania,TZA
+Tchad,Chad,Chad,TCD
+Thaïlande,Thailand,Tailandia,THA
+Timor-Leste,Timor-Leste,Timor Oriental,TLS
 Togo,Togo,Togo,TGO
 Tonga,Tonga,Tonga,TON
-Trinidad y Tobago,Trinité-et-Tobago,Trinidad and Tobago,TTO
-Túnez,Tunisie,Tunisia,TUN
-Turkmenistán,Turkménistan,Turkmenistan,TKM
-Turquía,Turquie,Turkey,TUR
-Ucrania,Ukraine,Ukraine,UKR
+Trinité-et-Tobago,Trinidad and Tobago,Trinidad y Tobago,TTO
+Tunisie,Tunisia,Túnez,TUN
+Turkménistan,Turkmenistan,Turkmenistán,TKM
+Turquie,Turkey,Turquía,TUR
+Ukraine,Ukraine,Ucrania,UKR
 Uruguay,Uruguay,Uruguay,URY
 Venezuela,Venezuela,Venezuela,VEN
 Vietnam,Vietnam,Vietnam,VNM
-Yemen,Yémen,Yemen,YEM
-Zambia,Zambie,Zambia,ZMB
-Zimbabue,Zimbabwe,Zimbabwe,ZWE
+Yémen,Yemen,Yemen,YEM
+Zambie,Zambia,Zambia,ZMB
+Zimbabwe,Zimbabwe,Zimbabue,ZWE
