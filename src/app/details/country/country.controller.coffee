@@ -13,6 +13,7 @@ angular.module("rsfIndex2015").controller "DetailsCountryCtrl", ($scope, $stateP
     year   : 2015
 
   $scope.$watch (-> $translate.use() ), (lang)->
+    $scope.narrative = $scope.rank["narrative_" + lang]
     # Filter the list of the predator and putit to the scope
     $scope.predators = _.filter predators, (predator)->
       # Only predators of the current country
