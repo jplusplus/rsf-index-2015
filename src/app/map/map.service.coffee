@@ -10,9 +10,16 @@ angular.module('rsfIndex2015').factory 'MapData', ($q, $http, $translate, $filte
   ).then (hash)->
     rankingBounds = (year)->
       key = "score_" + year
-      min = _.min( hash.ranking.data, (country)-> 1 * country[key] )[key]
-      max = _.max( hash.ranking.data, (country)-> 1 * country[key] )[key]
-      [1*min, 1*max]
+      max = 1 * _.max( hash.ranking.data, (country)-> 1*country[key] )[key]
+      min = 1 * _.min( hash.ranking.data, (country)->
+        value = 1*country[key]
+        # Avoid using null value
+        if value is 0
+          max
+        else
+          value
+      )[key]
+      [min, max]
     # Color scale
     countryColor = chroma.scale(['#FFFFFF', '#F7E91E', '#F48912', '#DE0027', '#000D16']).domain rankingBounds(2015)
     # Prepare data
@@ -82,7 +89,8 @@ angular.module('rsfIndex2015').factory 'MapData', ($q, $http, $translate, $filte
             # Yes we do!
             rankingTree[code][colorKey]
           else
-            colorScale = countryColor.domain rankingBounds(year)
+            bounds = rankingBounds(year)
+            colorScale = countryColor.domain bounds
             # Calculate the color now
             color = countryColor( rankingTree[code]["score_" + year] ).hex()
             # And save it
