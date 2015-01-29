@@ -7,5 +7,3 @@ angular.module "rsfIndex2015"
         controller: "MainCtrl"
         resolve:
           mapData: (MapData)-> MapData
-          # Do not start before the translation is loaded
-          decimal: ($translate)-> $translate('decimal_mark')
