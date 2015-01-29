@@ -44,6 +44,7 @@
   "rank": "Rank ",
   "score": "score",
   "score_without_exactions": "Without exactions",
+  "score_exactions": "Exactions score",
   "search_btn ": "Find a country",
   "search_placeholder ": "Search...",
   "select_year":"Select another year:",
