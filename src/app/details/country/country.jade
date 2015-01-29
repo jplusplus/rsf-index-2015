@@ -43,9 +43,9 @@
                 i.fa.fa-fa.fa-info-circle(tooltip="{{ 'exactions_warning' | translate }}", tooltip-append-to-body="true")
                 .details__country__body__title__banner__figure__label
                   i.fa.fa-fw &nbsp;
-                  span.label.label-inverse
+                  span.label.label-inverse(ng-show="rank.exactions_2015 !== '-'")
                     | {{ rank.exactions_2015 | number:2 | decimal }}
-                  | &nbsp;
+                  span.label(ng-show="rank.exactions_2015 === '-'") -
     .container
       .details__country__body__narrative.lead(ng-show="narrative")
         | {{ narrative }}
