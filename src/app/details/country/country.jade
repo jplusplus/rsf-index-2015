@@ -39,12 +39,13 @@
               span(ng-bind-html="'score_in_2014' | translate:{ score: decimal(rank.score_2014) }")
             .col-xs-3.details__country__body__title__banner__figure
               .lead
-                | {{ 'score_without_exactions' | translate }}
+                | {{ 'score_exactions' | translate }}&nbsp;
+                i.fa.fa-fa.fa-info-circle(tooltip="{{ 'exactions_warning' | translate }}", tooltip-append-to-body="true")
                 .details__country__body__title__banner__figure__label
                   i.fa.fa-fw &nbsp;
                   span.label.label-inverse
-                    | {{ rank.score_2015 - 0.4 | number:2 | decimal }}
-
+                    | {{ rank.exactions_2015 | number:2 | decimal }}
+                  | &nbsp;
     .container
       .details__country__body__narrative.lead(ng-show="narrative")
         | {{ narrative }}
