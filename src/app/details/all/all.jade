@@ -45,27 +45,28 @@
             th(ts-criteria="country_code | filter:countryName ")
               | {{ 'country' | translate }}
               i.fa
-            th(ts-criteria="pluralism_2015")
-              | {{ 'pluralism' | translate }}
-              i.fa
-            th(ts-criteria="media_independence_2015")
-              | {{ 'media_independence' | translate }}
-              i.fa
-            th(ts-criteria="environment_and_self_censorship_2015")
-              | {{ 'environment_selfcensorship' | translate }}
-              i.fa
-            th(ts-criteria="legal_framework_2015")
-              | {{ 'legal_framework' | translate }}
-              i.fa
-            th(ts-criteria="institutional_transparency_2015")
-              | {{ 'institutional_transparency' | translate }}
-              i.fa
-            th(ts-criteria="infrastructures_2015")
-              | {{ 'infrastructures' | translate }}
-              i.fa
-            th(ts-criteria="exactions_2015")
-              | {{ 'exactions' | translate }}
-              i.fa
+            //-
+              th(ts-criteria="pluralism_2015")
+                | {{ 'pluralism' | translate }}
+                i.fa
+              th(ts-criteria="media_independence_2015")
+                | {{ 'media_independence' | translate }}
+                i.fa
+              th(ts-criteria="environment_and_self_censorship_2015")
+                | {{ 'environment_selfcensorship' | translate }}
+                i.fa
+              th(ts-criteria="legal_framework_2015")
+                | {{ 'legal_framework' | translate }}
+                i.fa
+              th(ts-criteria="institutional_transparency_2015")
+                | {{ 'institutional_transparency' | translate }}
+                i.fa
+              th(ts-criteria="infrastructures_2015")
+                | {{ 'infrastructures' | translate }}
+                i.fa
+              th(ts-criteria="exactions_2015")
+                | {{ 'exactions' | translate }}
+                i.fa
             th(ts-criteria="score_2015")
               | {{ 'global_score' | translate }}
               i.fa
@@ -76,13 +77,14 @@
             td
               a(ui-sref="details.country({ country: country.country_code })")
                 {{ mapData.country(country).name() }}
-            td.text-center {{ country["pluralism_2015"] | decimal }}
-            td.text-center {{ country["media_independence_2015"] | decimal }}
-            td.text-center {{ country["environment_and_self_censorship_2015"] | decimal }}
-            td.text-center {{ country["legal_framework_2015"] | decimal }}
-            td.text-center {{ country["institutional_transparency_2015"] | decimal }}
-            td.text-center {{ country["infrastructures_2015"] | decimal }}
-            td.text-center {{ country["exactions_2015"] | decimal }}
+            //-
+              td.text-center {{ country["pluralism_2015"] | decimal }}
+              td.text-center {{ country["media_independence_2015"] | decimal }}
+              td.text-center {{ country["environment_and_self_censorship_2015"] | decimal }}
+              td.text-center {{ country["legal_framework_2015"] | decimal }}
+              td.text-center {{ country["institutional_transparency_2015"] | decimal }}
+              td.text-center {{ country["infrastructures_2015"] | decimal }}
+              td.text-center {{ country["exactions_2015"] | decimal }}
             td.text-center {{ country["score_2015"] | decimal }}
           tr.warning.text-warning(ng-hide="ranking.length")
             td(colspan=10).text-center {{ 'no_result' | translate }}
