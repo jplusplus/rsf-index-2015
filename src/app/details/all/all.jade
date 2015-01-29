@@ -64,9 +64,9 @@
               th(ts-criteria="infrastructures_2015")
                 | {{ 'infrastructures' | translate }}
                 i.fa
-              th(ts-criteria="exactions_2015")
-                | {{ 'exactions' | translate }}
-                i.fa
+            th(ts-criteria="exactions_2015")
+              | {{ 'exactions' | translate }}
+              i.fa
             th(ts-criteria="score_2015")
               | {{ 'global_score' | translate }}
               i.fa
@@ -84,7 +84,7 @@
               td.text-center {{ country["legal_framework_2015"] | decimal }}
               td.text-center {{ country["institutional_transparency_2015"] | decimal }}
               td.text-center {{ country["infrastructures_2015"] | decimal }}
-              td.text-center {{ country["exactions_2015"] | decimal }}
+            td.text-center {{ country["exactions_2015"] | decimal }}
             td.text-center {{ country["score_2015"] | decimal }}
           tr.warning.text-warning(ng-hide="ranking.length")
             td(colspan=10).text-center {{ 'no_result' | translate }}
