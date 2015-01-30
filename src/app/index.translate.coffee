@@ -11,8 +11,14 @@ angular.module "rsfIndex2015"
         'fr_CA': 'fr'
         'fr_BE': 'fr'
         'es_ES': 'es'
-      .preferredLanguage 'en'
-      .fallbackLanguage 'en'
+      .determinePreferredLanguage ->
+        lang = navigator.language || navigator.userLanguage
+        avalaibleKeys = [
+          'en_US', 'en_UK', 'en',
+          'fr_FR', 'fr_CA', 'fr_BE', 'fr',
+          'es_ES', 'es'
+        ]
+        return if avalaibleKeys.indexOf(lang) is -1 then 'en' else lang
+      .fallbackLanguage ['en', 'fr']
       .useMessageFormatInterpolation()
-      .determinePreferredLanguage()
       .useCookieStorage()
