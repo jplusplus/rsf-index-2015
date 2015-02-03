@@ -10,7 +10,7 @@ install:
 	gulp wiredep
 
 deploy:
-	gulp --force deploy
+	gulp  deploy
 
 crowdin_upload:
 	crowdin-cli upload sources
