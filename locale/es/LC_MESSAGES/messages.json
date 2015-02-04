@@ -52,7 +52,7 @@
   "share":"share",
   "share-embed":"Share \/ Embed",
   "share_desc":"share_desc",
-  "show_country_from_label":"show_country_from_label ",
+  "show_country_from_label":"show_country_from_label",
   "themes_desc":"Themes description",
   "themes_nav":"Themes",
   "thousands_separator":",",
@@ -81,5 +81,8 @@
   "barometer_warning":"Note: “Journalists killed” in the table includes only cases in which Reporters Without Borders has clearly established that the victim was killed because of his\/her activities as a journalist. It does not include cases in which the motives were not related to the victim’s work or in which a link has not yet been confirmed.",
   "barometer_2015_link":"<a href='' target='_blank'>See the full 2015 Press freedom barometer<\/a>",
   "predators_title":"Predators of freedom of information",
-  "no_ranking_this_year":"-"
+  "no_ranking_this_year":"-",
+  "search_placeholder":"search_placeholder",
+  "search_btn":"search_btn",
+  "presentation_desc":"presentation_desc"
 }
