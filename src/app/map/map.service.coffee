@@ -24,7 +24,7 @@ angular.module('rsfIndex2015').factory 'MapData', ($q, $http, $translate, $filte
     yearsBounds =
       2015: rankingBounds(2015)
     # Color scale
-    countryColor = chroma.scale(['#FFFFFF', '#F7E91E', '#F48912', '#DE0027', '#000D16']).domain yearsBounds[2015]
+    countryColor = chroma.scale(['#FFFFFF', '#F7E91E', '#F48912', '#DE0027', '#000D16'], [0.15, 0.25, 0.35, 0.55, 1]).domain yearsBounds[2015]
     # Prepare data
     angular.forEach hash.ranking.data, (rank)->
       # Convert every sortable key to numbers
