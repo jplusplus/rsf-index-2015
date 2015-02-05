@@ -16,7 +16,9 @@ full_deploy: crowdin_download
 	git commit ./locale -m "Updated locale" || true
 	git pull --rebase
 	gulp deploy
-	
+
+zip: build
+	(cd dist; zip -r ../export.zip .)
 
 crowdin_upload:
 	crowdin-cli upload sources
