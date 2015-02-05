@@ -14,5 +14,5 @@
             i.fa.fa-globe.fa-fw
             | &nbsp;{{ 'page_lang_not_available' | translate }}
           article(ng-bind-html="single.body")
-        .col-sm-4
-          .well
+        .col-sm-4(ng-show="aside")
+          .well(ng-bind-html="aside.body")
