@@ -18,7 +18,7 @@ full_deploy: crowdin_download
 	gulp deploy
 
 zip: build
-	(cd dist; zip -r ../export.zip .)
+	(cd dist; zip -r ../rsf-index-2015.zip .)
 
 crowdin_upload:
 	crowdin-cli upload sources
