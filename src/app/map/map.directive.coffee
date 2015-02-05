@@ -32,8 +32,8 @@ angular.module "rsfIndex2015"
       # Map settings
       scope.settings =
         maxbounds:
-          southWest: L.latLng(70, 180)
-          northEast: L.latLng(-50, -180)
+          southWest: L.latLng(90, 180)
+          northEast: L.latLng(-90, -180)
         center:
           zoom: if scope.country then 4 else 2
         defaults:
