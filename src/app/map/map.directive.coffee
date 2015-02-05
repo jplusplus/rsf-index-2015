@@ -39,6 +39,13 @@ angular.module "rsfIndex2015"
         defaults:
           zoomControl: no
           scrollWheelZoom: no
+        tiles:
+          name: 'OpenStreetMap'
+          type: 'xyz'
+          url: "http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          options:
+            continuousWorld: no
+            noWrap: yes
       # The map may be already centered on a country
       if scope.country
         angular.extend scope.settings.center, scope.data.country(scope.country).center()
