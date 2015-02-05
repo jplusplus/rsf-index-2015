@@ -19,7 +19,7 @@ angular.module "rsfIndex2015"
           weight: if feature.id is scope.country then 3 else 1,
           opacity: 1
           color: 'white',
-          fillOpacity: if feature.id is scope.country then 1 else 0.7
+          fillOpacity: 1 
         else
           opacity: 0
           fillOpacity: 0
