@@ -1,5 +1,5 @@
 .map(ng-if='settings', ng-class="{ 'map--country-selected': country }")
-  leaflet.map__workspace(center='settings.center', defaults="settings.defaults" id='{{mapId}}')
+  leaflet.map__workspace(center='settings.center', maxbounds="settings.maxbounds", defaults="settings.defaults" id='{{mapId}}')
 
   .map__brand.panel.panel-default(ng-show=" 'embed' | isState ")
     a(href="http://rsf.org", target="_blank")
@@ -36,7 +36,3 @@
           span.map__ranking__overflow__item__rank.label(ng-style="{ background: countryColor(country), color: countryContrast(country) }")
             | \#{{ country[ 'ranking_' + selectedYear ] }}
           | &nbsp;{{ data.country(country).name() }}<br />
-
-
-
-

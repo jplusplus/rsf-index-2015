@@ -31,6 +31,9 @@ angular.module "rsfIndex2015"
           countryLayer.setStyle(featureStyle)
       # Map settings
       scope.settings =
+        maxbounds:
+          southWest: L.latLng(70, 180)
+          northEast: L.latLng(-50, -180)
         center:
           zoom: if scope.country then 4 else 2
         defaults:
@@ -62,4 +65,3 @@ angular.module "rsfIndex2015"
         omnivore.topojson.parse(scope.data.topojson, null, countryLayer).addTo map
         # Watch change on the selectd year to update the color
         scope.$watch 'selectedYear', updateMapFeatures, yes
-
