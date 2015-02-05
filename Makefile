@@ -12,6 +12,12 @@ install:
 deploy:
 	gulp  deploy
 
+full_deploy: crowdin_download
+	git commit ./locale -m "Updated locale"
+	git pull --rebase
+	gulp deploy
+	
+
 crowdin_upload:
 	crowdin-cli upload sources
 
