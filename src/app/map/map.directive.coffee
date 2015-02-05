@@ -37,7 +37,7 @@ angular.module "rsfIndex2015"
         center:
           zoom: if scope.country then 4 else 2
         defaults:
-          zoomControl: no
+          zoomControl: not scope.country
           scrollWheelZoom: no
         tiles:
           name: 'OpenStreetMap'
