@@ -13,7 +13,7 @@ deploy:
 	gulp  deploy
 
 full_deploy: crowdin_download
-	git commit -am "Updated locale"
+	git commit ./locale -m "Updated locale" || true
 	git pull --rebase
 	gulp deploy
 	
