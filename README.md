@@ -20,14 +20,14 @@ make run
 
 Command | Description
 --- | ---
-make build | Build the app to the ´dist´ directory
-make crowdin_download | Downloads locales from Crowdin
-make crowdin_upload | Uploads locales to Crowdin
-make deploy | Deploys the app on Github Pages
-make full_deploy | Downloads locales from Crowdin, commits changes and deploy on Github Pages
-make install | Downloads all app's components
-make run | Runs the development server on port *3000*
-make zip | Builds and exports the app to a zip file
+`make build` | Build the app to the `dist` directory
+`make crowdin_download` | Downloads locales from Crowdin
+`make crowdin_upload` | Uploads locales to Crowdin
+`make deploy` | Deploys the app on Github Pages
+`make full_deploy` | Downloads locales from Crowdin, commits changes and deploy on Github Pages
+`make install` | Downloads all app's components
+`make run` | Runs the development server on port *3000*
+`make zip` | Builds and exports the app to a zip file
 
 ## Technical stack
 
