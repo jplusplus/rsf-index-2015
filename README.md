@@ -63,7 +63,7 @@ This project allows you to publish pages using markdowns files. There is 3 direc
 
 Directory | Description
 --- | ---
-`src/assets/markdowns/commons` | Common pages, not available under site a specific domain
+`src/assets/markdowns/commons` | Common pages, not available under a site's specific domain
 `src/assets/markdowns/highlights` | Highlights pages, listed on [index.rsf.org/#!/highlights](http://index.rsf.org/#!/highlights)
 `src/assets/markdowns/themes` | Themes pages, listed on [index.rsf.org/#!/themes](http://index.rsf.org/#!/themes)
 
