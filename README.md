@@ -1,6 +1,7 @@
 # RSF: Index 2015
 
-[Download](https://github.com/jplusplus/rsf-index-2015/archive/gh-pages.zip) • [Fork](https://github.com/jplusplus/rsf-index-2015) • [License](https://github.com/jplusplus/rsf-index-2015/blob/master/LICENSE)
+[Download](https://github.com/jplusplus/rsf-index-2015/archive/gh-pages.zip) • [Fork](https://github.com/jplusplus/rsf-index-2015) • [License](https://github.com/jplusplus/rsf-index-2015/blob/master/LICENSE)  •
+by [Journalism++](http://jplusplus.org/) under GNU Lesser General Public License
 
 ## Installation
 
