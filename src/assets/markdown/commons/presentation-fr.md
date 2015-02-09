@@ -1,7 +1,7 @@
 ---
 slug: presentation
-title: La liberté de l’information attaquée sur tous les continents
-description: Le Classement mondial de Reporters sans frontières (RSF) met en évidence une détérioration globale de la liberté de l’information en 2014. Éprouvée par les conflits, la menace accrue d’acteurs non étatiques, les exactions commises lors de manifestations ou par la crise économique et financière, la liberté de la presse régresse sur les cinq continents. A travers six analyses thématiques, l’organisation explique ce recul inquiétant.
+title: "La liberté de l’information attaquée sur tous les continents"
+description: "Le Classement mondial de Reporters sans frontières (RSF) met en évidence une détérioration globale de la liberté de l’information en 2014. Éprouvée par les conflits, la menace accrue d’acteurs non étatiques, les exactions commises lors de manifestations ou par la crise économique et financière, la liberté de la presse régresse sur les cinq continents. A travers six analyses thématiques, l’organisation explique ce recul inquiétant."
 lang: fr
 picture:
 ---
