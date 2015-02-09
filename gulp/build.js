@@ -181,7 +181,7 @@ gulp.task('fonts', function () {
     .pipe(gulp.dest('dist/assets/fonts/'));
 });
 
-['highlights', 'themes', 'commons'].forEach(function(domain) {
+['insights', 'themes', 'commons'].forEach(function(domain) {
   gulp.task('markdown:' + domain, function () {
     return gulp.src('src/assets/markdown/' + domain + '/**/*.md')
       .pipe(gutil.buffer())
@@ -190,7 +190,7 @@ gulp.task('fonts', function () {
   });
 })
 
-gulp.task('markdown', ['markdown:highlights', 'markdown:themes', 'markdown:commons']);
+gulp.task('markdown', ['markdown:insights', 'markdown:themes', 'markdown:commons']);
 
 gulp.task('misc', function () {
   return gulp.src([
