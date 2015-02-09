@@ -35,8 +35,8 @@
             .main__summary__panel__body
               | {{ "themes_desc" | translate }}
         .col-md-4.col-sm-6
-          a.main__summary__panel(ui-sref="help-us")
+          a.main__summary__panel(href="{{ 'help-us-link' | translate }}", target="_blank")
             .main__summary__panel__heading
-              h3 {{ "help_us_nav" | translate }}
+              h3 {{ "help_us_nav" | translate }} &nbsp;<i class="fa small fa-external-link"></i>
             .main__summary__panel__body
               | {{ "help_us_desc" | translate }}
