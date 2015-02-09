@@ -1,6 +1,7 @@
 project_identifier: rsf-index-2015
 base_url: https://api.crowdin.com
 preserve_hierarchy: true
+api_key: <ADD YOUR API KEY HERE>
 
 files:
   -
