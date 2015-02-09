@@ -24,7 +24,10 @@ angular.module('rsfIndex2015').factory 'MapData', ($q, $http, $translate, $filte
     yearsBounds =
       2015: rankingBounds(2015)
     # Color scale
-    countryColor = chroma.scale(['#FFFFFF', '#F7E91E', '#F48912', '#DE0027', '#000D16'], [0.15, 0.25, 0.35, 0.55, 1]).domain yearsBounds[2015]
+    colorScale = (year=2015)->
+      scale = chroma.scale(['#FFFFFF', '#FAE417', '#F1980B', '#DA032E', '#000000'], [0.15, 0.25, 0.35, 0.55, 1])
+      bounds = rankingBounds(year)
+      scale.domain bounds, 5
     # Prepare data
     angular.forEach hash.ranking.data, (rank)->
       # Convert every sortable key to numbers
@@ -35,9 +38,8 @@ angular.module('rsfIndex2015').factory 'MapData', ($q, $http, $translate, $filte
           rank[key] = 1 * rank[key] unless isNaN rank[key]
     # Create an object with every country to allow fast country lookup
     rankingTree  = _.reduce(hash.ranking.data, (result, country)->
-      colorScale = countryColor.domain rankingBounds(2015)
       # Pre-calculate 2015 colors
-      country["score_2015_color"] = colorScale(country["score_2015"]).hex()
+      country["score_2015_color"] = colorScale(2015)(country["score_2015"]).hex()
       # Save the country with it code as key
       result[country.country_code] = country
       result
@@ -63,7 +65,7 @@ angular.module('rsfIndex2015').factory 'MapData', ($q, $http, $translate, $filte
     ranking    : hash.ranking.data
     names      : namesTree
     count      : countTree
-    brewer     : countryColor
+    brewer     : colorScale(2015)
     # Help function to retreive country data
     country: (code)->
       code = if code.country_code? then code.country_code else code
@@ -88,19 +90,15 @@ angular.module('rsfIndex2015').factory 'MapData', ($q, $http, $translate, $filte
         # Return null if no score for this country
         if rankingTree[code]?
           # Should we use a pre-calculated color?
-          if rankingTree[code][colorKey]?
+          if !rankingTree[code][colorKey]?
             # Yes we do!
             rankingTree[code][colorKey]
           else
             unless yearsBounds[year]?
               yearsBounds[year] = rankingBounds year
-            colorScale = countryColor.domain yearsBounds[year]
             # Calculate the color now
-            color = countryColor( rankingTree[code]["score_" + year] ).hex()
+            color = colorScale(year)( rankingTree[code]["score_" + year] ).hex()
             # And save it
             rankingTree[code][colorKey] = color
         else
           null
-
-
-
