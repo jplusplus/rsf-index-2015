@@ -1,6 +1,6 @@
 ---
 slug: non-states-groups-tyrants-of-information
-title: Non-state groups: tyrants of information
+title: "Non-state groups: tyrants of information"
 description: Besides pressure from governments, journalists also faced violent threats from non-state groups in 2014. Far from being a homogenous whole, these groups pursue various goals including expansionist, political or financial and criminal aims.
 lang: en
 picture: http://fr.rsf.org/IMG/jpg/nonstatesgroups.jpg

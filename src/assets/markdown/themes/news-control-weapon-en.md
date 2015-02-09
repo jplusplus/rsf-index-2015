@@ -1,7 +1,7 @@
 ---
 slug: news-control-weapon
-title: News control - powerful weapon of war
-description: Many governments and non-state actors used control and manipulation of media coverage as a weapon of war in 2014. Ranging from over-coverage to complete news blackout, it creates a hostile climate for journalists and has disastrous consequences for media pluralism.
+title: "News control - powerful weapon of war"
+description: "Many governments and non-state actors used control and manipulation of media coverage as a weapon of war in 2014. Ranging from over-coverage to complete news blackout, it creates a hostile climate for journalists and has disastrous consequences for media pluralism."
 lang: en
 picture: http://fr.rsf.org/IMG/jpg/informationweapon.jpg
 ---

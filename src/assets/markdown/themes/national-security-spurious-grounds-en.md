@@ -1,6 +1,6 @@
 ---
 slug: national-security-spurious-grounds
-title: “National security” – spurious grounds
+title: "“National security” – spurious grounds"
 description: “Those who would give up essential liberty to purchase a little temporary safety, deserve neither liberty nor safety.” So said Benjamin Franklin, one of the US founding fathers, in the 18th century. Two centuries later, security is the grounds most often given by governments – both those that are democratic and those that are not – for trampling on fundamental freedoms and gagging the media.
 lang: en
 picture: http://fr.rsf.org/IMG/jpg/nationalsecurity.jpg

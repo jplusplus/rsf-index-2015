@@ -1,7 +1,7 @@
 ---
 slug: national-security-spurious-grounds
 title: Le prétexte fallacieux de la sécurité nationale
-description: "Un peuple prêt à sacrifier un peu de liberté pour un peu de sécurité ne mérite ni l'une ni l'autre, et finit par perdre les deux", affirmait déjà au XVIIIe siècle, Benjamin Franklin, l'un des pères fondateurs des États-Unis d’Amérique. Deux siècles plus tard, la sécurité est devenue le premier argument de nombreux gouvernements, démocratiques ou non, pour piétiner les libertés fondamentales et museler l’information.
+description: "\"Un peuple prêt à sacrifier un peu de liberté pour un peu de sécurité ne mérite ni l'une ni l'autre, et finit par perdre les deux\", affirmait déjà au XVIIIe siècle, Benjamin Franklin, l'un des pères fondateurs des États-Unis d’Amérique. Deux siècles plus tard, la sécurité est devenue le premier argument de nombreux gouvernements, démocratiques ou non, pour piétiner les libertés fondamentales et museler l’information."
 lang: fr
 picture: http://fr.rsf.org/IMG/jpg/nationalsecurity.jpg
 ---
