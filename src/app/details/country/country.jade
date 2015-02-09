@@ -23,7 +23,7 @@
                 .details__country__body__title__banner__figure__label
                   i.fa.fa-fw.fa-arrow-up.text-success-bg(ng-show='countryIndicatorProgression("ranking", 2015) ===  -1')
                   i.fa.fa-fw.fa-arrow-down.text-danger-bg(ng-show='countryIndicatorProgression("ranking", 2015) ===  1')
-                  i(ng-show='countryIndicatorProgression("ranking", 2015) === 0') =&nbsp;
+                  strong(ng-show='countryIndicatorProgression("ranking", 2015) === 0') =&nbsp;
                   span.label(ng-class="countryIndicatorLabel('ranking', 2015)")
                     | {{ rank.ranking_2014 - rank.ranking_2015 | number:2 | decimal | positive }}
               span(ng-bind-html="'ranking_in_2014' | translate:{ ranking: rank.ranking_2014 }")
