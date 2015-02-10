@@ -8,14 +8,13 @@
               i.fa.fa-code.fa-fw
               | &nbsp;{{ "source_code" | translate }}
           li
-            a(href="https://github.com/jplusplus/rsf-index-2015", target="_blank")
-              i.fa.fa-heart-o.fa-fw
-              | &nbsp;
-              span(ng-bind-html="'by_jpp' | translate")
+            i.fa.fa-heart-o.fa-fw
+            | &nbsp;
+            span(ng-bind-html="'by_jpp' | translate")
         ul.list-inline.footer__container__links.col-xs-6
           li
             a(ui-sref="presentation") {{ "presentation" | translate }}
           li
             a(ui-sref="press") {{ "press_nav" | translate }}
           li
-            a(ui-sref="help-us") {{ "help_us_nav" | translate }}
+            a(href="{{ 'help-us-link' | translate }}", target="_blank") {{ "help_us_nav" | translate }}
