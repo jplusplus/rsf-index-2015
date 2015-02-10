@@ -17,7 +17,7 @@ angular.module("rsfIndex2015").controller "DetailsCountryCtrl", ($scope, $stateP
     # Filter the list of the predator and putit to the scope
     $scope.predators = _.filter predators, (predator)->
       # Only predators of the current country
-      predator.countries.toUpperCase().indexOf($scope.selectedCountry) isnt -1
+      predator.countries? and predator.countries.toUpperCase().indexOf($scope.selectedCountry) isnt -1
     # Lang suffix
     suffix = "_" + lang
     # Simplify key (by remove language suffix)
