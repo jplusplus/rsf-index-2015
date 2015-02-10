@@ -8,22 +8,6 @@ angular.module('rsfIndex2015').factory 'MapData', ($q, $http, $translate, $filte
     # Do not start before the translation is loaded
     decimal    : ($translate)-> $translate('decimal_mark')
   ).then (hash)->
-    ###
-    rankingBounds = (year)->
-      key = "score_" + year
-      max = 1 * _.max( hash.ranking.data, (country)-> 1*country[key] )[key]
-      min = 1 * _.min( hash.ranking.data, (country)->
-        value = 1*country[key]
-        # Avoid using null value
-        if value is 0
-          max
-        else
-          value
-      )[key]
-      [min, max]
-    yearsBounds = 2015: rankingBounds(2015)
-    ###
-
     # Color scale
     colorScale = (value)->
       colors = ['#FFFFFF', '#FAE417', '#F1980B', '#DA032E', '#000000']
@@ -98,7 +82,6 @@ angular.module('rsfIndex2015').factory 'MapData', ($q, $http, $translate, $filte
             # Yes we do!
             rankingTree[code][colorKey]
           else
-            # yearsBounds[year] = rankingBounds year unless yearsBounds[year]?
             # Calculate the color now
             color = colorScale( rankingTree[code]["score_" + year] )
             # And save it
