@@ -62,9 +62,9 @@
   "year":"Année",
   "world":"Monde",
   "no_result":"Aucun résultat",
-  "download_data_url":"",
+  "download_data_url":"http:\/\/fr.rsf.org\/IMG\/csv\/2015wpfi.csv",
   "download_data_label":"Télécharger les données",
-  "download_methodo_url":"",
+  "download_methodo_url":"http:\/\/fr.rsf.org\/IMG\/pdf\/methodology-fr.pdf",
   "download_methodo_label":"Télécharger la méthodologie",
   "page_lang_not_available":"Cette page n'est pas disponible dans votre langue.",
   "more_info":"Plus d'informations",
@@ -85,5 +85,6 @@
   "search_placeholder":"Chercher un pays...",
   "search_btn":"Chercher",
   "presentation_desc":"Découvrez les grandes évolutions de l'édition 2015 du Classement mondial",
-  "help-us-link":"https:\/\/donate.rsf.org\/b\/mon-don"
+  "help-us-link":"https:\/\/donate.rsf.org\/b\/mon-don",
+  "tweet_text":""
 }
