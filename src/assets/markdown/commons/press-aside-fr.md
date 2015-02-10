@@ -15,7 +15,7 @@ Email : presse@rsf.org
 
 ####Responsable du Classement mondial  
 Antoine Héry  
-Tel. +33 1 44 83 84 76  
+Tel. +33 1 44 83 84 65  
 Email : index@rsf.org  
 
 ####Bureau Afrique  
