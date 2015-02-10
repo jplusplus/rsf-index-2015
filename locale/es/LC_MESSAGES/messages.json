@@ -79,7 +79,7 @@
   "score_indicator":"Puntuación",
   "barometer_sentence":"En <strong>2014<\/strong>, {journalists, select, =0{no periodista} =1{1 periodista} other{# periodistas}} y {netcitizens, select, =0{no net-ciudadano} =1{1 net-ciudadano} other{# net-ciudadanos}} asesinado(s).",
   "barometer_warning":"Atención: el cuadro “periodistas muertos\" sólo incluye a los profesionales de los medios de comunicación que Reporteros sin Fronteras ha podido confirmar fueron asesinados a causa de su labor periodística.",
-  "barometer_2015_link":"<a href=''http:\/\/es.rsf.org\/el-barometro-de-la-libertad-de-prensa-periodistas-muertos.html?annee=2015\" target='_blank'>Ver el Barómetro de la Libertad de Prensa 2015<\/a>",
+  "barometer_2015_link":"<a href=\"http:\/\/es.rsf.org\/el-barometro-de-la-libertad-de-prensa-periodistas-muertos.html?annee=2015\" target='_blank'>Ver el Barómetro de la Libertad de Prensa 2015<\/a>",
   "predators_title":"Predadores de la libertad de información",
   "no_ranking_this_year":"-",
   "search_placeholder":"Buscar un país...",
