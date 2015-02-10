@@ -13,6 +13,11 @@ Paris, France
 Tel. +33 1 44 83 84 56 / +33 7 82 37 23 12  
 Email: presse@rsf.org  
 
+####Head of Index 
+Antoine Héry  
+Tel. +33 1 44 83 84 76  
+Email: index@rsf.org  
+
 ####Africa desk  
 Tel. +33 1 44 83 84 76  
 Email: afrique@rsf.org  
