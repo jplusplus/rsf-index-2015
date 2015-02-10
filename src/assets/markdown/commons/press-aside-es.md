@@ -13,6 +13,11 @@ Paris, France
 Tel. +33 1 44 83 84 56 / +33 7 82 37 23 12  
 Email: presse@rsf.org  
 
+####Responsable de la Clasificación Mundial  
+Antoine Héry  
+Tel. +33 1 44 83 84 76  
+Email : index@rsf.org  
+
 ####Despacho África  
 Tel. +33 1 44 83 84 76  
 Email: afrique@rsf.org  
