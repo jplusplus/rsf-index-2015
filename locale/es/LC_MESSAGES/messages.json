@@ -2,7 +2,7 @@
   "africa":"África",
   "americas":"Américas",
   "asia-pacific":"Asia y el Pacífico",
-  "eeca":"Asia y el Pacífico",
+  "eeca":"Europa del Este y Asia central",
   "eu-and-western-balkans":"Unión Europea y los Balcanes",
   "mena":"Oriente Medio y África del Norte",
   "app_title":"Clasificación Mundial de la Libertad de Prensa 2015",
@@ -86,5 +86,7 @@
   "search_btn":"Buscar",
   "presentation_desc":"Descubre las evoluciones que marcaron la edición 2015 de la Clasificación Mundial",
   "help-us-link":"https:\/\/donate.rsf.org\/b\/my-donation",
-  "tweet_text":"Clasificación Mundial 2015 - La libertad de información, atacada en todos los continentes http:\/\/index.rsf.org\/#!\/ #RSFindex"
+  "tweet_text":"Clasificación Mundial 2015 - La libertad de información, atacada en todos los continentes http:\/\/index.rsf.org\/#!\/ #RSFindex",
+  "diff_2014_score":"Dif puntuación 2014",
+  "diff_2014_rank":"Dif lugar 2014"
 }
