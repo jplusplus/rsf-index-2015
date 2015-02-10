@@ -24,7 +24,7 @@
   "embed_desc":"Copiez-collez les lignes ci-dessous pour insérez la carte RSF dans votre code.",
   "environment_selfcensorship":"Environnement et autocensure",
   "europe":"Union européenne & Balkans",
-  "exactions":"Violence",
+  "exactions":"Score exactions",
   "exactions_warning":"Le score exaction reflète l'intensité des violences perpétrées contre les acteurs de l'information sur la période. Un score vierge signifie que le nombre minimal de violations constatées par Reporters sans frontières n'a pas été atteint pour faire l'objet d'une note strictement positive.",
   "find_out":"En savoir plus",
   "global_score":"Score global",
@@ -44,7 +44,7 @@
   "press_nav":"Presse",
   "rank":"Classement ",
   "score":"Score",
-  "score_without_exactions":"Sans exactions",
+  "score_without_exactions":"Score sans exactions",
   "score_exactions":"Score exactions",
   "search_btn ":"Trouver un pays",
   "search_placeholder ":"Recherche...",
@@ -86,5 +86,5 @@
   "search_btn":"Chercher",
   "presentation_desc":"Découvrez les grandes évolutions de l'édition 2015 du Classement mondial",
   "help-us-link":"https:\/\/donate.rsf.org\/b\/mon-don",
-  "tweet_text":""
+  "tweet_text":"Classement mondial 2015 - La liberté de l’information attaquée sur tous les continents http:\/\/index.rsf.org\/#!\/ #RSFindex #libertédelapresse"
 }
