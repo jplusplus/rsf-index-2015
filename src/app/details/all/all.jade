@@ -73,6 +73,12 @@
             th(ts-criteria="score_2015")
               | {{ 'global_score' | translate }}
               i.fa
+            th(ts-criteria="diff_2014_score")
+              | {{ 'diff_2014_score' | translate }}
+              i.fa
+            th(ts-criteria="diff_2014_rank")                
+              | {{ 'diff_2014_rank' | translate }}
+              i.fa
         tbody
           tr(ng-repeat='country in ranking track by $index', ts-repeat)
             td.text-center(ng-style="{ background: countryColor(country), color: countryContrast(country) }")
@@ -90,5 +96,7 @@
             td.text-center {{ country["exactions_2015"] | decimal }}
             td.text-center {{ country["score_2015_wo_exactions"] | decimal }}
             td.text-center {{ country["score_2015"] | decimal }}
+            td.text-center {{ country["diff_2014_score"] | decimal | positive }}
+            td.text-center {{ country["diff_2014_rank"] | decimal | positive }}
           tr.warning.text-warning(ng-hide="ranking.length")
             td(colspan=10).text-center {{ 'no_result' | translate }}
