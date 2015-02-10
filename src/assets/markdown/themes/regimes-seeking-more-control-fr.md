@@ -1,7 +1,7 @@
 ---
 slug: regimes-seeking-more-control
-title: Ces dictatures qui vont toujours plus loin dans le contrôle de l’information
-description: On pourrait penser que les Etats les plus despotiques et les plus fermés au monde se contentent de maintenir leur contrôle sur l’information. Ils n’ont pourtant de cesse de l’accentuer et de parfaire ainsi leurs outils de censure et de répression. Derrière leur apparente stagnation dans le Classement mondial, 15 Etats parmi les 20 derniers voient leurs scores baisser par rapport à 2014. Comment parviennent-ils à faire toujours pire ?
+title: "Ces dictatures qui vont toujours plus loin dans le contrôle de l’information"
+description: "On pourrait penser que les Etats les plus despotiques et les plus fermés au monde se contentent de maintenir leur contrôle sur l’information. Ils n’ont pourtant de cesse de l’accentuer et de parfaire ainsi leurs outils de censure et de répression. Derrière leur apparente stagnation dans le Classement mondial, 15 Etats parmi les 20 derniers voient leurs scores baisser par rapport à 2014. Comment parviennent-ils à faire toujours pire ?"
 lang: fr
 picture: http://fr.rsf.org/IMG/jpg/dictatures.jpg
 ---

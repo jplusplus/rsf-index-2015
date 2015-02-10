@@ -1,7 +1,7 @@
 ---
 slug: perspectives-other-indicators
-title: RSF déchiffre les corrélations entre son Classement de la liberté de la presse et des indicateurs mondiaux
-description: Exportation de pétrole brut, richesse par habitant, stabilité économique... Reporters sans frontières (RSF) passe au crible les liens entre de grands indicateurs mondiaux et son Classement de la liberté de la presse 2015.
+title: "RSF déchiffre les corrélations entre son Classement de la liberté de la presse et des indicateurs mondiaux"
+description: "Exportation de pétrole brut, richesse par habitant, stabilité économique... Reporters sans frontières (RSF) passe au crible les liens entre de grands indicateurs mondiaux et son Classement de la liberté de la presse 2015."
 lang: fr
 picture: http://fr.rsf.org/IMG/jpg/correlations.jpg
 ---

@@ -1,7 +1,7 @@
 ---
 slug: regimes-seeking-more-control
-title: Regimes seeking ever more information control
-description: You might have thought that the world’s most despotic and closed states would be satisfied with keeping news and information under control. Instead, they have continued to reinforce and improve their methods of censorship and repression. Despite apparently stagnating at the bottom of the press freedom index, 15 of the 20 worst-ranked countries have actually seen their scores fall in the past year. How do they manage to keep getting worse?
+title: "Regimes seeking ever more information control"
+description: "You might have thought that the world’s most despotic and closed states would be satisfied with keeping news and information under control. Instead, they have continued to reinforce and improve their methods of censorship and repression. Despite apparently stagnating at the bottom of the press freedom index, 15 of the 20 worst-ranked countries have actually seen their scores fall in the past year. How do they manage to keep getting worse?"
 lang: en
 picture: http://fr.rsf.org/IMG/jpg/dictatures.jpg
 ---

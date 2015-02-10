@@ -12,7 +12,7 @@ picture:
 [Learn about the major changes identified by Reporters Without Borders in the 2015 World Press Index (overall and by country).](http://index.rsf.org/#!/presentation)
 
 ####Index 
-[See the 2015 World Press Freedom Index, download the scores and rankings, and find out how the index was compiled.](http://index.rsf.org/#!/index)
+[See the 2015 World Press Freedom Index, download the scores and rankings, and find out how the index was compiled.](http://index.rsf.org/#!/index-details)
 
 ####Themes
 [Seven thematic analyses by Reporters Without Borders explaining the major challenges to journalists and bloggers in 2014.](http://index.rsf.org/#!/themes)

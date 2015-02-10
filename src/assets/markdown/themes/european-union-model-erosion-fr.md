@@ -1,7 +1,7 @@
 ---
 slug: european-union-model-erosion
-title: L’érosion du modèle européen
-description: Année après année, le Vieux Continent régresse au Classement mondial de la liberté de la presse. Stable entre les éditions 2013 et 2014, l’Union européenne marque le pas en 2015. Outre les pays nordiques qui restent, cette année encore, en tête de Classement, les autres membres de l’Union dévissent globalement. Une tendance générale qui nourrit de sérieuses inquiétudes quant à la pérennité du “modèle européen”.
+title: "L’érosion du modèle européen"
+description: "Année après année, le Vieux Continent régresse au Classement mondial de la liberté de la presse. Stable entre les éditions 2013 et 2014, l’Union européenne marque le pas en 2015. Outre les pays nordiques qui restent, cette année encore, en tête de Classement, les autres membres de l’Union dévissent globalement. Une tendance générale qui nourrit de sérieuses inquiétudes quant à la pérennité du “modèle européen”."
 lang: fr
 picture: http://fr.rsf.org/IMG/jpg/eu.jpg
 ---

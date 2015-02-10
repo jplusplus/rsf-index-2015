@@ -1,7 +1,7 @@
 ---
 slug: demonstrations-becoming-hazardous
-title: Covering demonstrations becoming increasingly hazardous
-description: Journalists play a critical role in newsgathering, observing and witnessing at demonstrations. By their very nature, these are events of public interest. In keeping with a pattern set in 2013, the year was marked by increased violence against news providers covering protest gatherings.
+title: "Covering demonstrations becoming increasingly hazardous"
+description: "Journalists play a critical role in newsgathering, observing and witnessing at demonstrations. By their very nature, these are events of public interest. In keeping with a pattern set in 2013, the year was marked by increased violence against news providers covering protest gatherings."
 lang: en
 picture: http://fr.rsf.org/IMG/jpg/manifs.jpg
 ---

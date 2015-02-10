@@ -1,7 +1,7 @@
 ---
 slug: perspectives-other-indicators
-title: RSF analiza la correlación entre su Clasificación Mundial de la Libertad de Prensa y los indicadores internacionales.
-description: Exportación de petróleo crudo, riqueza per cápita, estabilidad económica... Reporteros sin Fronteras (RSF) examina la relación que existe entre los grandes indicadores mundiales y su Clasificación Mundial de la Libertad de Prensa 2015.
+title: "RSF analiza la correlación entre su Clasificación Mundial de la Libertad de Prensa y los indicadores internacionales."
+description: "Exportación de petróleo crudo, riqueza per cápita, estabilidad económica... Reporteros sin Fronteras (RSF) examina la relación que existe entre los grandes indicadores mundiales y su Clasificación Mundial de la Libertad de Prensa 2015."
 lang: es
 picture: http://fr.rsf.org/IMG/jpg/correlations.jpg
 ---

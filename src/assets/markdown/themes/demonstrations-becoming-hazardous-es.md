@@ -1,7 +1,7 @@
 ---
 slug: demonstrations-becoming-hazardous
-title: La creciente dificultad de cubrir las manifestaciones
-description: Los periodistas juegan un papel crucial –de observación, testimonio e información– en las manifestaciones, que por esencia son de interés público. Inscribiéndose en la línea de 2013, el año 2014 estuvo marcado por una intensificación de la violencia contra los actores de la información que cubrieron este tipo de acontecimientos.
+title: "La creciente dificultad de cubrir las manifestaciones"
+description: "Los periodistas juegan un papel crucial –de observación, testimonio e información– en las manifestaciones, que por esencia son de interés público. Inscribiéndose en la línea de 2013, el año 2014 estuvo marcado por una intensificación de la violencia contra los actores de la información que cubrieron este tipo de acontecimientos."
 lang: es
 picture: http://fr.rsf.org/IMG/jpg/manifs.jpg
 ---

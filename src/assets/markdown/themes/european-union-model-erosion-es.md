@@ -1,7 +1,7 @@
 ---
 slug: european-union-model-erosion
-title: La erosión del modelo europeo
-description: Año tras año, el viejo continente retrocede en la Clasificación Mundial de la Libertad de Prensa. Estable entre las ediciones 2013 y 2014, la Unión Europea marca el paso en 2015. Fuera de los países nórdicos, que este año están de nuevo a la cabeza en la clasificación, los otros miembros de la Unión Europea globalmente cayeron. Una tendencia generalizada que nutre serias preocupaciones respecto a la perduración del “modelo europeo”.
+title: "La erosión del modelo europeo"
+description: "Año tras año, el viejo continente retrocede en la Clasificación Mundial de la Libertad de Prensa. Estable entre las ediciones 2013 y 2014, la Unión Europea marca el paso en 2015. Fuera de los países nórdicos, que este año están de nuevo a la cabeza en la clasificación, los otros miembros de la Unión Europea globalmente cayeron. Una tendencia generalizada que nutre serias preocupaciones respecto a la perduración del “modelo europeo”."
 lang: es
 picture: http://fr.rsf.org/IMG/jpg/eu.jpg
 ---

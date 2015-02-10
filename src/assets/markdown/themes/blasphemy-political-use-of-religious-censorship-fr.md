@@ -1,7 +1,7 @@
 ---
 slug: blasphemy-political-use-of-religious-censorship
 title: "Blasphème : une utilisation politique de la censure religieuse"
-description: Si l’année 2014 enregistre une baisse des arrestations et des condamnations de journalistes pour avoir traité de la question religieuse, de plus en plus de pays utilisent le délit de “blasphème” et autre atteinte au sacré pour censurer toute critique politique. Certains dirigeants étendent même l’interdit à leur personne,  en promulguant des lois abusives, qui rendent illégale toute critique à leur encontre et toute remise en question de leurs actions politiques.
+description: "Si l’année 2014 enregistre une baisse des arrestations et des condamnations de journalistes pour avoir traité de la question religieuse, de plus en plus de pays utilisent le délit de “blasphème” et autre atteinte au sacré pour censurer toute critique politique. Certains dirigeants étendent même l’interdit à leur personne,  en promulguant des lois abusives, qui rendent illégale toute critique à leur encontre et toute remise en question de leurs actions politiques."
 lang: fr
 picture: http://fr.rsf.org/IMG/jpg/blasphemy.jpg
 ---

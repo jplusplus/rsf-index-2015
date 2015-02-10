@@ -1,7 +1,7 @@
 ---
 slug: demonstrations-becoming-hazardous
-title: La difficulté croissante de couvrir les manifestations
-description: Les journalistes jouent un rôle crucial d’information, d’observation et de témoignage dans les manifestations, événements par essence d’intérêt public. S’inscrivant dans la lignée de 2013, l’année aura été marquée par une intensification de la violence à l’encontre des acteurs de l’information couvrant ce type de rassemblements.
+title: "La difficulté croissante de couvrir les manifestations"
+description: "Les journalistes jouent un rôle crucial d’information, d’observation et de témoignage dans les manifestations, événements par essence d’intérêt public. S’inscrivant dans la lignée de 2013, l’année aura été marquée par une intensification de la violence à l’encontre des acteurs de l’information couvrant ce type de rassemblements."
 lang: fr
 picture: http://fr.rsf.org/IMG/jpg/manifs.jpg
 ---

@@ -1,7 +1,7 @@
 ---
 slug: perspectives-other-indicators
 title: How the Press Freedom Index correlates with other indicators
-description: Oil exports, per capita GDP, economic stability... is there a correlation between such economic indicators and a country’s ranking in the Reporters Without Borders World Press Freedom Index? Are media freedom and independence linked to economic development? This year, Reporters Without Borders takes a look. 
+description: "Oil exports, per capita GDP, economic stability... is there a correlation between such economic indicators and a country’s ranking in the Reporters Without Borders World Press Freedom Index? Are media freedom and independence linked to economic development? This year, Reporters Without Borders takes a look."
 lang: en
 picture: http://fr.rsf.org/IMG/jpg/correlations.jpg
 ---

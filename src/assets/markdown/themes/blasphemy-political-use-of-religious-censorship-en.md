@@ -1,7 +1,7 @@
 ---
 slug: blasphemy-political-use-of-religious-censorship
 title: "Blasphemy: political use of religious censorship"
-description: While 2014 saw a fall in the number of journalists being arrested or convicted for covering religious issues, more and more countries are using prohibitions on blasphemy and sacrilege to censor political criticism. Some leaders go so far as to use these prohibitions to pass laws banning any criticism of themselves or their political actions.
+description: "While 2014 saw a fall in the number of journalists being arrested or convicted for covering religious issues, more and more countries are using prohibitions on blasphemy and sacrilege to censor political criticism. Some leaders go so far as to use these prohibitions to pass laws banning any criticism of themselves or their political actions."
 lang: en
 picture: http://fr.rsf.org/IMG/jpg/blasphemy.jpg
 ---

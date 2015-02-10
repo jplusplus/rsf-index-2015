@@ -1,7 +1,7 @@
 ---
 slug: presentation
-title: "La liberté de l’information attaquée sur tous les continents"
-description: "Le Classement mondial de Reporters sans frontières (RSF) met en évidence une détérioration globale de la liberté de l’information en 2014. Éprouvée par les conflits, la menace accrue d’acteurs non étatiques, les exactions commises lors de manifestations ou par la crise économique et financière, la liberté de la presse régresse sur les cinq continents. A travers six analyses thématiques, l’organisation explique ce recul inquiétant."
+title: La liberté de l’information attaquée sur tous les continents
+description: "Le Classement mondial de Reporters sans frontières (RSF) met en évidence une détérioration globale de la liberté de l’information en 2014. Éprouvée par les conflits, la menace accrue d’acteurs non étatiques, les exactions commises lors de manifestations ou par la crise économique et financière, la liberté de la presse régresse sur les cinq continents. A travers sept analyses thématiques, l’organisation explique ce recul inquiétant."
 lang: fr
 picture:
 ---
@@ -14,25 +14,25 @@ Si la zone Union européenne - Balkans reste de loin première avec un score de 
 
 ## Classement 2015 : Les raisons d’une régression inquiétante
 
-Proche-Orient, Ukraine, Syrie ou Irak… De nombreux conflits ont marqué 2014. Les belligérants se sont tous livrés, sans exception, à une redoutable guerre de l’information. Propagande ou blackout, les médias, devenus des objectifs stratégiques, ont été pris pour cibles, attaqués, voire réduits au silence.
+Proche-Orient, Ukraine, Syrie ou Irak… De nombreux conflits ont marqué 2014. Les belligérants se sont tous livrés, sans exception, à une redoutable guerre de l’information. Propagande ou blackout, les médias, devenus des objectifs stratégiques, ont été pris pour cibles, attaqués, voire réduits au silence.  
 [**Lire notre analyse : “L’information, redoutable arme de guerre”**](http://index.rsf.org/#!/themes/news-control-weapon)
 
-Les groupes non étatiques n’obéissent à aucune loi et poursuivent leurs propres intérêts au mépris des droits fondamentaux. De Boko Haram au groupe Etat islamique, en passant par les narcotrafiquants latinos ou la mafia italienne, les motivations varient mais le _modus operandi_ est le même: réduire au silence, par la peur ou les représailles, les journalistes et blogueurs qui osent enquêter sur ces groupes ou qui refusent de s'en faire les porte-voix.
+Les groupes non étatiques n’obéissent à aucune loi et poursuivent leurs propres intérêts au mépris des droits fondamentaux. De Boko Haram au groupe Etat islamique, en passant par les narcotrafiquants latinos ou la mafia italienne, les motivations varient mais le _modus operandi_ est le même: réduire au silence, par la peur ou les représailles, les journalistes et blogueurs qui osent enquêter sur ces groupes ou qui refusent de s'en faire les porte-voix.  
 [**Lire notre analyse : “Les groupes non étatiques, despotes de l’information”**](http://index.rsf.org/#!/themes/non-states-groups-tyrants-of-information)
 
-Sanctuariser un système politique au nom de la protection du sacré : un moyen extrêmement efficace pour censurer toute critique envers le pouvoir dans des pays où la religion fait loi. Dans près de la moitié des pays du monde, le délit de blasphème est une notion qui met en danger la liberté de l’information. Parfois, lorsque certains “fidèles” estiment que la justice n’assure pas suffisamment le respect de Dieu ou du prophète, ils se chargent eux-mêmes de rappeler aux journalistes et aux blogueurs ce qu’ils ont le droit de dire ou non.
+Sanctuariser un système politique au nom de la protection du sacré : un moyen extrêmement efficace pour censurer toute critique envers le pouvoir dans des pays où la religion fait loi. Dans près de la moitié des pays du monde, le délit de blasphème est une notion qui met en danger la liberté de l’information. Parfois, lorsque certains “fidèles” estiment que la justice n’assure pas suffisamment le respect de Dieu ou du prophète, ils se chargent eux-mêmes de rappeler aux journalistes et aux blogueurs ce qu’ils ont le droit de dire ou non.  
 [**Lire notre analyse : “Blasphème : une utilisation politique de la censure religieuse”**](http://index.rsf.org/#!/themes/blasphemy-political-use-of-religious-censorship)
 
-Le journaliste, ennemi commun des manifestants et des forces de l’ordre dans certains rassemblements populaires ? C’est le triste constat que dresse cette année encore Reporters sans frontières. 2014 aura été marquée par une intensification de la violence envers les reporters et les net-citoyens couvrant les manifestations.
+Le journaliste, ennemi commun des manifestants et des forces de l’ordre dans certains rassemblements populaires ? C’est le triste constat que dresse cette année encore Reporters sans frontières. 2014 aura été marquée par une intensification de la violence envers les reporters et les net-citoyens couvrant les manifestations.  
 [**Lire notre analyse : “La difficulté croissante de couvrir les manifestations”**](http://index.rsf.org/#!/themes/demonstrations-becoming-hazardous)
 
-Plus important recul entre les éditions 2014 et 2015 du Classement mondial, l’Union européenne montre les limites de son “modèle démocratique” et l’incapacité de ses mécanismes à endiguer cette érosion. Car l’UE semble débordée par les velléités de certains États membres à transiger avec la liberté de l’information. Conséquence directe, les écarts se creusent : les pays membres occupent des positions au Classement allant de la 1ère et la 106ème place. Une amplitude record.
+Plus important recul entre les éditions 2014 et 2015 du Classement mondial, l’Union européenne montre les limites de son “modèle démocratique” et l’incapacité de ses mécanismes à endiguer cette érosion. Car l’UE semble débordée par les velléités de certains États membres à transiger avec la liberté de l’information. Conséquence directe, les écarts se creusent : les pays membres occupent des positions au Classement allant de la 1ère et la 106ème place. Une amplitude record.  
 [**Lire notre analyse : “L’érosion du modèle européen”**](http://index.rsf.org/#!/themes/european-union-model-erosion)
 
-C’est d’ailleurs souvent au nom de la sécurité nationale que les démocraties prennent des largesses avec leurs valeurs. Face à la menace réelle ou fallacieuse, des gouvernements se créent, à un rythme chevronné, tout un arsenal législatif afin de museler les voix indépendantes. Un phénomène qui touche aussi bien les régimes autoritaires que les démocraties.
+C’est d’ailleurs souvent au nom de la sécurité nationale que les démocraties prennent des largesses avec leurs valeurs. Face à la menace réelle ou fallacieuse, des gouvernements se créent, à un rythme chevronné, tout un arsenal législatif afin de museler les voix indépendantes. Un phénomène qui touche aussi bien les régimes autoritaires que les démocraties.  
 [**Lire notre analyse : “La sécurité nationale, un prétexte fallacieux”**](http://index.rsf.org/#!/themes/national-security-spurious-grounds)
 
-Ce sont des régimes dictatoriaux d’Europe de l’Est, d’Afrique, d’Asie ou encore du Moyen-Orient. Ils sont pour la plupart dirigés par des caricatures vivantes, qui prêteraient sans doute à rire s’ils n’exerçaient pas un contrôle absolu sur l’information. En 2014, ils ont encore davantage resserré l’étau qui étouffe depuis des années la presse : parmi les 20 derniers pays du Classement 2015, 15 ont fait pire que lors de l’édition 2014.
+Ce sont des régimes dictatoriaux d’Europe de l’Est, d’Afrique, d’Asie ou encore du Moyen-Orient. Ils sont pour la plupart dirigés par des caricatures vivantes, qui prêteraient sans doute à rire s’ils n’exerçaient pas un contrôle absolu sur l’information. En 2014, ils ont encore davantage resserré l’étau qui étouffe depuis des années la presse : parmi les 20 derniers pays du Classement 2015, 15 ont fait pire que lors de l’édition 2014.  
 [**Lire notre analyse : “Ces dictatures qui vont toujours plus loin dans le contrôle de l’information”**](http://index.rsf.org/#!/themes/regimes-seeking-more-control)
 
 ## Les évolutions marquantes de l’édition 2015

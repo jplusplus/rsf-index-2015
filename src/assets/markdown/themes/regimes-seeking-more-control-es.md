@@ -1,7 +1,7 @@
 ---
 slug: regimes-seeking-more-control
-title: Esas regímenes que van cada vez más lejos en el control de la información
-description: Podríamos pensar que los Estados más despóticos y cerrados del mundo se conforman con conservar su control de la información. No obstante, estos no han dejado de acrecentar y perfeccionar sus herramientas de censura y represión. Detrás de su aparente estancamiento en la Clasificación Mundial, 15 de los Estados que se encontraban ya entre los últimos 20 lugares, descendieron respecto a la clasificación de 2014. ¿Cómo lograron empeorar aún más?
+title: "Esas regímenes que van cada vez más lejos en el control de la información"
+description: "Podríamos pensar que los Estados más despóticos y cerrados del mundo se conforman con conservar su control de la información. No obstante, estos no han dejado de acrecentar y perfeccionar sus herramientas de censura y represión. Detrás de su aparente estancamiento en la Clasificación Mundial, 15 de los Estados que se encontraban ya entre los últimos 20 lugares, descendieron respecto a la clasificación de 2014. ¿Cómo lograron empeorar aún más?"
 lang: es
 picture: http://fr.rsf.org/IMG/jpg/dictatures.jpg
 ---

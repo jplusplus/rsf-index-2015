@@ -1,7 +1,7 @@
 ---
 slug: european-union-model-erosion
-title: European model’s erosion
-description: Europe has been drifting downwards in the press freedom index for years. It held steady in last year’s index but, overall, it fell again in the 2015 index although the Nordic countries continued to hold the top positions. This general decline reinforces concern about the sustainability of the “European model.”
+title: "European model’s erosion"
+description: "Europe has been drifting downwards in the press freedom index for years. It held steady in last year’s index but, overall, it fell again in the 2015 index although the Nordic countries continued to hold the top positions. This general decline reinforces concern about the sustainability of the “European model.”"
 lang: en
 picture: http://fr.rsf.org/IMG/jpg/eu.jpg
 ---
