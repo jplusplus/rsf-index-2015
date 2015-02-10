@@ -1,6 +1,6 @@
 # Get the contrast color of the given hexadecimal color
 angular.module("rsfIndex2015").filter "contrast", ->
-  (hexcolor)->
+  (hexcolor='')->
     hexcolor = hexcolor.replace "#", ""
     r = parseInt(hexcolor.substr(0, 2), 16)
     g = parseInt(hexcolor.substr(2, 2), 16)

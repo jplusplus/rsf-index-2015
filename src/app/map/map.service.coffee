@@ -78,7 +78,7 @@ angular.module('rsfIndex2015').factory 'MapData', ($q, $http, $translate, $filte
         # Return null if no score for this country
         if rankingTree[code]?
           # Should we use a pre-calculated color?
-          if !rankingTree[code][colorKey]?
+          if rankingTree[code][colorKey]?
             # Yes we do!
             rankingTree[code][colorKey]
           else
