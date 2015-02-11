@@ -1,7 +1,7 @@
 ---
 slug: perspectives-other-indicators
-title: How the Press Freedom Index correlates with other indicators
-description: "Oil exports, per capita GDP, economic stability... is there a correlation between such economic indicators and a country’s ranking in the Reporters Without Borders World Press Freedom Index? Are media freedom and independence linked to economic development? This year, Reporters Without Borders takes a look."
+title: "How the Press Freedom Index correlates with other indicators"
+description: "Oil exports, per capita GDP, economic stability... is there a correlation between such economic indicators and a country’s ranking in the Reporters Without Borders World Press Freedom Index? Are media freedom and independence linked to economic development? This year, Reporters Without Borders takes a look." 
 lang: en
 picture: http://fr.rsf.org/IMG/jpg/correlations.jpg
 ---
@@ -12,7 +12,7 @@ Per capita GDP correlates positively with media freedom (a correlation coefficie
 
 But there are contrasting examples that show that media freedom is not a prerogative of the rich. **Niger**, the world’s least developed country [according to the United Nations Development Programme](http://hdr.undp.org/en/content/human-development-index-hdi), is ranked 47th out of 180 countries in the 2015 Press Freedom Index. Despite a challenging economic environment, Niger’s media have been diverse and outspoken since President Mamadou Tandja’s departure in 2010. But, while the creation of democratic space has been positive, Niger’s poverty continues to be a structural handicap limiting media development and the introduction of better educational standards in journalism.
 
-## Economic stability and media freedom
+## A link between economic stability and media freedom
 
 There is a 0.59 correlation coefficient between the Reporters Without Borders Press Freedom Index and the Institute for Economics and Peace’s political stability indicator, which measures the ability of countries to satisfy the needs of businesses and investors. 
 

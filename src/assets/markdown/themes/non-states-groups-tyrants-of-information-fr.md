@@ -1,6 +1,6 @@
 ---
 slug: non-states-groups-tyrants-of-information
-title: "Les groupes non étatiques, despotes de l’information"
+title: "Le despotisme sans Etat"
 description: "Outre la pression exercée par les Etats, les journalistes ont été confrontés en 2014 aux menaces violentes de groupes non étatiques. Ces entités, loin de représenter un ensemble homogène, sont motivées par des logiques expansionnistes, des objectifs politiques ou bien encore des intérêts économiques et mafieux."
 lang: fr
 picture: http://fr.rsf.org/IMG/jpg/nonstatesgroups.jpg 

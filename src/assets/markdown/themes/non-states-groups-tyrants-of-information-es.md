@@ -1,6 +1,6 @@
 ---
 slug: non-states-groups-tyrants-of-information
-title: "Los grupos non estatales, déspotas de la información"
+title: "Los grupos no estatales, déspotas de la información"
 description: "En 2014 los periodistas no sólo enfrentaron la presión ejercida por los Estados, también padecieron las amenazas violentas de grupos no estatales. Estas entidades están lejos de representar un conjunto homogéneo: están motivadas por lógicas expansionistas, responden a objetivos políticos, intereses económicos e, incluso, mafiosos."
 lang: es
 picture: http://fr.rsf.org/IMG/jpg/nonstatesgroups.jpg
@@ -8,7 +8,7 @@ picture: http://fr.rsf.org/IMG/jpg/nonstatesgroups.jpg
 
 Más allá de sus diferencias y motivaciones, los grupos no estatales tienen algo en común: obran en contra o de manera paralela a las estructuras legales y no se sienten regidos por otras leyes que no sean las establecidas por ellos mismos. Sin embargo, algunos pueden mantener lazos –menos o más lejanos– con las autoridades gubernamentales, administrativas o políticas. Asimismo, todos muestran una intolerancia visceral frente a cualquier información que vaya en contra de sus intenciones. Los periodistas que intentan trabajar en medio de esta situación, desenredar las madejas de la corrupción o denunciar las agresiones a civiles, se ven atrapados en una tempestad donde sólo la violencia es una certeza y en la que el Estado de Derecho se convierte en una referencia lejana. 
 
-## Terror y hoyos negros de la información
+## Terror y agujeros negros de la información
 
 En ciertas regiones de África o de Oriente Medio el año 2014 estuvo marcado por el avance de grupos más allá de las fronteras de su país de origen, en una lógica expansionista de conquista de poblaciones y territorios. Algunos, como el grupo Estado Islámico (EI), en Irak y en Siria, o como Boko Haram, que avanzó de Nigeria a Camerún y Níger, emplearon la violencia de forma extrema e indiferenciada, buscando sembrar el terror.
 
