@@ -34,11 +34,13 @@ angular.module('rsfIndex2015').factory 'MapData', ($q, $http, $translate, $filte
     , {})
     # Convert name to titlecase
     namesTree = _.reduce( hash.names.data, (result, country)->
+      ###
       for key of country
         # Only name attribute
         if key.indexOf('country_name_') is 0
           # Use the titlecase filter
-          country[key] = $filter("titlecase")(country[key] or "")
+          country[key] = country[key] or ""
+      ###
       result[country.iso_3] = country
       result
     , {})
