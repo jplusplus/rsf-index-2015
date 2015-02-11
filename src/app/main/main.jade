@@ -5,37 +5,37 @@
     .container
       .row
         .col-md-4.col-sm-6
-          a.main__summary__panel(ui-sref="presentation")
+          a.main__summary__panel.main__summary__panel--1(ui-sref="presentation")
             .main__summary__panel__heading
               h3 {{ "presentation" | translate }}
             .main__summary__panel__body
               | {{ "presentation_desc" | translate }}
         .col-md-4.col-sm-6
-          a.main__summary__panel(ui-sref="details.all")
+          a.main__summary__panel.main__summary__panel--2(ui-sref="details.all")
             .main__summary__panel__heading
               h3 {{ "details_nav" | translate }}
             .main__summary__panel__body
               | {{ "details_desc" | translate }}
         .col-md-4.col-sm-6
-          a.main__summary__panel(ui-sref="press")
+          a.main__summary__panel.main__summary__panel--3(ui-sref="press")
             .main__summary__panel__heading
               h3 {{ "press_nav" | translate }}
             .main__summary__panel__body
               | {{ "press_desc" | translate }}
         .col-md-4.col-sm-6
-          a.main__summary__panel(ui-sref="insights")
+          a.main__summary__panel.main__summary__panel--4(ui-sref="insights")
             .main__summary__panel__heading
               h3 {{ "highlight_nav" | translate }}
             .main__summary__panel__body
               | {{ "highlight_desc" | translate }}
         .col-md-4.col-sm-6
-          a.main__summary__panel(ui-sref="themes")
+          a.main__summary__panel.main__summary__panel--5(ui-sref="themes")
             .main__summary__panel__heading
               h3 {{ "themes_nav" | translate }}
             .main__summary__panel__body
               | {{ "themes_desc" | translate }}
         .col-md-4.col-sm-6
-          a.main__summary__panel(href="{{ 'help-us-link' | translate }}", target="_blank")
+          a.main__summary__panel.main__summary__panel--6(href="{{ 'help-us-link' | translate }}", target="_blank")
             .main__summary__panel__heading
               h3 {{ "help_us_nav" | translate }} &nbsp;<i class="fa small fa-external-link"></i>
             .main__summary__panel__body
