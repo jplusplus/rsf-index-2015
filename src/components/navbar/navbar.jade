@@ -1,5 +1,5 @@
 nav.navbar.navbar-static-top.navbar-default(ng-controller='NavbarCtrl', ng-show="shoudShowNavbar()")
-  .container(ng-init="collapseMenu = true")
+  div(ng-init="collapseMenu = true")
     .navbar-header
       a.navbar-brand.navbar-logo(ui-sref='main', ng-if='useLanguage()')
         img(ng-src='http://rsf.org/squelettes/img/{{useLanguage()}}/logo-{{useLanguage()}}.png', height='25')
