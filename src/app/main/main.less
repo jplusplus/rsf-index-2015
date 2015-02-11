@@ -16,7 +16,7 @@
     &__panel {
       display: block;
       margin-bottom:30px;
-      color: @navbar-default-link-color;
+      color: white;
       background:@navbar-default-bg;
       height:250px;
       position: relative;
@@ -26,15 +26,15 @@
         .transition(0.4s);
       }
 
-      &:hover {
-        color:@navbar-default-link-color;
+      &:hover, &:focus, &:active {
+        color:white;
         text-decoration: none;
       }
 
-      &:hover & {
+      & & {
 
        &__heading {
-          border-color:@navbar-default-link-color;
+          border-color:white;
           padding:20px 0;
         }
 
