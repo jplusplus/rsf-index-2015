@@ -44,6 +44,7 @@ angular.module "rsfIndex2015"
           type: 'xyz'
           url: "http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           options:
+            attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors',
             continuousWorld: no
             noWrap: yes
       # The map may be already centered on a country
